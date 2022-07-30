@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -21,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية ترحيل ملفات Google إلى Microsoft 365 للأعمال باستخدام SharePoint Migration Manager.
-ms.openlocfilehash: 68b3a0455a2bf57e35308c428bf2b5de3e4b5983
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 55dd5740192914b89e7be1da070b97b4f6983c97
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602105"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085536"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>ترحيل ملفات Google إلى Microsoft 365 للأعمال باستخدام Migration Manager
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 ## <a name="watch-migrate-google-files-to-microsoft-365-for-business"></a>مشاهدة: ترحيل ملفات Google إلى Microsoft 365 للأعمال
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198217).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198217).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 

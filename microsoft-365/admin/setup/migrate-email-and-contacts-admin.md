@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020
@@ -31,16 +32,16 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: تعرف على كيفية استيراد جهات الاتصال والتقويمات ورسائل البريد الإلكتروني من Gmail أو موفر بريد إلكتروني آخر وترحيلها إلى Microsoft 365.
-ms.openlocfilehash: 14f4e1d630c19038f3bf9204d52f62b2f2f18d5d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 769ac7b2ee1a84767fe71d45ee9214927044213b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602967"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086902"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>ترحيل البريد الإلكتروني والتقويم وجهات الاتصال إلى Microsoft 365
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 استيراد البريد الإلكتروني أو ترحيله من Gmail أو موفر بريد إلكتروني آخر إلى Microsoft 365.
   
@@ -53,7 +54,7 @@ ms.locfileid: "66602967"
   
 ## <a name="watch-import-and-redirect-email"></a>المراقبة: استيراد البريد الإلكتروني وإعادة توجيهه
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197916).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 

@@ -1,5 +1,5 @@
 ---
-title: التسجيل للحصول على اشتراك عمل Microsoft Teams
+title: التسجيل للحصول على اشتراك Microsoft Teams للأعمال
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
-description: اتبع الخطوات الواردة في هذه المقالة للتسجيل للحصول على Microsoft Teams كجزء من اشتراك الأعمال.
-ms.openlocfilehash: 9be7805e8b3ee29128eab2b99ee0f2f87f42b607
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: اتبع الخطوات الواردة في هذه المقالة للتسجيل في Microsoft Teams كجزء من اشتراك الأعمال.
+ms.openlocfilehash: 7acf40e6c4ba199abab8eb97c5d87b357f012830
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465833"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086092"
 ---
-# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>التسجيل للحصول على Microsoft Teams كجزء من اشتراك الأعمال
+# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>التسجيل في Microsoft Teams كجزء من اشتراك الأعمال
 
 يتم تقديم أساسيات Microsoft Teams و365 Microsoft 365 Business Basic للاستخدام التجاري وهي مخصصة لعملاء الأعمال. هذه المقالة هي لمساعدة العملاء على اختيار ما هو مناسب لاحتياجاتهم.  هل أنت لست شركة؟
 
@@ -29,7 +30,7 @@ ms.locfileid: "65465833"
 
 ## <a name="choosing-the-right-business-subscription"></a>اختيار اشتراك العمل المناسب
 
-عند البحث عن Microsoft Teams وظيفة الاجتماعات والمكالمات المتميزة، لديك خياران بسعر مماثل لكيفية البدء - أساسيات Microsoft Teams Microsoft 365 Business Basic. تقييم ثلاثة عوامل رئيسية لاختيار أفضل ما يلبي احتياجاتك:
+عند محاولة شراء وظيفة المكالمات والاجتماعات المتميزة في Microsoft Teams، لديك خياران بسعر مماثل لكيفية البدء - أساسيات Microsoft Teams Microsoft 365 Business Basic. تقييم ثلاثة عوامل رئيسية لاختيار أفضل ما يلبي احتياجاتك:
 
 1. ما هي التطبيقات والخدمات التي تريدها؟.
 2. ما مقدار المهارة التقنية المتوفرة لديك؟  
@@ -39,7 +40,7 @@ ms.locfileid: "65465833"
 
 |&nbsp;|**الخيار 1 - أساسيات Microsoft Teams** |**الخيار 2 - Microsoft 365 Business Basic** |
 |---|---|---|
-|التطبيقات والخدمات المتوفرة|سجل الدخول باستخدام حساب البريد الإلكتروني الموجود (Hotmail وGmail وYahoo) باستخدام عملية التسجيل الجديدة في Business Standard. Microsoft Teams مع التخزين السحابي في OneDrive. PowerPoint إصدارات ويب مجانية من Word أو Excel أو Office.com لتحرير الملفات المشتركة في Teams. <br/><br/> **هذه المجموعة من التطبيقات هي الأفضل للشركات الصغيرة جدا التي تحتاج إلى التعاون بفعالية عبر اجتماعات الفيديو والدردشة**. |Microsoft Teams OneDrive. Microsoft Exchange، SharePoint، Bookings، Planner والقوائم. Premium Office إصدارات ويب من Word أو Excel أو PowerPoint على Office.com. <br/><br/> **يتيح لك Microsoft 365 Business Basic أيضا الوصول إلى مجموعة واسعة من الخدمات المستندة إلى الويب**: <ul><li>حسابات بريد إلكتروني جديدة للأعمال ذات علامة تجارية ذات تقويمات مشتركة Outlook داخل شركتك.</li><li>Bookings وجدولة المواعيد وتسجيلات الاجتماع.</li><li>تخزين المستندات المشتركة ومواقع SharePoint.</li><li> Microsoft Planner قوائم Microsoft.</li></ul> <br/> Microsoft 365 Business Basic تقديم خدمات إضافية ضمن Teams مع تسجيل حساب المجال: <ul><li>تسجيلات الاجتماعات والوصول إلى المكالمات المجهولة في Microsoft Teams.</li><li>مشاركة المستندات بسهولة أكبر داخل شركتك.</li><li>دعم احتياجات التوافق لمجالك.</li><li>الوصول إلى استخدام الموظفين للخدمات والتحكم فيها.</li><li>أوسع مجموعة من عمليات تكامل التطبيقات غير التابعة ل Microsoft (على سبيل المثال، Salesforce وAdobe) التي تعمل ضمن Teams Office.</li></ul>|
+|التطبيقات والخدمات المتوفرة|سجل الدخول باستخدام حساب البريد الإلكتروني الموجود (Hotmail وGmail وYahoo) باستخدام عملية التسجيل الجديدة في Business Standard. Microsoft Teams مع التخزين السحابي في OneDrive. إصدارات ويب مجانية من Word وExcel وPowerPoint على Office.com لتحرير الملفات المشتركة في Teams. <br/><br/> **هذه المجموعة من التطبيقات هي الأفضل للشركات الصغيرة جدا التي تحتاج إلى التعاون بفعالية عبر اجتماعات الفيديو والدردشة**. |Microsoft Teams وOneDrive. Microsoft Exchange وSharePoint و Bookings و Planner والقوائم. إصدارات ويب Premium Office من Word وExcel وPowerPoint على Office.com. <br/><br/> **يتيح لك Microsoft 365 Business Basic أيضا الوصول إلى مجموعة واسعة من الخدمات المستندة إلى الويب**: <ul><li>حسابات البريد الإلكتروني للأعمال الجديدة ذات العلامة التجارية مع Outlook والتقويمات المشتركة داخل شركتك.</li><li>الحجوزات وجدولة المواعيد وتسجيلات الاجتماع.</li><li>تخزين المستندات المشتركة ومواقع SharePoint.</li><li> Microsoft Planner قوائم Microsoft.</li></ul> <br/> Microsoft 365 Business Basic تقديم خدمات إضافية داخل Teams مع تسجيل حساب المجال: <ul><li>تسجيلات الاجتماعات والوصول إلى المكالمات المجهولة في Microsoft Teams.</li><li>مشاركة المستندات بسهولة أكبر داخل شركتك.</li><li>دعم احتياجات التوافق لمجالك.</li><li>الوصول إلى استخدام الموظفين للخدمات والتحكم فيها.</li><li>أوسع مجموعة من عمليات التكامل لتطبيقات غير التابعة ل Microsoft (على سبيل المثال، Salesforce وAdobe) التي تعمل ضمن Teams وOffice.</li></ul>|
 |المعرفة المطلوبة|لنبدأ دون معرفة تقنية مطلوبة لتشغيل مجال.|يتطلب منك شراء مجال أو امتلاك مجال. إذا كنت تريد استخدام مجال موجود، فستحتاج إلى بيانات اعتماد الوصول للمجال وقد تحتاج إلى معرفة تقنية لإثبات الملكية.|
 |الاتفاقية المنظمة ومعالجة البيانات|متوفر بموجب ملحق [اتفاقية خدمات Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) **وهو الأفضل للشركات التي تريد بعض أدوات العمل والتعاون عن بعد وترغب في أن تعمل Microsoft كوحدة تحكم** لبياناتك بموجب [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). لن يكون للمشتركين ("أنت") في الخدمات التي تستخدم هذا الخيار حق الوصول إلى محتوى أو بيانات مستخدم آخر مدعو ("المستخدمون المدعوون". <br/><br/> على سبيل المثال، إذا كنت تعمل بشكل تعاوني مع مستخدمين آخرين مدعوين على مستند مخزن في حسابهم، فقد يختارون جعل هذه المستندات غير قابلة للوصول إليك. <br/><br> وبشكل منفصل، قد يختار المستخدمون المدعوون عدم نقل المستندات في حساب Sign-Up المبسط إلى اشتراكك في "حساب المجال"، حتى بعد دعوتهم للقيام بذلك. وهذا يعني أن مستنداتهم قد لا تكون متاحة لك حتى إذا أضفت حساب مجال لاحقا. وعلى هذا النحو، يجب تقييم اعتبارات ملكية البيانات والملكية الفكرية وفقا لذلك.|متوفر بموجب [اتفاقية اشتراك Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) وهو **الأفضل للشركات التي تحتاج إلى أن تعمل Microsoft كمعالج** لبياناتها ضمن [ملحق حماية البيانات](https://go.microsoft.com/fwlink/p/?linkid=2180314) لدينا وتحتاج إلى مجموعتنا الكاملة من أدوات العمل والتعاون عن بعد. **يجب على المشتركين في الصناعات المنظمة أو الذين يسعون إلى مزيد من التحكم، سواء على استخدام الخدمات من قبل موظفيك أو على معالجة Microsoft للبيانات ذات الصلة، اختيار تسجيل حساب المجال مع Microsoft Business Business Basic**، وتسجيل الدخول بموجب اتفاقية على مستوى المؤسسة لحساب المجال.|
 

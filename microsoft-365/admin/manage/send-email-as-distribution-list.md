@@ -21,22 +21,22 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: أرسل بريدا إلكترونيا كقوائم توزيع في Microsoft 365 بحيث يبدو أنه من قائمة التوزيع عندما يرد أحد الأعضاء على رسالة.
-ms.openlocfilehash: dd6e1f906481fe1c04bfa7cd275bd108ab558d59
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: d2a2edd1b0db8bad29108b9e06555924918048e4
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468449"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087540"
 ---
-# <a name="send-microsoft-365-email-as-a-distribution-list"></a>إرسال بريد إلكتروني Microsoft 365 كقوائم توزيع
+# <a name="send-microsoft-365-email-as-a-distribution-list"></a>إرسال بريد Microsoft 365 الإلكتروني كقوائم توزيع
 
-في Microsoft 365، يمكنك إرسال بريد إلكتروني كقوائم توزيع. عندما يرد شخص عضو في قائمة التوزيع على رسالة تم إرسالها إلى قائمة التوزيع، يظهر البريد الإلكتروني من قائمة التوزيع، وليس من المستخدم الفردي. يوضح لك هذا الموضوع كيفية القيام بذلك.
+في Microsoft 365، يمكنك إرسال البريد الإلكتروني كقوائم توزيع. عندما يرد شخص عضو في قائمة التوزيع على رسالة تم إرسالها إلى قائمة التوزيع، يظهر البريد الإلكتروني من قائمة التوزيع، وليس من المستخدم الفردي. يوضح لك هذا الموضوع كيفية القيام بذلك.
   
 ## <a name="before-you-begin"></a>قبل البدء
 
 قبل تنفيذ هذه الخطوات، تأكد من إضافتك إلى قائمة توزيع Microsoft 365 وتم منحك الإذن "إرسال ك" عليها.
   
- **المسؤولون**: تأكد من اتباع الخطوات الواردة في [إضافة مستخدم Microsoft 365 أو جهة اتصال إلى قائمة](../email/add-user-or-contact-to-distribution-list.md) [والسماح للأعضاء بإرسال بريد إلكتروني كمواضيع مجموعة Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)، وأضف الأشخاص الصحيحين إلى قائمة التوزيع.
+ **المسؤولون**: تأكد من اتباع الخطوات الواردة في [إضافة مستخدم Microsoft 365 أو جهة اتصال إلى قائمة](../email/add-user-or-contact-to-distribution-list.md) [والسماح للأعضاء بإرسال بريد إلكتروني كموضوعات مجموعة Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) ، وأضف الأشخاص الصحيحين إلى قائمة التوزيع.
   
 ## <a name="outlook-on-the-web"></a>Outlook على ويب
 
@@ -54,7 +54,7 @@ ms.locfileid: "65468449"
 
 ## <a name="outlook"></a>Outlook
 
-1. افتح عميل سطح المكتب Outlook.
+1. افتح عميل Outlook لسطح المكتب.
 
 2. إنشاء بريد إلكتروني جديد. انقر فوق الحقل **"من** " وحدد **عنوان بريد إلكتروني آخر**. إذا لم يظهر الحقل "من"، فانقل إلى **"خيارات** " وحدد **"من** " في المقطع "إظهار الحقول".
 
@@ -62,7 +62,7 @@ ms.locfileid: "65468449"
 
 4. إرسال البريد الإلكتروني.
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إنشاء مجموعة أمان أو تحريرها أو حذفها في مركز مسؤولي Microsoft 365](../email/create-edit-or-delete-a-security-group.md) (المقالة)\
 [التعاون عبر البريد الإلكتروني](../email/email-collaboration.md) (مقالة)\

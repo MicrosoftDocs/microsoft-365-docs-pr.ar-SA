@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -28,16 +29,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: تعرف على كيفية إعداد المصادقة متعددة العوامل لمؤسستك.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 00a92a7755c0200d0ad707e84ceb13fac7c978c9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 32e429f2d24c8754603c3ab32b060a9b7656df4e
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603848"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085498"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>إعداد المصادقة متعددة العوامل ل Microsoft 365
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 تعني المصادقة متعددة العوامل أنه يجب عليك أنت وموظفيك توفير أكثر من طريقة واحدة لتسجيل الدخول إلى Microsoft 365 هي واحدة من أسهل الطرق لتأمين عملك. استنادا إلى فهمك [للمصادقة متعددة العوامل (MFA) ودعمها في Microsoft 365](multi-factor-authentication-microsoft-365.md)، حان الوقت لإعدادها وطرحها في مؤسستك. 
 
@@ -49,7 +50,7 @@ ms.locfileid: "66603848"
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>المراقبة: تشغيل المصادقة متعددة العوامل
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197909).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197909).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 

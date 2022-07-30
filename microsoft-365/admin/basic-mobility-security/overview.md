@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة على التنقل الأساسي والأمان Microsoft 365
+title: نظرة عامة على التنقل الأساسي والأمان ل Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,33 +14,34 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
-ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك في Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
+ms.openlocfilehash: b49b02b37df615aafb87b2fc520737d4ad16d515
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042221"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084488"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان ل Microsoft 365
 
-يمكنك إدارة الأجهزة المحمولة وتأمينها عندما تكون متصلة بمؤسستك Microsoft 365 باستخدام Basic Mobility and Security. تلعب الأجهزة المحمولة مثل الهواتف الذكية والأجهزة اللوحية المستخدمة للوصول إلى البريد الإلكتروني والتقويم وجهات الاتصال والمستندات الخاصة بالعمل دورا مهما في التأكد من أن الموظفين يقومون بعملهم في أي وقت ومن أي مكان. لذلك من المهم أن تساعد في حماية معلومات مؤسستك عندما يستخدم الأشخاص الأجهزة. يمكنك استخدام Basic Mobility and Security لتعيين نهج أمان الجهاز وقواعد الوصول، ومسح الأجهزة المحمولة إذا فقدت أو سرقت.
+يمكنك إدارة الأجهزة المحمولة وتأمينها عندما تكون متصلة بمؤسستك في Microsoft 365 باستخدام Basic Mobility and Security. تلعب الأجهزة المحمولة مثل الهواتف الذكية والأجهزة اللوحية المستخدمة للوصول إلى البريد الإلكتروني والتقويم وجهات الاتصال والمستندات الخاصة بالعمل دورا مهما في التأكد من أن الموظفين يقومون بعملهم في أي وقت ومن أي مكان. لذلك من المهم أن تساعد في حماية معلومات مؤسستك عندما يستخدم الأشخاص الأجهزة. يمكنك استخدام Basic Mobility and Security لتعيين نهج أمان الجهاز وقواعد الوصول، ومسح الأجهزة المحمولة إذا فقدت أو سرقت.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="التنقل الأساسي وإعداد الأمان.":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>ما هي أنواع الأجهزة التي يمكنك إدارتها؟
 
-يمكنك استخدام Basic Mobility and Security لإدارة العديد من أنواع الأجهزة المحمولة مثل Android iPhone iPad. لإدارة الأجهزة المحمولة التي يستخدمها الأشخاص في مؤسستك، يجب أن يكون لكل شخص ترخيص Microsoft 365 قابل للتطبيق ويجب أن يكون جهازه مسجلا في Basic Mobility and Security.
+يمكنك استخدام Basic Mobility and Security لإدارة العديد من أنواع الأجهزة المحمولة مثل Android وiPhone وiPad. لإدارة الأجهزة المحمولة التي يستخدمها الأشخاص في مؤسستك، يجب أن يكون لكل شخص ترخيص Microsoft 365 قابل للتطبيق ويجب أن يكون جهازه مسجلا في Basic Mobility and Security.
 
 لمعرفة ما يدعمه Basic Mobility and Security لكل نوع من الأجهزة، راجع [قدرات Basic Mobility and Security](capabilities.md).
 
 ## <a name="setup-steps-for-basic-mobility-and-security"></a>خطوات الإعداد للتنقل الأساسي والأمان
 
-يجب على المسؤول العام Microsoft 365 إكمال الخطوات التالية لتنشيط وإعداد Basic Mobility and Security. للحصول على خطوات مفصلة، اتبع الإرشادات الواردة في [إعداد التنقل الأساسي والأمان](set-up.md). 
+يجب على المسؤول العام ل Microsoft 365 إكمال الخطوات التالية لتنشيط وإعداد Basic Mobility and Security. للحصول على خطوات مفصلة، اتبع الإرشادات الواردة في [إعداد التنقل الأساسي والأمان](set-up.md). 
 
 فيما يلي ملخص للخطوات:
 
@@ -54,7 +55,7 @@ ms.locfileid: "66042221"
 
 ## <a name="device-management-tasks"></a>مهام إدارة الجهاز
 
-بعد إعداد Basic Mobility and Security وتسجيل المستخدمين لأجهزتهم، يمكنك إدارة الأجهزة أو حظر الوصول أو مسح جهاز، إذا لزم الأمر. لمعرفة المزيد حول بعض مهام إدارة الأجهزة الشائعة، بما في ذلك مكان إكمال المهام، راجع [إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة Microsoft 365](manage-enrolled-devices.md).
+بعد إعداد Basic Mobility and Security وتسجيل المستخدمين لأجهزتهم، يمكنك إدارة الأجهزة أو حظر الوصول أو مسح جهاز، إذا لزم الأمر. لمعرفة المزيد حول بعض مهام إدارة الأجهزة الشائعة، بما في ذلك مكان إكمال المهام، راجع [إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة ل Microsoft 365](manage-enrolled-devices.md).
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>طرق أخرى لإدارة الأجهزة والتطبيقات
 
@@ -64,5 +65,5 @@ ms.locfileid: "66042221"
 
 [إعداد Basic Mobility and Security](set-up.md) (article)\
 [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
-[إدارة الأجهزة المسجلة في إدارة الجهاز الجوال ل Microsoft 365](manage-enrolled-devices.md) (المقالة)\
+[إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة ل Microsoft 365](manage-enrolled-devices.md) (المقال)\
 [الحصول على تفاصيل حول الأجهزة المدارة بواسطة Basic Mobility and Security](get-details-about-managed-devices.md) (مقالة)

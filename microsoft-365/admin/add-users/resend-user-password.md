@@ -1,5 +1,5 @@
 ---
-title: إعادة إرسال كلمة مرور مستخدم - تعليمات المسؤول
+title: إعادة إرسال كلمة مرور مستخدم - تعليمات مسؤول
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- VSBFY23
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 'أعد إرسال البريد الإلكتروني للإعلام إلى مستخدم جديد في Microsoft 365 عن طريق إعادة تعيين كلمة مرور المستخدم إذا لم يحصل على البريد الإلكتروني الأصلي مع كلمة المرور الجديدة الخاصة به. '
-ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: a735f02000fade93f0d2824352f48abb01a27f61
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636141"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084686"
 ---
-# <a name="resend-a-microsoft-365-users-password---admin-help"></a>إعادة إرسال كلمة مرور مستخدم Microsoft 365 - تعليمات المسؤول
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>إعادة إرسال كلمة مرور مستخدم Microsoft 365 - مسؤول التعليمات
 
 تشرح هذه المقالة كيفية إعادة إرسال البريد الإلكتروني للإعلام إلى مستخدم جديد في Office 365. قد يحدث هذا الأمر عندما تنشئ مستخدما جديدا ولا يحصل على بريد إلكتروني يتضمن كلمة المرور الجديدة الخاصة به. يمكنك القيام بذلك عن طريق إعادة تعيين كلمة مرور المستخدم.
 

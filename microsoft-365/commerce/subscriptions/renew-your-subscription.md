@@ -14,26 +14,27 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: تعرف على كيفية تجديد معظم Microsoft 365 لاشتراكات الأعمال عن طريق إيقاف تشغيل الفوترة المتكررة أو تشغيلها.
+description: تعرف على كيفية تجديد معظم اشتراكات Microsoft 365 للأعمال عن طريق إيقاف تشغيل الفوترة المتكررة أو تشغيلها.
 ms.date: 05/04/2021
-ms.openlocfilehash: 5a0b9550df77c7482173e378f4d367af8f363887
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 74eb33f058081d4cd7d9bf7cb741324272a6a46a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102229"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084884"
 ---
 # <a name="renew-microsoft-365-for-business"></a>تجديد Microsoft 365 للأعمال
 
 > [!IMPORTANT]
 > اعتبارا من 26 يناير 2021، لم تعد الحسابات المصرفية الجديدة مدعومة للعملاء في بلجيكا وفرنسا وإيطاليا ولكسمبورج والبرتغال وأسبانيا والولايات المتحدة. إذا كنت عميلا موجودا في أحد هذه البلدان، فيمكنك متابعة دفع قيمة اشتراكك باستخدام حساب بنكي موجود، ويمكنك إضافة اشتراكات جديدة إليه، ولكن فقط طالما كان الحساب البنكي في وضع جيد.
 
-تنطبق هذه المقالة على معظم Microsoft 365 المدفوعة لاشتراكات الأعمال.
+تنطبق هذه المقالة على معظم اشتراكات Microsoft 365 للأعمال المدفوعة.
   
 للتجديد باستخدام مفتاح منتج اشتريته من متجر بيع بالتجزئة أو شريك Microsoft، راجع [البحث عن مفتاح المنتج وإدخاله](../enter-your-product-key.md).
 

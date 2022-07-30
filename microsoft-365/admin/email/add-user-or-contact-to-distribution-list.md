@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: تعرف على كيفية إضافة مستخدم Microsoft 365 أو جهة اتصال مثل موظف أو شريك أو مورد إلى مجموعة توزيع بريد إلكتروني.
-ms.openlocfilehash: e4054d73707d77297ae4f5e9f6f2fb406a829d55
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437206"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084070"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>إضافة مستخدم أو جهة اتصال إلى مجموعة توزيع Microsoft 365
 

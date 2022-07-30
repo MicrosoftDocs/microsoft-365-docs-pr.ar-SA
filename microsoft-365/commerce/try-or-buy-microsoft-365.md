@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,16 +24,16 @@ ms.custom:
 search.appverid: GEA150
 description: التسجيل للحصول على إصدار تجريبي مجاني لمدة 30 يوما للحصول على Microsoft 365 Business Standard أو Microsoft 365 Business Premium أو Microsoft 365 Apps for business.
 ms.date: 08/07/2020
-ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a47d956b614c6464a49af33c179609eeb0e42ac9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602525"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087671"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>تجربة اشتراك Microsoft 365 للأعمال أو شراؤه
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 Microsoft 365 للأعمال هي خدمة اشتراك تتيح لك تشغيل مؤسستك في السحابة بينما تهتم Microsoft ب IT نيابة عنك. تدير Microsoft الأجهزة، وتحمي من التهديدات في العالم الحقيقي، وتوفر لمؤسستك أحدث برامج الأعمال. يمكنك التسجيل للحصول على اشتراك تجريبي مجاني Microsoft 365 Business Standard أو Microsoft 365 Business Premium أو Microsoft 365 Apps for business وتجربته لمدة 30 يوما.
 
@@ -44,7 +45,7 @@ Microsoft 365 للأعمال هي خدمة اشتراك تتيح لك تشغيل
 > [!IMPORTANT]
 > لا يتم قبول **خيارات الدفع Office 365 المشغلة بواسطة 21Vianet في بطاقات الائتمان الدولية في الصين**. يمكنك الدفع مقابل اشتراكك من خلال:
 >
-> - الفاتوره
+> - فاتورة
 > - سيتم توفير الدفع عبر الإنترنت باستخدام Alipay أو China UnionPay Proof of payment في شكل Fapiaos. يمكنك إرسال طلب Fapiao إلى [نظام Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) الخاص بنا بعد ثلاثة (3) أيام من الدفع. لمزيد من المعلومات، راجع [تطبيق Fapiao Office 365 المشغل بواسطة 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
@@ -111,7 +112,7 @@ Microsoft 365 للأعمال هي خدمة اشتراك تتيح لك تشغيل
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>شاهد: نقل المستخدمين إلى اشتراك مختلف
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
@@ -137,7 +138,7 @@ Microsoft 365 للأعمال هي خدمة اشتراك تتيح لك تشغيل
 
 يمكنك الدفع مقابل اشتراكك من خلال:
 
-- الفاتوره
+- فاتورة
 
 - الدفع عبر الإنترنت باستخدام Alipay أو China UnionPay
 

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -20,28 +21,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية نقل البيانات والمستخدمين من Google Workspace Microsoft 365 للأعمال.
-ms.openlocfilehash: 555e29d40b5135d8f3a6ffd44dbb61a8cfae6843
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: تعرف على كيفية نقل البيانات والمستخدمين من Google Workspace إلى Microsoft 365 للأعمال.
+ms.openlocfilehash: 7e469d9cfe8fb5dd8a995050270197cd38fa7e6a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63583805"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087386"
 ---
 # <a name="switch-from-google-workspace---overview"></a>التبديل من Google Workspace - نظرة عامة
 
-يمكنك استخدام الخطوات التالية لنقل البيانات والبريد الإلكتروني والمستخدمين من Google Workspace Microsoft 365 للأعمال. استخدم المقالات ومقاطع الفيديو في كل خطوة لمساعدتك على إعداد بيئتك وتكوينها لترحيل أدوات الترحيل المتوفرة لك في مركز إدارة Microsoft واستخدامها.
+يمكنك استخدام الخطوات التالية لنقل البيانات والبريد الإلكتروني والمستخدمين من Google Workspace إلى Microsoft 365 للأعمال. استخدم المقالات ومقاطع الفيديو في كل خطوة لمساعدتك على إعداد البيئة وتكوينها للتنقل واستخدام أدوات الترحيل المتوفرة لك في مركز مسؤول Microsoft.
 
 
-| الخطوة  |الوصف  |
+| درج  |الوصف  |
 |---------|---------|
-|الخطوة 1 | [التسجيل للحصول](../admin-overview/sign-up-for-office-365.md) على Microsoft 365 Business Premium       |
-|الخطوة 2 | [إعداد Microsoft 365 ترحيل Google Workspace](set-up-microsoft-365-forgoogle.md). </br> في هذه الخطوة، ستتحقق من صحة امتلاكك للمجال الذي تستخدمه في Google Workspace، وإضافة مستخدمين، بالإضافة إلى إعداد الأمان الأساسي للأجهزة. |
-|الخطوة 3 | [إعداد سياسات الأمان Windows الأجهزة.](../setup/secure-win-10-pcs.md)</br> Windows إعداد الأمان بشكل منفصل في صفحة الإعداد في مركز مسؤولي Microsoft 365. |
-|الخطوة الرابعة | [إضافة مجال Google Workspace إلى Microsoft 365](add-google-domain.md) </br> بعد التحقق من امتلاكك للمجال الذي تستخدمه للبريد الإلكتروني، يمكنك أنت وجميع المستخدمين الآخرين بدء استخدام البريد الإلكتروني القديم الخاص بك Microsoft 365 Business premium. |
-|الخطوة الخامسة | [قم Office التطبيقات Microsoft Teams](../setup/install-applications.md).</br> يجب على جميع الأشخاص الذين لديهم Microsoft 365 تثبيت Office على أجهزة العمل الخاصة بهم.|
-|الخطوة السادسة | [ترحيل عناصر البريد الإلكتروني والتقويم الخاصة بالجميع](migrate-email.md).</br> في هذه الخطوة، سيتم تشغيل عملية ترحيل Exchange Online لنقل البريد الإلكتروني والتقويم وجهات الاتصال للجميع من Google Workspace.  |
-|الخطوة السابعة | [الاتصال المجال Microsoft 365](connect-domain-tom365.md). </br> بعد توصيل رسالة البريد الإلكتروني للمجال، Microsoft 365، وستعمل كل Microsoft 365 الخاصة بك.|
-|الخطوة الثامنة|استخدم [إدارة الترحيل لنقل بيانات](migrate-files-migration-manager.md) الجميع من محرك الأقراص إلى OneDrive ومن محركات الأقراص المشتركة إلى مواقع الفريق.</br> في هذه الخطوة، يتم نسخ كل البيانات الموجودة في محركات الأقراص الشخصية والمشتركة ونسخها إلى Microsoft 365.|
-|الخطوة التاسعة| [أوقف Google Workspace](cancel-google.md) ولكن احتفظ والمجال الخاص بك. </br> إذا كان Google يدير مجالك، يمكنك الاحتفاظ به هناك حتى بعد إيقاف اشتراكك في Google Workspace. يمكنك أيضا اختيار نقله إلى مضيف DNS آخر إذا أردت ذلك.|
+|الخطوة 1 | [التسجيل](../admin-overview/sign-up-for-office-365.md) للحصول على Microsoft 365 Business Premium       |
+|الخطوة 2 | [إعداد Microsoft 365 ل Google Workspace migration](set-up-microsoft-365-forgoogle.md). </br> في هذه الخطوة، ستتحقق من ملكيتك للمجال الذي تستخدمه في Google Workspace، وإضافة مستخدمين، وإعداد الأمان الأساسي للأجهزة. |
+|الخطوة 3 | [إعداد نهج الأمان لأجهزة Windows.](../setup/secure-win-10-pcs.md)</br> يتم إعداد أمان Windows بشكل منفصل في صفحة الإعداد مركز مسؤولي Microsoft 365. |
+|الخطوة الرابعة | [إضافة مجال Google Workspace إلى Microsoft 365](add-google-domain.md) </br> بعد التحقق من ملكيتك للمجال الذي تستخدمه للبريد الإلكتروني، يمكنك أنت وجميع المستخدمين الآخرين البدء في استخدام بريدك الإلكتروني القديم لتسجيل الدخول إلى Microsoft 365 Business premium. |
+|الخطوة الخامسة | [تثبيت تطبيقات Office وMicrosoft Teams](../setup/install-applications.md).</br> يجب على جميع الأشخاص الذين لديهم تراخيص Microsoft 365 تثبيت تطبيقات Office على أجهزة العمل الخاصة بهم.|
+|الخطوة السادسة | [ترحيل البريد الإلكتروني وعناصر التقويم الخاصة بالجميع](migrate-email.md).</br> في هذه الخطوة، ستقوم بتشغيل ترحيل Exchange Online لنقل البريد الإلكتروني والتقويم وجهات الاتصال الخاصة بالجميع من Google Workspace.  |
+|الخطوة السابعة | [توصيل المجال ب Microsoft 365](connect-domain-tom365.md). </br> بعد توصيل البريد الإلكتروني للمجال، سيبدأ الانتقال إلى Microsoft 365، وستعمل جميع خدمات Microsoft 365.|
+|الخطوة الثامنة|استخدم [Migration Manager لنقل بيانات الجميع](migrate-files-migration-manager.md) من Drive إلى OneDrive ومن محركات الأقراص المشتركة إلى مواقع الفريق.</br> في هذه الخطوة، يتم نسخ جميع البيانات في محركات الأقراص الشخصية والمشتركة ونقلها إلى Microsoft 365.|
+|الخطوة التاسعة| [توقف عن استخدام Google Workspace](cancel-google.md) مع الاحتفاظ بمجالك. </br> إذا كانت Google تدير مجالك، فيمكنك الاحتفاظ به هناك حتى بعد إيقاف اشتراكك في Google Workspace. يمكنك أيضا اختيار نقله إلى مضيف DNS آخر إذا أردت.|
 

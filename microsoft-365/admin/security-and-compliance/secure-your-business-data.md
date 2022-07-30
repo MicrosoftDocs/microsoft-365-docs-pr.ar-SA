@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -28,16 +29,16 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: قم بحماية بريدك الإلكتروني وبيانات عملك من التهديدات الإلكترونية، بما في ذلك برامج الفدية الضارة والتصيد الاحتيالي والمرفقات الضارة.
-ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602923"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087430"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>أفضل الممارسات لتأمين Microsoft 365 للأعمال
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 إذا كنت مؤسسة صغيرة أو متوسطة الحجم تستخدم إحدى خطط أعمال Microsoft، فإن الإرشادات الواردة في هذه المقالة تساعدك على تعزيز أمان مؤسستك. من بين خياراتك، Microsoft 365 Business Premium تقود الطريق لأنها تتضمن الآن Microsoft Defender for Business [وحمايات أمنية](../../business-premium/get-microsoft-365-business-premium.md) أخرى. ستساعدك الإجراءات الموصى بها المضمنة هنا على تحقيق الأهداف الموضحة في [كتيب حملة الأمن السيبراني](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة جامعة هارفرد.
 
@@ -46,7 +47,7 @@ ms.locfileid: "66602923"
 
 ## <a name="watch-a-quick-overview-of-security"></a>شاهد: نظرة عامة سريعة على الأمان
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
@@ -56,17 +57,17 @@ ms.locfileid: "66602923"
 
 للتعرف على إحدى ميزات خطة الخدمة، انقر فوق العنوان في الجدول التالي. 
 
-|المهمه|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+|مهمة|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[الحماية من كلمات المرور المفقودة أو المسروقة](#set-up-multi-factor-authentication) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[تدريب المستخدمين](#train-your-users) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[استخدام حسابات المسؤولين المخصصة](#use-dedicated-admin-accounts)|![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-[الحماية من البرامج الضارة](#protect-against-malware) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية البريد الإلكتروني) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(زيادة الحماية للبريد الإلكتروني والأجهزة) |
-[الحماية من برامج الفدية الضارة](#protect-against-ransomware) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية البريد الإلكتروني وتخزين السحابة) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(زيادة الحماية للأجهزة والبريد الإلكتروني والتخزين السحابي) |
-[تشفير رسائل البريد الإلكتروني الحساسة](#send-encrypted-email) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[حماية بريدك الإلكتروني من هجمات التصيد الاحتيالي](#protect-sensitive-emails) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(الحماية من التصيد الاحتيالي) | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(الحماية المتقدمة من التصيد الاحتيالي) |
-[الحماية من المرفقات والملفات وعناوين URL الضارة في البريد الإلكتروني وملفات Office](#protect-against-malicious-attachments-files-and-urls) | | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(ارتباطات آمنة ومرفقات آمنة) |
-[زيادة الحماية لأجهزة مؤسستك](#increase-protection-for-your-organizations-devices) | | ![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية الجهاز على مستوى المؤسسة) |
+[الحماية من كلمات المرور المفقودة أو المسروقة](#set-up-multi-factor-authentication) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[تدريب المستخدمين](#train-your-users) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[استخدام حسابات المسؤولين المخصصة](#use-dedicated-admin-accounts)|![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+[الحماية من البرامج الضارة](#protect-against-malware) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية البريد الإلكتروني) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(زيادة الحماية للبريد الإلكتروني والأجهزة) |
+[الحماية من برامج الفدية الضارة](#protect-against-ransomware) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية البريد الإلكتروني وتخزين السحابة) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(زيادة الحماية للأجهزة والبريد الإلكتروني والتخزين السحابي) |
+[تشفير رسائل البريد الإلكتروني الحساسة](#send-encrypted-email) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[حماية بريدك الإلكتروني من هجمات التصيد الاحتيالي](#protect-sensitive-emails) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(الحماية من التصيد الاحتيالي) | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(الحماية المتقدمة من التصيد الاحتيالي) |
+[الحماية من المرفقات والملفات وعناوين URL الضارة في البريد الإلكتروني وملفات Office](#protect-against-malicious-attachments-files-and-urls) | | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(ارتباطات آمنة ومرفقات آمنة) |
+[زيادة الحماية لأجهزة مؤسستك](#increase-protection-for-your-organizations-devices) | | ![متضمن.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(حماية الجهاز على مستوى المؤسسة) |
 
 يمكنك إعداد الأمان بسرعة والبدء في التعاون بأمان باستخدام الإرشادات التي نقدمها في مكتبة [Microsoft 365 Business Premium](../../business-premium/index.md). تم تطوير معلومات Business Premium بالشراكة مع فريق Microsoft Defending Progressive لحماية جميع عملاء الشركات الصغيرة من التهديدات الإلكترونية التي تطلقها الهجمات الإلكترونية المتطورة والمتسللون.
 

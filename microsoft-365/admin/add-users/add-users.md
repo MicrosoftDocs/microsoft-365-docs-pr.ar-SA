@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,16 +24,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية منح كل عضو في الفريق حساب مستخدم حتى يتمكن من الحصول على تراخيص Microsoft 365 وبيانات اعتماد تسجيل الدخول وعلب بريد Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: afcb3d0b3db8dbdbbd6cf870c1c148c73562c889
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601983"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084730"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>إضافة مستخدمين وتعيين التراخيص في الوقت نفسه
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 يحتاج كل من الأشخاص في فريقك إلى حساب مستخدم قبل أن يتمكنوا من تسجيل الدخول والوصول إلى [Microsoft 365 للأعمال](https://www.microsoft.com/microsoft-365/business). أسهل طريقة لإضافة حسابات المستخدمين هي إضافتها واحدة في كل مرة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. بعد تنفيذ هذه الخطوة، يكون لدى المستخدمين تراخيص Microsoft 365 وبيانات اعتماد تسجيل الدخول وعلب بريد Microsoft 365.
 
@@ -45,7 +46,7 @@ ms.locfileid: "66601983"
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>شاهد: إضافة مستخدمين في طريقة عرض لوحة المعلومات
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198205).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198205).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

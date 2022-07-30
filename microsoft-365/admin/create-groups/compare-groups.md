@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: يحصل أعضاء مجموعة Microsoft 365 على بريد إلكتروني للمجموعة ومساحة عمل مشتركة للمحادثات والملفات وأحداث التقويم و Stream و Planner.
-ms.openlocfilehash: cf66d4b2b2aab903934a87f64f53fa485d82f572
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7876acf9785de9c4630f83a804b700f5d1db6ff2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717635"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084312"
 ---
 # <a name="compare-groups"></a>مقارنة المجموعات
 

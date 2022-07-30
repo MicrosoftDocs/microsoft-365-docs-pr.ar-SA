@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -24,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: تعرف على كيفية العثور على شريك Microsoft 365 جديد، أو الحصول على معلومات الاتصال لشريك عملت معه في الماضي.
-ms.openlocfilehash: af865ee194cb9efb5c2891e6c73d860604c57bec
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 5b6c9abcd614f0b4be96f597c72a813064b78b14
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573747"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086814"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>البحث عن شريك أو بائع اشتراكات Microsoft 365
 

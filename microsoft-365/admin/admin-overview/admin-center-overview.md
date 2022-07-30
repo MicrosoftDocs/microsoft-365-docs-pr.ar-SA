@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: يمكنك استخدام طريقة عرض مبسطة في مركز مسؤولي Microsoft 365 لإدارة المهام الشائعة أو طريقة عرض لوحة المعلومات للإعدادات والمهام الأكثر تعقيداً.
-ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 285769f9d7d91169dbf505ee125cab1a15d5adcd
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601641"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084664"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>نظرة عامة حول مركز مسؤولي Microsoft 365
 

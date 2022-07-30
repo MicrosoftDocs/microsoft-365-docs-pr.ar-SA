@@ -16,6 +16,7 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
@@ -29,16 +30,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: فهم ما تحتاج إلى معرفته حول الإصدارات الأخيرة من برامج Office قبل الانتقال إلى عملية التسجيل للحصول على Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b8bddd621998fcebf319b2d4ed2386a78375fc70
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601169"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084554"
 ---
 # <a name="how-to-sign-up---admin-help"></a>كيفية التسجيل - مسؤول التعليمات
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 سجل للحصول على Microsoft 365 للأعمال حتى يتمكن فريقك من بدء استخدام أحدث إصدارات Word وExcel وPowerPoint وبرامج Office الأخرى.
 
@@ -63,7 +64,7 @@ ms.locfileid: "66601169"
 
 ## <a name="watch-choose-a-microsoft-365-subscription"></a>شاهد: اختيار اشتراك Microsoft 365
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 

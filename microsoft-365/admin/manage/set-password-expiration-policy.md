@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: تعرف على كيفية تعيين المسؤول لنهج انتهاء صلاحية كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: b7f7691d0c1c0e6177d5414bc7802b62bb07a3b3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 48dfd933cad12d309a6c00ec15a7226ae918e79d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468767"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083982"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>تعيين نهج انتهاء صلاحية كلمة المرور لمؤسستك
 
@@ -48,7 +49,7 @@ ms.locfileid: "65468767"
 إذا كنت مستخدما، فليس لديك الأذونات لتعيين كلمة المرور إلى عدم انتهاء صلاحيتها أبدا. اطلب من الدعم التقني للعمل أو المؤسسة التعليمية تنفيذ الخطوات الواردة في هذه المقالة بالنيابة عنك.
 
 > [!TIP]
-> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
+> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="set-password-expiration-policy"></a>تعيين نهج انتهاء صلاحية كلمة المرور
 
@@ -65,11 +66,11 @@ ms.locfileid: "65468767"
 1. اكتب عدد مرات انتهاء صلاحية كلمات المرور. اختر عددا من الأيام من 14 إلى 730.
  
 > [!IMPORTANT]
-> لم تعد إعلامات انتهاء صلاحية كلمة المرور معتمدة في Office تطبيقات الويب أو [مركز الإدارة](https://portal.office.com).
+> لم تعد إعلامات انتهاء صلاحية كلمة المرور معتمدة في تطبيقات Office على الويب أو [مركز الإدارة](https://portal.office.com).
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>الأمور المهمة التي تحتاج إلى معرفتها حول ميزة انتهاء صلاحية كلمة المرور
   
-لن يتم إجبار الأشخاص الذين يستخدمون تطبيق Outlook فقط على إعادة تعيين كلمة مرور Microsoft 365 الخاصة بهم حتى تنتهي صلاحيتها في ذاكرة التخزين المؤقت. قد يكون هذا بعد عدة أيام من تاريخ انتهاء الصلاحية الفعلي. لا يوجد حل بديل لذلك على مستوى المسؤول.
+لن يضطر الأشخاص الذين يستخدمون تطبيق Outlook فقط إلى إعادة تعيين كلمة مرور Microsoft 365 حتى تنتهي صلاحيتها في ذاكرة التخزين المؤقت. قد يكون هذا بعد عدة أيام من تاريخ انتهاء الصلاحية الفعلي. لا يوجد حل بديل لذلك على مستوى المسؤول.
 
 ## <a name="prevent-last-password-from-being-used-again"></a>منع استخدام كلمة المرور الأخيرة مرة أخرى
 
@@ -77,11 +78,11 @@ ms.locfileid: "65468767"
 
 في Azure AD، لا يمكن استخدام كلمة المرور الأخيرة مرة أخرى عندما يغير المستخدم كلمة مرور. يتم تطبيق نهج كلمة المرور على جميع حسابات المستخدمين التي تم إنشاؤها وإدارتها مباشرة في Azure AD. لا يمكن تعديل نهج كلمة المرور هذا. راجع [نهج كلمة المرور Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>مزامنة تجزئة كلمات مرور المستخدمين من Active Directory محلي إلى Azure AD (Microsoft 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>مزامنة تجزئة كلمات مرور المستخدم من Active Directory محلي إلى Azure AD (Microsoft 365)
 
 هذه المقالة مخصصة لإعداد نهج انتهاء الصلاحية لمستخدمي السحابة فقط (Azure AD). لا ينطبق على مستخدمي الهوية المختلطة الذين يستخدمون مزامنة تجزئة كلمة المرور أو المصادقة التمريرية أو الاتحاد المحلي مثل ADFS.
   
-لمعرفة كيفية مزامنة تجزئة كلمة مرور المستخدم من AD المحلي إلى Azure AD، راجع [تنفيذ مزامنة تجزئة كلمة المرور مع مزامنة Azure AD الاتصال](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+لمعرفة كيفية مزامنة تجزئة كلمة مرور المستخدم من AD المحلي إلى Azure AD، راجع [تنفيذ مزامنة تجزئة كلمة المرور مع Azure AD مزامنة الاتصال](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
 ## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>نهج كلمة المرور وقيود الحساب في Azure Active Directory
 
@@ -93,7 +94,7 @@ ms.locfileid: "65468767"
 
 لمعرفة كيفية تحديث نهج كلمة المرور لمجال أو مستأجر معين، راجع [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../add-users/let-users-reset-passwords.md) (المقالة)/
 

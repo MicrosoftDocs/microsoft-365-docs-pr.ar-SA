@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية ترحيل البريد الإلكتروني وجهات الاتصال والتقويم من Google Workspace إلى Microsoft 365 للأعمال.
-ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602027"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087364"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>ترحيل البريد الإلكتروني والتقويم للأعمال من Google Workspace
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 ## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>شاهد: ترحيل البريد الإلكتروني والتقويم للأعمال من Google Workspace
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 

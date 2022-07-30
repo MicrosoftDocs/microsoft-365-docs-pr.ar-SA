@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -27,22 +28,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: قم بإدارة تواقيع البريد الإلكتروني، بما في ذلك إخلاء المسؤولية القانونية أو بيانات الإفصاح لجميع رسائل البريد الإلكتروني التي تدخل مؤسستك أو تغادرها.
-ms.openlocfilehash: 47e6a862441b5c2725a48cae20669541b8a69f87
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602801"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087276"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>إنشاء تواقيع وإخلاء المسؤولية على مستوى المؤسسة
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
  يمكنك إدارة تواقيع البريد الإلكتروني عن طريق إضافة توقيع بريد إلكتروني أو إخلاء المسؤولية القانونية أو بيان الإفصاح إلى رسائل البريد الإلكتروني التي تدخل مؤسستك أو تغادرها. يمكنك إعداده لتطبيقه على كل الرسائل الواردة والصادرة كما هو موضح أدناه. أو يمكنك تطبيقه على رسائل معينة مثل تلك التي تحتوي على كلمات أو أنماط نص معينة.
 
 ## <a name="watch-create-a-company-wide-email-signature"></a>شاهد: إنشاء توقيع بريد إلكتروني على مستوى الشركة
   
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 

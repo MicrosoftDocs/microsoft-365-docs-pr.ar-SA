@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرّف على كيفية الحصول على الدعم عبر الإنترنت أو الهاتف لاشتراكك في Microsoft 365 للأعمال. يجب أن تكون مسؤولاً لاشتراك الأعمال للحصول على الدعم.
-ms.openlocfilehash: 129a774d808cfc0f7f1dc860f72ede7c21ad8f1a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 837bd27d0a1f0823397710a6c55ec108ebe8548d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602845"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084906"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>الحصول على دعم Microsoft 365 للأعمال
 

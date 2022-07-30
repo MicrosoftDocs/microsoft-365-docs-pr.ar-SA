@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: إنشاء فصول واجتماعات Teams وإدارتها باستخدام إمكانية التشغيل التفاعلي لأدوات التعلم من Microsoft ل Open LMS.
-ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 264f9a2129d36b1d6ab3dae2afdb14973f3deac5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943233"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086440"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>دمج فصول Microsoft Teams واجتماعاته داخل Open LMS
 
@@ -29,7 +29,7 @@ ms.locfileid: "66943233"
 
 لكي يعمل التكامل بين Open LMS وTeams بشكل صحيح، يجب إعداد Open LMS وTeams للتواصل مع بعضهما البعض.
 
-اتبع [الإرشادات لتثبيت المكون الإضافي Moodle وتكوينه](open-lms-plugin-configuration.md).
+اتبع [الإرشادات لتثبيت وتكوين المكونات الإضافية ل Moodle LMS](open-lms-plugin-configuration.md).
 
 ## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>تسجيل Microsoft Teams LTI للاستخدام في Open LMS
 

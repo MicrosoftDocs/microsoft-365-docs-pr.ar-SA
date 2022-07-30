@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: تعرف على كيفية ترقية قائمة توزيع واحدة أو أكثر إلى مجموعات Microsoft 365 في Exchange Online، وكيفية استخدام PowerShell لترقية العديد من قوائم التوزيع في وقت واحد.
-ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: تعرف على كيفية ترقية قائمة توزيع واحدة أو أكثر مجموعات Microsoft 365 في Exchange Online، وكيفية استخدام PowerShell لترقية العديد من قوائم التوزيع في وقت واحد.
+ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922164"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085214"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Exchange Online
 
@@ -84,7 +84,7 @@ ms.locfileid: "65922164"
 
 ## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>كيفية استخدام Exchange Online PowerShell لترقية العديد من قوائم التوزيع في الوقت نفسه
 
-للاتصال ب Exchange Online PowerShell، راجع [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="upgrade-a-single-distribution-list"></a>ترقية قائمة توزيع واحدة
 
@@ -145,7 +145,7 @@ Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.c
 
 يمكنك فقط ترقية قوائم التوزيع المدارة على السحابة والبسيطة وغير المتداخلة. يسرد الجدول أدناه قوائم التوزيع التي **لا** يمكن ترقيتها.
 
-|الخاصيه|المؤهله؟|
+|مال|المؤهله؟|
 |---|:---:|
 |قائمة التوزيع المدارة المحلية.|لا|
 |قوائم التوزيع المتداخلة. تحتوي قائمة التوزيع على مجموعات تابعة أو عضو في مجموعة أخرى.|لا|
@@ -186,7 +186,7 @@ Get-EligibleDistributionGroupForMigration
   - سيتم حل مستلم المجموعة كقوائم توزيع بدلا من مجموعة Microsoft 365.
   - ستكون بطاقة جهة الاتصال جهة اتصال قائمة التوزيع بدلا من مجموعة Microsoft 365.
 
-- **Outlook على الويب**: مثل Outlook، ستبقى قائمة التوزيع في ذاكرة التخزين المؤقت للمستلمين. اتبع الخطوات الواردة في هذه المقالة لتحديث ذاكرة التخزين المؤقت للاطلاع على بطاقة جهة اتصال المجموعة: [قم بإزالة الاسم المقترح أو عنوان البريد الإلكتروني المقترح من قائمة الإكمال التلقائي](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
+- **Outlook على ويب**: مثل Outlook، ستبقى قائمة التوزيع في ذاكرة التخزين المؤقت للمستلمين. اتبع الخطوات الواردة في هذه المقالة لتحديث ذاكرة التخزين المؤقت للاطلاع على بطاقة جهة اتصال المجموعة: [قم بإزالة الاسم المقترح أو عنوان البريد الإلكتروني المقترح من قائمة الإكمال التلقائي](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>هل يحصل أعضاء المجموعة الجدد على بريد إلكتروني ترحيبي في علبة الوارد الخاصة بهم؟
 
@@ -219,5 +219,5 @@ Get-EligibleDistributionGroupForMigration
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
 [مقارنة المجموعات](../create-groups/compare-groups.md) (مقالة)\
-[شرح مجموعات Microsoft 365 للمستخدمين](../create-groups/explain-groups-knowledge-worker.md) (المقالة)\
+[شرح مجموعات Microsoft 365 للمستخدمين](../create-groups/explain-groups-knowledge-worker.md) (مقالة)\
 [إضافة أعضاء أو إزالتهم من مجموعات Microsoft 365 باستخدام مركز الإدارة](../create-groups/add-or-remove-members-from-groups.md)

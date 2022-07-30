@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
@@ -30,16 +31,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: سجل الدخول باستخدام حساب مسؤول Microsoft 365 لإعادة تعيين كلمات المرور للمستخدمين عندما يكون لديك اشتراك Microsoft 365 للأعمال.
-ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601663"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084642"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>إعادة تعيين كلمات المرور في Microsoft 365 للأعمال
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 تشرح هذه المقالة كيفية إعادة تعيين كلمات المرور لنفسك ولمستخدميك عندما يكون لديك اشتراك Microsoft 365 للأعمال.
 
@@ -57,7 +58,7 @@ ms.locfileid: "66601663"
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>المراقبة: إعادة تعيين كلمة مرور العمل لمستخدم
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 

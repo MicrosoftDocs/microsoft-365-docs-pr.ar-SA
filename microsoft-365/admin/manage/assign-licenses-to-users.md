@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_licensing
 - AdminSurgePortfolio
 - TopSMBIssues
@@ -26,12 +27,12 @@ ms.custom:
 search.appverid: MET150
 description: قم بتعيين التراخيص استنادا إلى ما إذا كنت تريد تعيين تراخيص المنتج لمستخدمين محددين أو تعيين تراخيص المستخدمين لمنتج معين.
 ms.date: 07/12/2022
-ms.openlocfilehash: bf315b0a13bdf0eebb2e38afa3eafb35d4a0361c
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e18cbae154a85f29194cd3d6c4e4f00d298a7d76
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748396"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084752"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>تعيين تراخيص Microsoft 365 للمستخدمين
 

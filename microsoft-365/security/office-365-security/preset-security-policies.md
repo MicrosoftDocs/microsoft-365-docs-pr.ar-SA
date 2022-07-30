@@ -16,12 +16,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تطبيق إعدادات النهج القياسية والضيقة عبر ميزات الحماية Exchange Online Protection (EOP) Microsoft Defender لـ Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772051"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085236"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>نهج الأمان التي تم تعيينها مسبقا في EOP و Microsoft Defender لـ Office 365
 
@@ -66,7 +66,7 @@ ms.locfileid: "66772051"
   يمكنك استخدام شرط أو استثناء مرة واحدة فقط، ولكن يمكنك تحديد قيم متعددة للشرط أو الاستثناء. تستخدم قيم متعددة لنفس الشرط أو منطق الاستثناء منطق OR (على سبيل المثال، _\<recipient1\>_ أو _\<recipient2\>_). تستخدم الشروط أو الاستثناءات المختلفة منطق AND (على سبيل المثال، _\<recipient1\>_ و _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+  > لا توجد أنواع مختلفة متعددة من الشروط أو الاستثناءات الإضافية؛ إنها شاملة. يتم تطبيق نهج الأمان المعين مسبقا _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
   >
   > - المستلم هو: romain@contoso.com
   > - المستلم هو عضو في: المديرين التنفيذيين
@@ -76,6 +76,9 @@ ms.locfileid: "66772051"
   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
 - **الحماية المضمنة** (Defender لـ Office 365 فقط): ملف تعريف يمكن الارتباطات الآمنة وحماية المرفقات الآمنة فقط. يوفر ملف التعريف هذا بشكل فعال نهج افتراضية للارتباطات الآمنة والمرفقات الآمنة، والتي لم يكن لها نهج افتراضية.
+
+  > [!NOTE]
+  > يتم نشر نهج الأمان المعين مسبقا للحماية المضمنة، وقد لا يكون متوفرا في مؤسستك.
 
   بالنسبة إلى **الحماية المضمنة**، يتم تشغيل نهج الأمان المحدد مسبقا بشكل افتراضي لجميع العملاء Defender لـ Office 365. على الرغم من أننا لا نوصي بذلك، يمكنك أيضا تكوين استثناءات استنادا إلى **المستخدمين** **والمجموعات** **والمجالات** بحيث لا يتم تطبيق الحماية على مستخدمين محددين.
 
@@ -119,14 +122,19 @@ ms.locfileid: "66772051"
 
 عند تطبيق نهج متعددة على مستخدم، يتم تطبيق الترتيب التالي من الأولوية القصوى إلى الأولوية الدنيا:
 
-1. نهج أمان تم تعيينه مسبقا **لحماية صارمة**
-2. نهج الأمان الذي تم تعيينه مسبقا **للحماية القياسية**
-3. نهج الأمان المخصصة
-4. نهج الأمان **المضمن** الذي تم تعيينه مسبقا للارتباطات الآمنة والمرفقات الآمنة والنهج الافتراضية لمكافحة البرامج الضارة ومكافحة البريد العشوائي والتصيد الاحتيالي.
+1. نهج أمان مقيد مسبقا.
+2. نهج أمان قياسي مسبق الإعداد.
+3. النهج المخصصة. يتم تطبيق النهج المخصصة استنادا إلى قيمة الأولوية للنهج.
+4. نهج أمان مسبق الإعداد للحماية المضمنة للارتباطات الآمنة والمرفقات الآمنة؛ النهج الافتراضية لمكافحة البرامج الضارة، ومكافحة البريد العشوائي، ومكافحة التصيد الاحتيالي.
 
-بمعنى آخر، تتجاوز إعدادات نهج **الحماية الصارمة** إعدادات نهج **الحماية القياسية** ، والتي تتجاوز الإعدادات من نهج مخصص، والذي يتجاوز الإعدادات من نهج الأمان المحدد مسبقا **للحماية المضمنة** (الارتباطات الآمنة والمرفقات الآمنة) والنهج الافتراضي (مكافحة البريد العشوائي والبرامج الضارة والتصيد الاحتيالي).
+بمعنى آخر، تتجاوز إعدادات نهج الأمان المضمن **مسبقا إعدادات** نهج الأمان **القياسي** الذي تم تعيينه مسبقا، والذي يتجاوز الإعدادات من أي نهج مخصصة، والتي تتجاوز إعدادات نهج الأمان **المضمن** الذي تم تعيينه مسبقا للارتباطات الآمنة والمرفقات الآمنة، والنهج الافتراضية لمكافحة البريد العشوائي ومكافحة البرامج الضارة والتصيد الاحتيالي.
 
-على سبيل المثال، إذا كان هناك إعداد أمان موجود في **الحماية القياسية** وقد قام مسؤول بتمكين **الحماية القياسية** لمستخدم، فسيتم تطبيق إعداد **الحماية القياسية** بدلا من ما تم تكوينه لهذا الإعداد في نهج مخصص أو في النهج الافتراضي (لنفس المستخدم). تجدر الإشارة إلى أنه قد يكون لديك جزء من مؤسستك تريد تطبيق نهج الحماية **القياسي** أو **الصارم** فقط عليه مع تطبيق نهج مخصص على مستخدمين آخرين في مؤسستك لتلبية احتياجات محددة.
+على سبيل المثال، يوجد إعداد أمان في **الحماية القياسية** ويحدد المسؤول مستخدما **للحماية القياسية**. يتم تطبيق إعداد **الحماية القياسي** على المستخدم بدلا من ما تم تكوينه لهذا الإعداد في نهج مخصص أو في النهج الافتراضي لنفس المستخدم.
+
+قد تحتاج إلى تطبيق نهج الأمان **القياسية** أو **الصارمة** المعينة مسبقا على مجموعة فرعية من المستخدمين، وتطبيق نهج مخصصة على مستخدمين آخرين في مؤسستك لتلبية احتياجات محددة. لتلبية هذا المطلب، قم بالخطوات التالية:
+
+- تكوين المستخدمين الذين يجب أن يحصلوا على إعدادات نهج الأمان **القياسي** الذي تم تعيينه مسبقا والنهج المخصصة كاستثناءات في نهج الأمان المضمن **مسبقا.**
+- تكوين المستخدمين الذين يجب أن يحصلوا على إعدادات النهج المخصصة كاستثناءات في نهج الأمان **القياسي** الذي تم تعيينه مسبقا.
 
 لا تؤثر **الحماية المضمنة** على المستلمين في نهج الارتباطات الآمنة أو المرفقات الآمنة الموجودة. إذا قمت بالفعل بتكوين نهج **الحماية القياسية** أو **الحماية الصارمة** أو الارتباطات الآمنة المخصصة أو المرفقات الآمنة، يتم تطبيق هذه النهج _دائما_ _قبل_ **الحماية المضمنة**، لذلك لا يوجد أي تأثير على المستلمين الذين تم تعريفهم بالفعل في تلك النهج المخصصة أو المعينة مسبقا الموجودة.
 
@@ -256,3 +264,293 @@ ms.locfileid: "66772051"
 على سبيل المثال، بالنسبة للبريد الإلكتروني الذي تم اكتشافه كبريد عشوائي (ليس بريدا عشوائيا عالي الدقة) تحقق من تسليم الرسالة إلى مجلد "البريد الإلكتروني غير الهام" لمستخدمي **الحماية القياسية** ، ويتم عزلها لمستخدمي **الحماية الصارمة** .
 
 أو، [للبريد المجمع](bulk-complaint-level-values.md)، تحقق من أن قيمة BCL 6 أو أعلى تقوم بتسليم الرسالة إلى مجلد البريد الإلكتروني غير الهام لمستخدمي **الحماية القياسية** ، وتعزل قيمة BCL 4 أو أعلى الرسالة لمستخدمي **الحماية الصارمة** .
+
+## <a name="preset-security-policies-in-exchange-online-powershell"></a>نهج الأمان المسبقة في Exchange Online PowerShell
+
+في PowerShell، تتكون نهج الأمان التي تم تعيينها مسبقا من العناصر التالية:
+
+- **نهج الأمان الفردية**: على سبيل المثال، نهج مكافحة البرامج الضارة ونهج مكافحة البريد العشوائي ونهج مكافحة التصيد الاحتيالي ونهج الارتباطات الآمنة ونهج المرفقات الآمنة.
+
+  > [!WARNING]
+  > لا تحاول إنشاء نهج الأمان الفردية المقترنة بنهج الأمان المعينة مسبقا أو تعديلها أو إزالتها. الطريقة الوحيدة المدعومة لإنشاء نهج الأمان الفردية لنهج الأمان القياسية أو الصارمة المعينة مسبقا هي تشغيل نهج الأمان المعين مسبقا في مدخل Microsoft 365 Defender للمرة الأولى.
+
+- **القواعد**: تحدد القواعد المنفصلة لنهج الأمان القياسي المعين مسبقا، ونهج الأمان المحدد مسبقا الصارم، ونهج الأمان المضمن المعين مسبقا للحماية شروط المستلم والاستثناءات للنهج (تحديد المستلمين الذين تنطبق حماية النهج علىهم).
+
+  بالنسبة إلى نهج الأمان القياسية والضيقة المعينة مسبقا، يتم إنشاء هذه القواعد في المرة الأولى التي تقوم فيها بتشغيل نهج الأمان المعين مسبقا في مدخل Microsoft 365 Defender. إذا لم تقم بتشغيل نهج الأمان المعين مسبقا، فإن القواعد المقترنة غير موجودة. بعد ذلك، لا يؤدي إيقاف تشغيل نهج الأمان المعين مسبقا إلى حذف القواعد المقترنة.
+
+  يحتوي نهج الأمان الذي تم إعداده مسبقا للحماية المضمنة على قاعدة واحدة تتحكم في استثناءات للارتباطات الآمنة الافتراضية وحماية المرفقات الآمنة للنهج.
+
+  تتضمن نهج الأمان القياسية والضيقة التي تم تعيينها مسبقا القواعد التالية:
+
+  - **قواعد حماية Exchange Online Protection (EOP):** تتحكم قاعدة نهج الأمان القياسي المحدد مسبقا والقاعدة الخاصة بنهج الأمان المحدد مسبقا الصارم في الأشخاص الذين تطبقهم حماية EOP في النهج (مكافحة البرامج الضارة والبريد العشوائي والتصيد الاحتيالي) على (شروط المستلمين واستثناءات حماية EOP).
+  - **قواعد الحماية Defender لـ Office 365**: تتحكم قاعدة نهج الأمان القياسي المحدد مسبقا وقاعدة نهج الأمان المحدد مسبقا الصارم في الأشخاص الذين تنطبق Defender لـ Office 365 الحماية في النهج (الارتباطات الآمنة والمرفقات الآمنة) على (شروط المستلمين واستثناءاتهم Defender لـ Office 365 الحماية).
+
+  تسمح لك قواعد نهج الأمان القياسية والضيقة المعينة مسبقا أيضا بتشغيل نهج الأمان المعين مسبقا أو تشغيله عن طريق تمكين القواعد المقترنة بالنهج أو تعطيلها.
+
+  لا تتوفر قواعد نهج الأمان المحددة مسبقا ل cmdlets القاعدة العادية التي تعمل مع نهج الأمان الفردية (على سبيل المثال، **Get-AntiPhishRule**). بدلا من ذلك، تكون أوامر cmdlets التالية مطلوبة:
+
+  - نهج أمان الحماية المضمنة مسبقا: **\*-ATPBuiltInProtectionRule** cmdlets.
+  - نهج الأمان القياسية والصارمة المحددة مسبقا: **\*-EOPProtectionPolicyRule** **و-ATPProtectionPolicyRule\*** cmdlets.
+
+تصف الأقسام التالية كيفية استخدام أوامر cmdlets هذه في **السيناريوهات المدعومة**.
+
+للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
+### <a name="use-powershell-to-view-individual-security-policies-for-preset-security-policies"></a>استخدام PowerShell لعرض نهج الأمان الفردية لنهج الأمان التي تم تعيينها مسبقا
+
+تذكر، إذا لم تقم بتشغيل نهج الأمان القياسي المعين مسبقا أو نهج الأمان المحدد مسبقا الصارم في مدخل Microsoft 365 Defender، فإن نهج الأمان المقترنة لنهج الأمان المعين مسبقا غير موجودة.
+
+> [!WARNING]
+> لا تحاول إنشاء نهج الأمان الفردية المقترنة بنهج الأمان المعينة مسبقا أو تعديلها أو إزالتها. الطريقة الوحيدة المدعومة لإنشاء نهج الأمان الفردية لنهج الأمان القياسية أو الصارمة المعينة مسبقا هي تشغيل نهج الأمان المعين مسبقا في مدخل Microsoft 365 Defender للمرة الأولى.
+
+- **نهج الأمان المعين مسبقا للحماية المضمنة**: تسمى النهج المقترنة Built-In نهج الحماية. قيمة الخاصية IsBuiltInProtection هي True لهذه النهج.
+
+  لعرض نهج الأمان الفردية لنهج الأمان المضمن الذي تم تعيينه مسبقا للحماية، قم بتشغيل الأمر التالي:
+
+  ```powershell
+  Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy -Identity "Built-In Protection Policy" | Format-List; Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Links policy",("-"*79);Get-SafeLinksPolicy -Identity "Built-In Protection Policy" | Format-List
+  ```
+
+- **نهج الأمان القياسي المعين مسبقا**: تتم تسمية `Standard Preset Security Policy<13-digit number>`النهج المقترنة. على سبيل المثال، `Standard Preset Security Policy1622650008019`. قيمة خاصية RecommendPolicyType هي Standard.
+
+  - **المؤسسات التي لا تحتوي على Defender ل Microsoft 365**:
+
+    لعرض نهج الأمان الفردية لنهج الأمان القياسي الذي تم تعيينه مسبقا في المؤسسات دون Defender ل Microsoft 365، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+  - **المؤسسات التي تستخدم Defender ل Microsoft 365**:
+
+    لعرض نهج الأمان الفردية لنهج الأمان القياسي الذي تم تعيينه مسبقا في المؤسسات باستخدام Defender ل Microsoft 365، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+- **نهج أمان مقيد مسبقا**: تتم تسمية النهج المقترنة.`Strict Preset Security Policy<13-digit number>` على سبيل المثال، `Strict Preset Security Policy1642034872546`. قيمة الخاصية RecommendPolicyType مقيدة.
+
+  - **المؤسسات التي لا تحتوي على Defender ل Microsoft 365**:
+
+    - لعرض نهج الأمان الفردية لنهج الأمان المضمن مسبقا في المؤسسات دون Defender ل Microsoft 365، قم بتشغيل الأمر التالي:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+      ```
+
+  - **المؤسسات التي تستخدم Defender ل Microsoft 365**:
+
+    - لعرض نهج الأمان الفردية لنهج الأمان المضمن مسبقا في المؤسسات التي تستخدم Defender for Microsoft 365، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+    ```
+
+### <a name="use-powershell-to-view-rules-for-preset-security-policies"></a>استخدام PowerShell لعرض قواعد نهج الأمان التي تم تعيينها مسبقا
+
+تذكر، إذا لم تقم بتشغيل نهج الأمان القياسي المعين مسبقا أو نهج الأمان المحدد مسبقا في مدخل Microsoft 365 Defender، فلن تكون القواعد المقترنة بهذه النهج موجودة.
+
+- **نهج الأمان المعين مسبقا للحماية المضمنة**: تسمى القاعدة المقترنة ب ATP Built-In Protection Rule.
+
+  لعرض القاعدة المقترنة بنهج الأمان المعين مسبقا للحماية المضمنة، قم بتشغيل الأمر التالي:
+
+  ```powershell
+  Get-ATPBuiltInProtectionRule
+  ```
+
+  للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Get-ATPBuiltInProtectionRule](/powershell/module/exchange/get-atpbuiltinprotectionrule).
+
+- **نهج الأمان القياسي المعين مسبقا**: تسمى القواعد المقترنة بنهج الأمان القياسي المعين مسبقا.
+
+  استخدم الأوامر التالية لعرض القواعد المقترنة بنهج الأمان القياسي المعين مسبقا:
+
+  - لعرض القاعدة المقترنة بحمايات EOP في نهج الأمان القياسي المعين مسبقا، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - لعرض القاعدة المقترنة بالحماية Defender لـ Office 365 في نهج الأمان القياسي المعين مسبقا، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - لعرض كلتا القواعد في الوقت نفسه، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Standard preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+- **نهج أمان مقيد مسبقا**: تسمى القواعد المقترنة "نهج أمان مقيد مسبق الإعداد".
+
+  استخدم الأوامر التالية لعرض القواعد المقترنة بنهج الأمان المحدد مسبقا الصارم:
+
+  - لعرض القاعدة المقترنة بحمايات EOP في نهج الأمان المحدد مسبقا الصارم، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - لعرض القاعدة المقترنة بالحماية Defender لـ Office 365 في نهج الأمان المحدد مسبقا، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - لعرض كلتا القواعد في الوقت نفسه، قم بتشغيل الأمر التالي:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Strict preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Get-EOPProtectionPolicyRule](/powershell/module/exchange/get-eopprotectionpolicyrule) و [Get-ATPProtectionPolicyRule](/powershell/module/exchange/get-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-turn-on-or-turn-off-preset-security-policies"></a>استخدام PowerShell لتشغيل نهج الأمان المحددة مسبقا أو إيقاف تشغيلها
+
+كما هو موضح سابقا، لتشغيل نهج الأمان القياسية أو التقييدية المعينة مسبقا أو إيقاف تشغيلها، يمكنك تمكين القواعد المقترنة بالنهج أو تعطيلها. تظهر قيمة خاصية الحالة للقاعدة ما إذا كانت القاعدة ممكنة أو معطلة.
+
+اعتمادا على ما إذا كان لدى مؤسستك Defender لـ Office 365، قد تحتاج إلى تمكين قاعدة واحدة أو تعطيلها (قاعدة حماية EOP) أو قاعدتين (قاعدة واحدة لحماية EOP، وقاعدة واحدة لحماية Defender لـ Office 365) لتشغيل نهج الأمان المحدد مسبقا أو إيقاف تشغيله.
+
+- **نهج الأمان القياسي المسبق الإعداد**:
+
+  - **المؤسسات التي لا Defender لـ Office 365**:
+
+    - في المؤسسات التي لا تحتوي على Defender لـ Office 365، قم بتشغيل الأمر التالي لتحديد ما إذا كانت القاعدة الخاصة بنهج الإعداد المسبق القياسي ممكنة أو معطلة حاليا:
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - قم بتشغيل الأمر التالي لإيقاف تشغيل نهج الأمان القياسي المحدد مسبقا إذا كان قيد التشغيل:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - قم بتشغيل الأمر التالي لتشغيل نهج الأمان القياسي المحدد مسبقا إذا تم إيقاف تشغيله:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+  - **المؤسسات ذات Defender لـ Office 365**:
+
+    - في المؤسسات ذات Defender لـ Office 365، قم بتشغيل الأمر التالي لتحديد ما إذا كانت قواعد نهج الإعداد المسبق القياسي ممكنة أو معطلة حاليا:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Standard preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - قم بتشغيل الأمر التالي لإيقاف تشغيل نهج الأمان القياسي المحدد مسبقا إذا كان قيد التشغيل:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - قم بتشغيل الأمر التالي لتشغيل نهج الأمان القياسي المحدد مسبقا إذا تم إيقاف تشغيله:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+- **نهج أمان مقيد مسبقا**:
+
+  - **المؤسسات التي لا Defender لـ Office 365**:
+
+    - في المؤسسات ذات Defender لـ Office 365، قم بتشغيل الأمر التالي لتحديد ما إذا كانت قاعدة نهج الإعداد المسبق الصارم ممكنة أو معطلة حاليا:
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - قم بتشغيل الأمر التالي لإيقاف تشغيل نهج الأمان المحدد مسبقا الصارم إذا كان قيد التشغيل:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - قم بتشغيل الأمر التالي لتشغيل نهج الأمان المحدد مسبقا الصارم إذا تم إيقاف تشغيله:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+  - **المؤسسات ذات Defender لـ Office 365**:
+
+    - في المؤسسات ذات Defender لـ Office 365، قم بتشغيل الأمر التالي لتحديد ما إذا كانت قواعد نهج الإعداد المسبق الصارم ممكنة أو معطلة حاليا:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Strict preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - قم بتشغيل الأمر التالي لإيقاف تشغيل نهج الأمان المحدد مسبقا الصارم إذا كان قيد التشغيل:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - قم بتشغيل الأمر التالي لتشغيل نهج الأمان المحدد مسبقا الصارم إذا تم إيقاف تشغيله:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Enable-EOPProtectionPolicyRule](/powershell/module/exchange/enable-eopprotectionpolicyrule) و [Enable-ATPProtectionPolicyRule](/powershell/module/exchange/enable-atpprotectionpolicyrule) و [Disable-EOPProtectionPolicyRule](/powershell/module/exchange/disable-eopprotectionpolicyrule) و [Disable-ATPProtectionPolicyRule](/powershell/module/exchange/disable-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-specify-recipient-conditions-and-exceptions-for-preset-security-policies"></a>استخدام PowerShell لتحديد شروط المستلم واستثناءاته لنهج الأمان التي تم تعيينها مسبقا
+
+> [!IMPORTANT]
+  > لا توجد أنواع مختلفة متعددة من الشروط أو الاستثناءات الإضافية؛ إنها شاملة. يتم تطبيق نهج الأمان المعين مسبقا _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+  >
+  > - المستلم هو: romain@contoso.com
+  > - المستلم هو عضو في: المديرين التنفيذيين
+  >
+  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+  >
+  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
+
+بالنسبة إلى نهج الأمان المضمن الذي تم تعيينه مسبقا للحماية، يمكنك تحديد استثناءات المستلمين فقط. إذا كانت كافة قيم معلمات الاستثناء فارغة (`$null`)، فلا توجد استثناءات للنهج.
+
+بالنسبة إلى نهج الأمان القياسية والضيقة التي تم تعيينها مسبقا، يمكنك تحديد شروط المستلم واستثناءاته لحماية EOP وحمايات Defender لـ Office 365. إذا كانت كافة الشروط وقيم معلمات الاستثناء فارغة (`$null`)، فلا توجد شروط مستلم أو استثناءات لنهج الأمان القياسية أو الصارمة المحددة مسبقا.
+
+حتى إذا لم يتم تطبيق شروط المستلمين أو استثناءاتهم على نهج أمان معين مسبقا، فإن ما إذا كان النهج مطبقا على كافة المستلمين يعتمد على [ترتيب الأسبقية للنهج](#order-of-precedence-for-preset-security-policies-and-other-policies) كما هو موضح سابقا في هذه المقالة.
+
+- **نهج الأمان الذي تم إعداده مسبقا للحماية المضمنة**:
+
+  استخدم بناء الجملة التالي:
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null>
+  ```
+
+  يزيل هذا المثال كافة استثناءات المستلمين من نهج الأمان المضمن الذي تم تعيينه مسبقا للحماية.
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs $null -ExceptIfSentTo $null -ExceptIfSentToMemberOf $null
+  ```
+
+  للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-ATPBuiltInProtectionRule](/powershell/module/exchange/set-atpbuiltinprotectionrule).
+
+- **نهج أمان محددة مسبقا قياسية أو مقيدة**
+
+  استخدم بناء الجملة التالي:
+
+  ```powershell
+  <Set-EOPProtectionPolicyRule | SetAtpProtectionPolicyRule> -Identity "<Standard Preset Security Policy | Strict Preset Security Policy>" -SentTo <"user1","user2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -SentToMemberOf <"group1","group2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null> -RecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null>
+  ```
+
+  يقوم هذا المثال بتكوين استثناءات من حماية EOP في نهج الأمان القياسي المحدد مسبقا لأعضاء مجموعة التوزيع المسماة "المديرون التنفيذيون".
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
+  ```
+
+  يقوم هذا المثال بتكوين استثناءات من الحماية Defender لـ Office 365 في الأمان المعين مسبقا الصارم لعلب بريد عمليات الأمان المحددة (SecOps).
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"
+  ```
+
+  للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-EOPProtectionPolicyRule](/powershell/module/exchange/set-eopprotectionpolicyrule) و [Set-ATPProtectionPolicyRule](/powershell/module/exchange/Set-atpprotectionpolicyrule).

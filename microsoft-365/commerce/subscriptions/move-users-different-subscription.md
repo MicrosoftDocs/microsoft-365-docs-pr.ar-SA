@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
 description: تعرف على كيفية نقل المستخدمين بين الاشتراكات.
 ms.date: 05/12/2022
-ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b8427e383e40a4061e92e4d02b64a6a16a4412db
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044312"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083960"
 ---
 # <a name="move-users-to-a-different-subscription"></a>نقل المستخدمين إلى اشتراك مختلف
 
@@ -67,4 +68,4 @@ ms.locfileid: "66044312"
 [إزالة التراخيص من اشتراكك](../licenses/buy-licenses.md) (مقال)\
 [تغيير الخطط يدويا](change-plans-manually.md) (مقالة)\
 [فهم الاشتراكات والتراخيص في Microsoft 365 للأعمال](../licenses/subscriptions-and-licenses.md) (مقالة)\
-[شراء اشتراك آخر Microsoft 365 للأعمال](../try-or-buy-microsoft-365.md) (مقالة)
+[شراء اشتراك Microsoft 365 للأعمال آخر](../try-or-buy-microsoft-365.md) (مقالة)

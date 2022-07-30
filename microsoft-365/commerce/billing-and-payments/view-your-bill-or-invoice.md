@@ -15,6 +15,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - TopSMBIssues
 - okr_smb
@@ -25,12 +26,12 @@ ms.custom:
 - adminvideo
 description: ابحث عن الفاتورة أو بيان الفوترة في مركز مسؤولي Microsoft 365. كما يمكنك أيضاً حفظ نسخة من الفاتورة وطباعتها.
 ms.date: 01/25/2022
-ms.openlocfilehash: 72bbf1b8c845fb462b761e44f94d0f99bcea2aba
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 8e30bb90c27edc03667f02c7d677c18514359027
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602823"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086836"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>عرض فاتورة أو فاتورة اشتراك Microsoft 365 للأعمال
 

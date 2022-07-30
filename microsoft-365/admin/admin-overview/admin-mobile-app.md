@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,16 +26,16 @@ search.appverid:
 - MET150
 - MOE150
 description: احصل على تطبيق مسؤول Microsoft 365، رفيقك في مركز مسؤولي Microsoft 365 المستندة إلى الويب، لإدارة مؤسستك عبر الإنترنت من الهاتف أو الكمبيوتر اللوحي.
-ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601685"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084620"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>حول تطبيق مسؤول Microsoft 365 للأجهزة المحمولة
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 هل أنت مسؤول عادة ما يكون قيد التنقل؟ حتى لو لم تكن كذلك، فقد تحتاج في بعض الأحيان إلى إدارة Microsoft 365 من الهاتف أو الكمبيوتر اللوحي. اطلع على [تطبيق مسؤول Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) المجاني، وهو الرفيق المثالي مركز مسؤولي Microsoft 365 المستندة إلى الويب. يمكنك تنزيل التطبيق من [App Store Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) ومن [متجر Google Play](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp) ومن ارتباط تطبيق مسؤول Microsoft 365 في الزاوية العلوية <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">اليسرى من مركز مسؤولي Microsoft 365</a>.
 
@@ -57,7 +58,7 @@ ms.locfileid: "66601685"
 
 ## <a name="watch-install-the-admin-mobile-app"></a>المراقبة: تثبيت تطبيق الأجهزة المحمولة المسؤول
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 

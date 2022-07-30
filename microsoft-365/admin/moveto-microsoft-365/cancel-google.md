@@ -1,5 +1,5 @@
 ---
-title: إلغاء Google Workspace (والحفاظ على مجالك)
+title: إلغاء مساحة عمل Google (والاحتفاظ بمجالك)
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -20,22 +21,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية إلغاء اشتراك Google Workspace مع الاحتفاظ مجالك.
-ms.openlocfilehash: 65aedc876b2554aa5573947615fc5e9281b5c5c0
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: تعرف على كيفية إلغاء اشتراك Google Workspace مع الاحتفاظ بمجالك.
+ms.openlocfilehash: 6454a8ce138c46f1c15f89ee5beb3060a0938ee1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63575983"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086968"
 ---
 # <a name="cancel-google-workspace-subscription"></a>إلغاء اشتراك Google Workspace
 
-1. سجل الدخول إلى [مسؤول Google](https://admin.google.com/) واذهب إلى **الفوترة**.
-1. في قائمة **الاشتراكات** ، اختر اشتراك G Suite، **وإلغاء الاشتراك**، ثم اختر **متابعة**.
+1. سجل الدخول إلى [Google مسؤول](https://admin.google.com/) وانتقل إلى **الفوترة**.
+1. في قائمة **الاشتراكات** ، اختر اشتراك G Suite الخاص بك، **وإلغاء الاشتراك**، ثم اختر **"متابعة**".
 
     > [!IMPORTANT]
     > سيتم إلغاء اشتراكك على الفور ولا يمكنك التراجع عن هذا الإجراء.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="لقطة شاشة لصفحة فوترة مسؤول Google.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="لقطة شاشة لصفحة الفوترة في Google مسؤول.":::
 
 تجدر الإشارة إلى أنك قد لا ترى "تسجيل المجال" في قائمة الاشتراكات إذا لم يكن موفر استضافة DNS من مجالات Google.

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: تعرف على كيفية تعيين نهج في مركز مسؤولي Microsoft 365 للسماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم باستخدام أداة إعادة تعيين كلمة مرور الخدمة الذاتية.
-ms.openlocfilehash: 917f04b7472204be4228d802975902c42ab8fce0
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 2d00158b55b429c5bd59b213834dc7219e75ed87
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037216"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084708"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم
 
