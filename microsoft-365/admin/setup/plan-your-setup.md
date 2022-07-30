@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - adminvideo
@@ -23,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: تعرف على المتطلبات والاعتبارات اللازمة للانتقال إلى Microsoft 365 للأعمال.
-ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 384d0573237104609937ad7627de1784a21a6158
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601147"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086462"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>التخطيط لإعداد Microsoft 365 للأعمال
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 هذه المقالة مخصصة للأشخاص الذين اشتركوا في خطة Microsoft 365 للأعمال.
   
@@ -40,7 +41,7 @@ ms.locfileid: "66601147"
 
 ## <a name="overview-of-microsoft-365-for-business-setup"></a>نظرة عامة على إعداد Microsoft 365 للأعمال
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

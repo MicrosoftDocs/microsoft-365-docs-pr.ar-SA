@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - TopSMBIssues
 - okr_smb
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على كيفية تفسير معلومات الرسوم والفوترة والدفع على فاتورة Microsoft 365 أو فاتورة أعمال.
 ms.date: 05/24/2022
-ms.openlocfilehash: 57120632cfe0b3543b228dfaca5955dfa31e4358
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: e0fde94ba3dd2f3d174bac44b3d53df469be9c9d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717857"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084928"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>افهم فاتورتك أو فاتورة أعمالك على Microsoft 365 للأعمال
 

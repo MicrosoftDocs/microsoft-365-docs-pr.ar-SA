@@ -1,5 +1,5 @@
 ---
-title: زيادة الحماية من التهديدات ل Microsoft 365 للأعمال
+title: زيادة الحماية من المخاطر لـ Microsoft 365 للأعمال
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -24,14 +25,14 @@ search.appverid:
 - BCS160
 - MET150
 description: إعداد Microsoft Defender لـ Office 365 البيانات الحساسة وحمايتها من التصيد الاحتيالي والبرامج الضارة والتهديدات الأخرى.
-ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66857499"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085520"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>زيادة الحماية من التهديدات ل Microsoft 365 للأعمال
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>زيادة الحماية من المخاطر لـ Microsoft 365 للأعمال
 
 اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
@@ -266,7 +267,7 @@ ms.locfileid: "66857499"
 
 ## <a name="go-to-intune-admin-center"></a>الانتقال إلى مركز إدارة Intune
 
-1. سجل الدخول إلى [Azure-Portal](https://portal.azure.com/).
+1. سجل الدخول إلى [مدخل Azure](https://portal.azure.com/).
 
 2. حدد **كافة الخدمات** واكتب *في Intune* في **مربع البحث**.
 

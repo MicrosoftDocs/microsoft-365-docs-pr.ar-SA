@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - adminvideo
 - TopSMBIssues
 - SaRA
@@ -29,18 +30,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: استخدم معالج الإعداد لإضافة مجالك إلى Microsoft 365 في مركز مسؤولي Microsoft 365 عن طريق إضافة سجل DNS لدى مضيف DNS.
-ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 13699b4a565c0762baa6f383330ed2e87517ac6d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602889"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087342"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>إضافة مجال إلى Microsoft 365
 
  **[تحقق من الأسئلة المتداولة حول المجالات](domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
-اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
   
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -51,7 +52,7 @@ ms.locfileid: "66602889"
 
 ## <a name="watch-add-a-domain"></a>شاهد: إضافة مجال
 
-اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198213).
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198213).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 

@@ -10,26 +10,27 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom:
+- VSBFY23
 - SMB_SuccessCenter
 - seo-marvel-mar
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: تعرف على تهديدات الأمان التي تواجهها أعمالك و الطرق السهلة التي يمكنك أنت وموظفيك من خلالها حماية بياناتك وحساباتك وأجهزتك.
-ms.openlocfilehash: 625fe763a8e1d2c6e0d4748fd96185d9bf654ee3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تعرف على التهديدات الأمنية التي تواجهها شركتك والطرق السهلة التي يمكنك أنت وموظفيك من خلالها حماية بياناتك وحساباتك وأجهزتك.
+ms.openlocfilehash: 7bb3b978841d23f9ac579311be8d6731f687b45d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63570992"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086946"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>رسم معلومات الأمان للشركات الصغيرة
 
-**ملخص:** تعرف على الشروط الأساسية للتهديدات التي تواجهها شركتك وما يمكنك فعله لحماية بياناتك وحساباتك وأجهزتك. بتحملك Microsoft 365 للأعمال، يمكنك اتخاذ إجراء لجعل عملك أكثر أمانا، ومساعدة كل موظف على معرفة كيفية الحفاظ على أمان بيانات العمل وأجهزتك.
+**ملخص:** تعرف على المصطلحات الأساسية للتهديدات التي تواجهها شركتك وما يمكنك القيام به لحماية بياناتك وحساباتك وأجهزتك. بصفتك مسؤولا في Microsoft 365 للأعمال، اتخذ إجراء لجعل عملك أكثر أمانا، ومساعدة كل موظف على تعلم كيفية الحفاظ على أمان بيانات العمل والأجهزة.
 
-يمكن تنزيل ارتباطات PowerPoint و PDF أدناه وطباعتها بتنسيق جدولي (يعرف أيضا بدفتر الأستاذ أو 11 × 17 أو A3).
+يمكن تنزيل ارتباطات PowerPoint وPDF أدناه وطباعتها بتنسيق tabloid (المعروف أيضا باسم دفتر الأستاذ أو 11 × 17 أو A3).
 
-![صورة لتأمين رسم معلومات شركتك الصغيرة.](../media/smbthreatprotectioninfographic-thumbnail.png)
+![صورة لتأمين رسم معلومات الشركات الصغيرة.](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [PDF](downloads/smbthreatprotection-infographic.pdf) |  [PowerPoint](downloads/smbthreatprotection-infographic.pptx)
