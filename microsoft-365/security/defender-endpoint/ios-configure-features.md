@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051811"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099272"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>تكوين Microsoft Defender for Endpoint على ميزات iOS
 
@@ -79,7 +79,7 @@ Microsoft Defender لنقطة النهاية لديه القدرة على الك
     - في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **نهج** >  تكوين **تطبيقات التطبيقات** > **إضافة** > **أجهزة مدارة**.
     - قم بتسمية النهج، **النظام الأساسي > iOS/iPadOS**.
     - حدد Microsoft Defender لنقطة النهاية كتطبيق الهدف.
-    - في صفحة الإعدادات، حدد استخدام مصمم التكوين وأضف  **WebProtection** كمفتاح ونوع القيمة **كقيمة منطقية**.
+    - في صفحة الإعدادات، حدد استخدام مصمم التكوين وأضف **WebProtection** كمفتاح ونوع القيمة **كقيمة منطقية**.
         - بشكل افتراضي، **WebProtection= true**.
         - يحتاج مسؤول إلى جعل **WebProtection = false** لإيقاف تشغيل حماية الويب.
         - سيرسل Defender رسالة كشف أخطاء الاتصال إلى مدخل Microsoft 365 Defender كلما فتح المستخدم التطبيق.
@@ -90,7 +90,7 @@ Microsoft Defender لنقطة النهاية لديه القدرة على الك
     - في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **نهج** >  تكوين تطبيقات **التطبيقات** > **إضافة** > **تطبيقات مدارة**.
     - امنح النهج اسما.
     - ضمن "تحديد التطبيقات العامة"، اختر Microsoft Defender لنقطة النهاية كتطبيق الهدف.
-    - في الصفحة "إعدادات"، ضمن "إعدادات التكوين العامة"، أضف  **WebProtection** كمفتاح وقيمة **كخطأ**.
+    - في الصفحة "إعدادات"، ضمن "إعدادات التكوين العامة"، أضف **WebProtection** كمفتاح وقيمة **كخطأ**.
         - بشكل افتراضي، **WebProtection= true**.
         - يحتاج مسؤول إلى جعل **WebProtection = false** لإيقاف تشغيل حماية الويب.
         - سيرسل Defender رسالة كشف أخطاء الاتصال إلى مدخل Microsoft 365 Defender كلما فتح المستخدم التطبيق.
@@ -114,7 +114,7 @@ Microsoft Defender لنقطة النهاية لديه القدرة على الك
 
     |المفتاح| الافتراضي (تمكين صواب، تعطيل خطأ)|الوصف|
     |---|---|---|
-    |DefenderEndUserTrustFlowEnable| كاذبه | تمكين المستخدمين من الوثوق بالشبكات والشهادات|
+    |DefenderEndUserTrustFlowEnable| خطأ | تمكين المستخدمين من الوثوق بالشبكات والشهادات|
     |DefenderNetworkProtectionAutoRemediation| صحيح |يستخدم مسؤول تكنولوجيا المعلومات هذا الإعداد لتمكين أو تعطيل تنبيهات المعالجة التي يتم إرسالها عندما يقوم مستخدم بتنفيذ أنشطة المعالجة مثل التبديل إلى نقاط وصول WIFI أكثر أمانا أو حذف الشهادات المشبوهة التي اكتشفها Defender|
     |DefenderNetworkProtectionPrivacy| صحيح |يدير مسؤول تكنولوجيا المعلومات هذا الإعداد لتمكين الخصوصية أو تعطيلها في حماية الشبكة|
   

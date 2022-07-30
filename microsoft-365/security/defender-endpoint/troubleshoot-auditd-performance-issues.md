@@ -17,22 +17,22 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31aaf297fd3622eede2e1532ad60a20666d1bd07
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66988230"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099052"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>استكشاف مشكلات أداء AuditD وإصلاحها باستخدام Microsoft Defender لنقطة النهاية على Linux 
 
 توفر هذه المقالة إرشادات حول كيفية استكشاف مشكلات الأداء ذات الصلة AuditD وإصلاحها التي قد تواجهها مع Microsoft Defender لنقطة النهاية على Linux. 
 
-**الخلفيه:** 
+**خلفية:** 
 
 - يستخدم Microsoft Defender لنقطة النهاية على توزيعات نظام التشغيل Linux إطار عمل AuditD لجمع أنواع معينة من أحداث تتبع الاستخدام. 
 
-- ستتم إضافة أحداث النظام التي تم تسجيلها بواسطة القواعد المضافة إلى `/etc/audit/rules.d/` audit.log (سجلات) وقد تؤثر على تدقيق المضيف ومجموعة المصدر.  
+- ستتم إضافة أحداث النظام التي تم تسجيلها بواسطة القواعد المضافة إلى `/etc/audit/rules.d/` التدقيق.log (الأحداث) وقد تؤثر على تدقيق المضيف ومجموعة المصدر.  
 
 - سيتم وضع علامة على الأحداث التي تمت إضافتها بواسطة Microsoft Defender لنقطة النهاية على Linux باستخدام `mdatp` المفتاح. 
 

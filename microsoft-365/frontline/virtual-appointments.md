@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: f36d79aa4902991e07355fc6bfd3a6add1ae0fe0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823725"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100086"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>المواعيد الظاهرية مع Microsoft Teams
 
@@ -49,9 +49,9 @@ ms.locfileid: "66823725"
 
 للتعرّف على المزيد، اطلع على:
 
-- [إدارة تطبيق Bookings](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [إدارة تطبيق الحجوزات](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [المواعيد الظاهرية مع Teams وتطبيق Bookings](bookings-virtual-visits.md)
-- [مساعدة عملائك وعملائك على استخدام المواعيد الظاهرية](virtual-appointments-toolkit.md)
+- [مساعدة زبائنك وعملائك على استخدام المواعيد الظاهرية](virtual-appointments-toolkit.md)
 
 ## <a name="teams-electronic-health-record-ehr-connector"></a>موصل Teams Electronic Health Record (EHR)
 

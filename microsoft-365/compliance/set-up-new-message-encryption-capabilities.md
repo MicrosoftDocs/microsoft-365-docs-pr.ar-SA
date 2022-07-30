@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797940"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099448"
 ---
 # <a name="set-up-message-encryption"></a>إعداد تشفير الرسائل
 
@@ -60,7 +60,7 @@ ms.locfileid: "66797940"
 
 هذه خطوة اختيارية. السماح ل Microsoft بإدارة المفتاح الجذر ل Azure حماية البيانات هو الإعداد الافتراضي وأفضل الممارسات الموصى بها لمعظم المؤسسات. إذا كانت هذه هي الحالة، فلن تحتاج إلى القيام بأي شيء.
 
-هناك العديد من الأسباب، على سبيل المثال متطلبات التوافق، التي قد تتطلب منك إنشاء المفتاح الجذر الخاص بك وإدارته (المعروف أيضا باسم إحضار المفتاح الخاص بك (BYOK)). إذا كان الأمر كذلك، نوصي بإكمال الخطوات المطلوبة قبل إعداد تشفير الرسائل في Microsoft Purview. راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key) للحصول على المزيد.
+هناك العديد من الأسباب، على سبيل المثال متطلبات التوافق، التي قد تتطلب منك إنشاء المفتاح الجذر الخاص بك وإدارته، والمعروف أيضا باسم "إحضار مفتاحك الخاص" (BYOK). إذا كان الأمر كذلك، نوصي بإكمال الخطوات المطلوبة قبل إعداد تشفير الرسائل في Microsoft Purview. راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key) للحصول على المزيد.
 
 ## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>التحقق من تكوين تشفير الرسائل في Microsoft Purview في Exchange Online PowerShell
 
@@ -70,7 +70,7 @@ ms.locfileid: "66797940"
 
 2. تشغيل Get-IRMConfiguration cmdlet.
 
-     يجب أن تشاهد قيمة $True للمعلمة AzureRMSLicensingEnabled، والتي تشير إلى تكوين تشفير الرسائل في Microsoft Purview في المستأجر الخاص بك. إذا لم يكن كذلك، فاستخدم Set-IRMConfiguration لتعيين قيمة AzureRMSLicensingEnabled إلى $True لتمكين تشفير الرسائل في Microsoft Purview.
+     يجب أن تشاهد قيمة `$True` للمعلمة AzureRMSLicensingEnabled، والتي تشير إلى تكوين تشفير الرسائل في Microsoft Purview في المستأجر الخاص بك. إذا لم يكن كذلك، فاستخدم Set-IRMConfiguration لتعيين قيمة AzureRMSLicensingEnabled `$True` لتمكين تشفير الرسائل في Microsoft Purview.
 
 3. تشغيل Test-IRMConfiguration cmdlet باستخدام بناء الجملة التالي:
 
@@ -106,10 +106,10 @@ ms.locfileid: "66797940"
 
    - قد تختلف أسماء القوالب الافتراضية عن تلك المعروضة أعلاه. راجع [تكوين وإدارة القوالب ل Azure حماية البيانات](/azure/information-protection/configure-policy-templates) للحصول على المزيد.
 
-4. إذا فشل الاختبار مع رسالة خطأ **فشلت في الحصول على قوالب RMS**، فنفذ الأوامر التالية وقم بتشغيل Test-IRMConfiguration cmdlet للتحقق من اجتيازه.
+4. إذا فشل الاختبار مع رسالة خطأ **فشلت في الحصول على قوالب RMS**، فنفذ الأوامر التالية وقم بتشغيل Test-IRMConfiguration cmdlet للتحقق من اجتيازه. الاتصال [بالوحدة النمطية AIPService](/powershell/module/aipservice/?view=azureipps) لتشغيل cmdlet.
 
    ```powershell
-   $RMSConfig = Get-AadrmConfiguration
+   $RMSConfig = Get-AipServiceConfiguration
    $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true

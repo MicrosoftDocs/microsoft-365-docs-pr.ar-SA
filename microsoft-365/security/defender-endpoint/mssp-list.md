@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0ef0cd210b405440c4dd16f9b8ea7a707d8f6197
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970244"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099250"
 ---
 # <a name="supported-managed-security-service-providers"></a>موفرو خدمات الأمان المدارة المعتمدون
 
@@ -29,7 +29,7 @@ ms.locfileid: "66970244"
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 يمكن الوصول إلى موفري خدمة الأمان المدارة التالية من خلال المدخل.
 
@@ -38,7 +38,7 @@ ms.locfileid: "66970244"
 ![صورة شعار التمييز.](images/accenture-logo.png)|[استجابة & الكشف المدار من Accenture (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | إدارة عمليات الأمان عبر الإنترنت العالمية وصيانتها وتعزيزها باستخدام قدرات موسعة تكشف عن الهجمات الإلكترونية المتقدمة وتتتبعها وتستجيب لها بشكل استباقي عبر بيئات تكنولوجيا المعلومات وOT الموجودة في السحابة وفي الموقع.
 ![صورة شعار Aujas.](images/aujas-logo.png) | [خدمة MDE المدارة من Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | يوفر الأمان عبر الإنترنت في Aujas 24*7 خدمات أمان مدارة عبر طيف المؤسسة بأكمله، باستخدام Microsoft Defender لنقطة النهاية من خلال مراكز الدفاع السيبراني الخاصة بها.
 ![صورة شعار BDO Digital.](images/bdo-logo.png)| [BDO Digital](/openspecs/ie_standards/ms-html401/ad459f6f-5219-4f68-829c-a58f7397a11f) | يستخدم الدفاع المدار ل BDO Digital أدوات أفضل الممارسات، الذكاء الاصطناعي، وخبراء الأمان الداخليين لحماية الهوية على مدار 24/7/365
-![صورة شعار BlueVoyant.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | يوفر MDR Microsoft Defender لنقطة النهاية الدعم في مراقبة الهجمات المتقدمة على نقاط النهاية والتحقيق فيها والتخفيف من حدتها
+![صورة شعار BlueVoyant.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | خدمات MDR التي توفر تحليلات شاملة لبيانات التهديدات وحلول تقنية متقدمة مع المراقبة عن بعد على مدار الساعة و24×7 ومعالجة حوادث XDR في بيئتك.
 :::image type="content" source="images/bt-logo.png" alt-text="! صورة شعار BT.":::|[نقطة النهاية المدارة Microsoft من BT](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| لقد كنا ندافع عن أنفسنا لسنوات عديدة، وقد سمحت لنا هذه الخبرة بتطوير حرفة فريدة نستخدمها لحماية عملاء Microsoft. سنوفر مراقبة 24x7x365 لممتلكاتك Microsoft Defender لنقطة النهاية في مراكز عمليات الأمان العالمية.
 ![Image of Cloud Defender for Cloud logo.](images/cloudsecuritycenter-logo.png)| [Cloud Defender for Cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | Cloud Defender for Cloud من InSpark هي خدمة مدارة على مدار 24x7 توفر الحماية، وتكتشف قدرات الاستجابة &
 ![Image of Cloud SOC logo.](images/cloudsoc-logo.png)| [سحابة SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | يوفر Cloud SOC خدمات مراقبة الأمان على مدار الساعة، كما يساعدك على تحسين وضع الأمان بشكل مستمر

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7bda1310178759def39b6ba9baedb25de875fb11
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059790"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099125"
 ---
 # <a name="batch-update-alerts"></a>تنبيهات التحديثات الدفعية
 
@@ -55,7 +55,7 @@ ms.locfileid: "67059790"
 
 أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-نوع الإذن | اذن | اسم عرض الإذن
+نوع الإذن | إذن | اسم عرض الإذن
 :---|:---|:---
 Application | Alert.ReadWrite.All | "قراءة كافة التنبيهات وكتابتها"
 مفوض (حساب العمل أو المؤسسة التعليمية) | Alert.ReadWrite | "تنبيهات القراءة والكتابة"
@@ -76,7 +76,7 @@ POST /api/alerts/batchUpdate
 
 الاسم|نوع|الوصف
 :---|:---|:---
-التخويل | سلسلة | حامل {token}. **مطلوب**.
+إذن | سلسلة | حامل {token}. **مطلوب**.
 نوع المحتوى | سلسلة | التطبيق/json. **مطلوب**.
 
 ## <a name="request-body"></a>نص الطلب
@@ -87,13 +87,13 @@ POST /api/alerts/batchUpdate
 
 للحصول على أفضل أداء، يجب عدم تضمين القيم الموجودة التي لم تتغير.
 
-الخاصيه | نوع | الوصف
+مال | نوع | الوصف
 :---|:---|:---
 alertIds | سلسلة قائمة&lt;&gt;| قائمة بمعرفات التنبيهات التي سيتم تحديثها. **مطلوب**
-حاله | سلسلة | تحديد الحالة المحدثة للتنبيهات المحددة. قيم الخاصية هي: "جديد" و"InProgress" و"تم الحل".
+حالة | سلسلة | تحديد الحالة المحدثة للتنبيهات المحددة. قيم الخاصية هي: "جديد" و"InProgress" و"تم الحل".
 معين إلى | سلسلة | مالك التنبيهات المحددة
 تصنيف | سلسلة | تحديد مواصفات التنبيهات المحددة. قيم الخاصية هي: "True positive" و"Informational, expected activity" و"False positive".
-تحديد | سلسلة | تحديد التنبيهات المحددة. قيم الخصائص هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+عزم | سلسلة | تحديد التنبيهات المحددة. قيم الخصائص هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 التعليق | سلسلة | تعليق لإضافته إلى التنبيهات المحددة.
 
 >[!NOTE]
@@ -103,7 +103,7 @@ alertIds | سلسلة قائمة&lt;&gt;| قائمة بمعرفات التنبي
 
 إذا نجحت هذه الطريقة، ترجع 200 موافق، مع نص استجابة فارغ.
 
-## <a name="example"></a>المثال
+## <a name="example"></a>مثل
 
 ### <a name="request"></a>طلب
 

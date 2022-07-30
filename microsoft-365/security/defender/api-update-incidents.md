@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059722"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100042"
 ---
 # <a name="update-incidents-api"></a>تحديث واجهة برمجة تطبيقات الأحداث
 
@@ -54,7 +54,7 @@ ms.locfileid: "67059722"
 
 أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [الوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender](api-access.md).
 
-نوع الإذن|اذن|اسم عرض الإذن
+نوع الإذن|إذن|اسم عرض الإذن
 ---|---|---
 Application|Incident.ReadWrite.All|قراءة وكتابة جميع الحوادث
 مفوض (حساب العمل أو المؤسسة التعليمية)|Incident.ReadWrite|أحداث القراءة والكتابة
@@ -72,21 +72,21 @@ PATCH /api/incidents/{id}
 
 الاسم|نوع|الوصف
 ---|---|---
-التخويل|سلسلة|حامل {token}. **مطلوب**.
+إذن|سلسلة|حامل {token}. **مطلوب**.
 نوع المحتوى|سلسلة|التطبيق/json. **مطلوب**.
 
 ## <a name="request-body"></a>نص الطلب
 
 في نص الطلب، قم بتوفير قيم الحقول التي يجب تحديثها. ستحافظ الخصائص الموجودة غير المضمنة في نص الطلب على قيمها، إلا إذا كان يجب إعادة حسابها بسبب التغييرات في القيم ذات الصلة. للحصول على أفضل أداء، يجب حذف القيم الموجودة التي لم تتغير.
 
-الخاصيه|نوع|الوصف
+مال|نوع|الوصف
 ---|---|---
-حاله|التعداد|تحديد الحالة الحالية للحادث. القيم المحتملة هي: `Active`و، `Resolved`و `Redirected`.
-معين إلى|سلسله|مالك الحادث.
-تصنيف|التعداد|مواصفات الحدث. القيم المحتملة هي: `Unknown`, , `TruePositive``FalsePositive`.
-تحديد|التعداد|تحديد تحديد الحادث. القيم المحتملة هي: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, , `SecurityTesting`, `Other``UnwantedSoftware`.
+حالة|قائمة تعداد|تحديد الحالة الحالية للحادث. القيم المحتملة هي: `Active`و، `Resolved`و `Redirected`.
+معين إلى|خيط|مالك الحادث.
+تصنيف|قائمة تعداد|مواصفات الحدث. القيم المحتملة هي: `Unknown`, , `TruePositive``FalsePositive`.
+عزم|قائمة تعداد|تحديد تحديد الحادث. القيم المحتملة هي: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, , `SecurityTesting`, `Other``UnwantedSoftware`.
 العلامات|قائمة السلاسل|قائمة بعلامات الحادث.
-التعليق|سلسله|تعليق لإضافته إلى الحدث.
+التعليق|خيط|تعليق لإضافته إلى الحدث.
 
 >[!NOTE]
 >حوالي 29 أغسطس 2022، سيتم إهمال قيم تحديد التنبيه المدعومة مسبقا ('Apt' و'SecurityPersonnel') ولن تعود متوفرة عبر واجهة برمجة التطبيقات.
@@ -95,7 +95,7 @@ PATCH /api/incidents/{id}
 
 إذا نجحت، يرجع `200 OK`هذا الأسلوب. سيحتوي نص الاستجابة على كيان الحادث بخصائص محدثة. إذا لم يتم العثور على حادث بالمعرف المحدد، فترجع `404 Not Found`الطريقة.
 
-## <a name="example"></a>المثال
+## <a name="example"></a>مثل
 
 ### <a name="request-example"></a>مثال على الطلب
 

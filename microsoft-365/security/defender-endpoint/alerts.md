@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059789"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099976"
 ---
 # <a name="alert-resource-type"></a>نوع مورد التنبيه
 
@@ -35,13 +35,13 @@ ms.locfileid: "67059789"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="methods"></a>اساليب
+## <a name="methods"></a>أساليب
 
 <br>
 
 ****
 
-|الاسلوب|نوع الإرجاع|الوصف|
+|أسلوب|نوع الإرجاع|الوصف|
 |---|---|---|
 |[الحصول على تنبيه](get-alert-info-by-id.md)|[تنبيه](alerts.md)|الحصول على كائن [تنبيه](alerts.md) واحد.|
 |[تنبيهات القائمة](get-alerts.md)|مجموعة [التنبيهات](alerts.md)|قائمة مجموعة [التنبيهات](alerts.md) .|
@@ -61,7 +61,7 @@ ms.locfileid: "67059789"
 
 ****
 
-|الخاصيه|نوع|الوصف|
+|مال|نوع|الوصف|
 |---|---|---|
 |id|سلسلة|معرف التنبيه.|
 |عنوان|سلسلة|عنوان التنبيه.|
@@ -78,11 +78,11 @@ ms.locfileid: "67059789"
 |rbacGroupName|سلسلة|اسم مجموعة أجهزة RBAC.|
 |mitreTechniques|سلسلة|معرف تقنية Mitre Enterprise.|
 |مستخدم ذي صلة|سلسلة|تفاصيل المستخدم المتعلقة بتنبيه معين.|
-|شده|التعداد|خطورة التنبيه. القيم المحتملة هي: "غير محدد"، و"معلوماتي"، و"منخفض"، و"متوسط" و"مرتفع".|
-|حاله|التعداد|تحديد الحالة الحالية للتنبيه. القيم المحتملة هي: "غير معروف" و"جديد" و"InProgress" و"تم الحل".|
+|شده|قائمة تعداد|خطورة التنبيه. القيم المحتملة هي: "غير محدد"، و"معلوماتي"، و"منخفض"، و"متوسط" و"مرتفع".|
+|حالة|قائمة تعداد|تحديد الحالة الحالية للتنبيه. القيم المحتملة هي: "غير معروف" و"جديد" و"InProgress" و"تم الحل".|
 |تصنيف|قائمة تعداد فارغة|مواصفات التنبيه. القيم المحتملة هي: 'غير معروف'، 'FalsePositive'، 'TruePositive'.|
-|تحديد|قائمة تعداد فارغة|يحدد تحديد التنبيه. القيم المحتملة هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
-|الفئه|سلسلة|فئة التنبيه.|
+|عزم|قائمة تعداد فارغة|يحدد تحديد التنبيه. القيم المحتملة هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|باب|سلسلة|فئة التنبيه.|
 |مصدر الكشف|سلسلة|مصدر الكشف.|
 |threatFamilyName|سلسلة|عائلة المخاطر.|
 |اسم التهديد|سلسلة|اسم التهديد.|
@@ -90,8 +90,8 @@ ms.locfileid: "67059789"
 |اسم الكمبيوتر|سلسلة|اسم [الجهاز](machine.md) المؤهل بالكامل.|
 |aadTenantId|سلسلة|معرف Azure Active Directory.|
 |معرف الكشف|سلسلة|معرف جهاز الكشف الذي قام بتشغيل التنبيه.|
-|تعليقات|قائمة تعليقات التنبيه|يحتوي كائن تعليق التنبيه على: سلسلة تعليق وسلسلة createdBy ووقت تاريخ createTime.|
-|الادله|قائمة بأدلة التنبيه|الأدلة المتعلقة بالتنبيه. راجع المثال أدناه.|
+|التعليقات|قائمة تعليقات التنبيه|يحتوي كائن تعليق التنبيه على: سلسلة تعليق وسلسلة createdBy ووقت تاريخ createTime.|
+|دليل|قائمة بأدلة التنبيه|الأدلة المتعلقة بالتنبيه. راجع المثال أدناه.|
 |
 
 >[!NOTE]

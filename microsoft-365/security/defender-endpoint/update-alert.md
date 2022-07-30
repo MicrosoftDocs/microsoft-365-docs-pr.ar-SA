@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 141f57f50b8400c0fdf2b40e9d8190be96b0fe1b
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: c015372c9f0fcf6cf0e25af1902af970e11156d0
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059788"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099107"
 ---
 # <a name="update-alert"></a>تحديث التنبيه
 
@@ -53,7 +53,7 @@ ms.locfileid: "67059788"
 
 أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-نوع الإذن|اذن|اسم عرض الإذن
+نوع الإذن|إذن|اسم عرض الإذن
 :---|:---|:---
 Application|Alerts.ReadWrite.All|"قراءة كافة التنبيهات وكتابتها"
 مفوض (حساب العمل أو المؤسسة التعليمية)|Alert.ReadWrite|"تنبيهات القراءة والكتابة"
@@ -74,7 +74,7 @@ PATCH /api/alerts/{id}
 
 الاسم|نوع|الوصف
 :---|:---|:---
-التخويل|سلسلة|حامل {token}. **مطلوب**.
+إذن|سلسلة|حامل {token}. **مطلوب**.
 نوع المحتوى|سلسلة|التطبيق/json. **مطلوب**.
 
 ## <a name="request-body"></a>نص الطلب
@@ -85,12 +85,12 @@ PATCH /api/alerts/{id}
 
 للحصول على أفضل أداء، يجب عدم تضمين القيم الموجودة التي لم تتغير.
 
-الخاصيه|نوع|الوصف
+مال|نوع|الوصف
 :---|:---|:---
-حاله|سلسلة|تحديد الحالة الحالية للتنبيه. قيم الخاصية هي: "جديد" و"InProgress" و"تم الحل".
+حالة|سلسلة|تحديد الحالة الحالية للتنبيه. قيم الخاصية هي: "جديد" و"InProgress" و"تم الحل".
 معين إلى|سلسلة|مالك التنبيه
 تصنيف|سلسلة|تحديد مواصفات التنبيه. قيم الخاصية هي: 'غير معروف'، 'FalsePositive'، 'TruePositive'.
-تحديد|سلسلة|يحدد تحديد التنبيه. قيم الخصائص هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+عزم|سلسلة|يحدد تحديد التنبيه. قيم الخصائص هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 التعليق|سلسلة|تعليق لإضافته إلى التنبيه.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ PATCH /api/alerts/{id}
 
 إذا نجحت، ترجع هذه الطريقة 200 OK، وكيان [التنبيه](alerts.md) في نص الاستجابة مع الخصائص المحدثة. إذا لم يتم العثور على تنبيه بالمعرف المحدد - 404 لم يتم العثور عليه.
 
-## <a name="example"></a>المثال
+## <a name="example"></a>مثل
 
 ### <a name="request"></a>طلب
 

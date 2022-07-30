@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6fa5ebe413baef991b412cd44d90239bfb72b0e2
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493938"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099030"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>استثناءات الملفات والمجلدات السياقية
 
@@ -43,21 +43,21 @@ ms.locfileid: "66493938"
 
 عادة ما يتم تطبيق القيود عن طريق إضافة نوع التقييد إلى مسار استثناء الملف أو المجلد.  
 
-| تقييد | Typename | قيمه |
+| تقييد | اسم النوع | قيمة |
 |:---|:---|:---|
-| ملف/مجلد  | نوع المسار  | ملف <br> المجلد |
-| نوع الفحص | نوع الفحص | سريعه <br> الكامل |
+| ملف/مجلد  | نوع المسار  | ملف <br> مجلد |
+| نوع الفحص | نوع الفحص | سريع <br> كامل |
 | مشغل الفحص | ScanTrigger | OnDemand <br> OnAccess <br> BM |
-| عمليه | عمليه | "<image_path>" |
+| عملية | عملية | "<image_path>" |
 
-### <a name="requirements"></a>الاحتياجات
+### <a name="requirements"></a>المتطلبات
 
 تتطلب هذه الإمكانية برنامج الحماية من الفيروسات لـ Windows Defender:
 
 - النظام الأساسي: **4.18.2205.7** أو أحدث
 - المحرك: **1.1.19300.2** أو أحدث
 
-### <a name="syntax"></a>بناء الجمله
+### <a name="syntax"></a>إعراب
 
 كنقطة بداية، قد يكون لديك بالفعل استثناءات ترغب في جعلها أكثر تحديدا. لتكوين سلسلة الاستبعاد، قم أولا بتعريف المسار إلى الملف أو المجلد المطلوب استبعاده، ثم أضف اسم النوع والقيمة المقترنة، كما هو موضح في المثال التالي.
 
@@ -73,11 +73,11 @@ ms.locfileid: "66493938"
 
 تستثني السلسلة التالية "c:\documents\design.doc" فقط إذا تم مسحها ضوئيا (عند الوصول) بسبب الوصول إليها من خلال عملية تحمل اسم الصورة "winword.exe":
 
-`c:\documents\design.doc\:{Process:”winword.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe"}`
 
 قد يحتوي مسار صورة العملية على أحرف بدل، كما في المثال التالي:
 
-`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
+`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### <a name="filefolder-restriction"></a>تقييد الملف/المجلد
 
@@ -146,7 +146,7 @@ ms.locfileid: "66493938"
 
 لاستبعاد ملف أو مجلد فقط عند الوصول إليه بواسطة عملية معينة، قم بإنشاء استثناء ملف أو مجلد عادي وأضف العملية لتقييد الاستبعاد إلى:  
 
-`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
 
 ### <a name="how-to-configure"></a>كيفية التكوين
 

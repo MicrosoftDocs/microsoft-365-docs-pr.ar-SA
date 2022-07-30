@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554214"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099981"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>أجهزة التجهيز وتكوين Microsoft Defender لنقطة النهاية
 
@@ -42,6 +42,18 @@ ms.locfileid: "66554214"
 
 :::image type="content" source="images/deployment-steps.png" alt-text="عملية الإلحاق والتكوين" lightbox="images/deployment-steps.png":::
 
+## <a name="role-based-access-control"></a>عنصر تحكم الوصول المستند إلى الدور
+
+نوصي باستخدام إدارة الهويات المتميزة لإدارة أدوارك لتوفير تدقيق إضافي والتحكم ومراجعة صلاحية الوصول للمستخدمين الذين لديهم أذونات الدليل.
+
+يدعم Defender لنقطة النهاية طريقتين لإدارة الأذونات:
+
+- **إدارة الأذونات الأساسية**: تعيين الأذونات إما للوصول الكامل أو للقراءة فقط. يمكن للمستخدمين الذين لديهم أدوار مسؤول عمومي أو مسؤول أمان في Azure Active Directory (Azure AD) الوصول الكامل. دور قارئ الأمان لديه حق الوصول للقراءة فقط ولا يمنح حق الوصول لعرض مخزون الأجهزة/الأجهزة.
+
+- **التحكم في الوصول استنادا إلى الدور (RBAC):** تعيين الأذونات الدقيقة عن طريق تحديد الأدوار، وتعيين Azure AD مجموعات المستخدمين للأدوار، ومنح مجموعات المستخدمين حق الوصول إلى مجموعات الأجهزة. لمزيد من المعلومات. راجع [إدارة الوصول إلى المدخل باستخدام التحكم في الوصول استنادا إلى الدور](rbac.md).
+
+نوصي بالاستفادة من التحكم في الوصول استنادا إلى الدور للتأكد من أن المستخدمين الذين لديهم مبررات عمل فقط يمكنهم الوصول إلى Defender لنقطة النهاية.
+
 ## <a name="onboard-devices-to-the-service"></a>إلحاق الأجهزة للخدمة
 ستحتاج إلى الانتقال إلى قسم الإلحاق في مدخل Defender لنقطة النهاية لإلحاق أي من الأجهزة المدعومة. اعتمادا على الجهاز، سيتم إرشادك بالخطوات المناسبة وتوفير خيارات أداة الإدارة والتوزيع المناسبة للجهاز. 
 
@@ -61,7 +73,7 @@ ms.locfileid: "66554214"
 |--------------|------------------------------------------|
 | **عميل Windows**  |     [إدارة الجهاز الجوال / Microsoft Intune](configure-endpoints-mdm.md) <br> [نهج المجموعة](configure-endpoints-gp.md) <br> [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>[البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
 | **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **ماك**    | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md) |
+| **macOS**    | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md) |
 | **Linux Server** | [البرنامج النصي المحلي](linux-install-manually.md) <br> [دميه](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
 | **دائره الرقابه الداخليه**      | [إدارة نقاط النهاية من Microsoft](ios-install.md)           |
 | **الروبوت**  | [إدارة نقاط النهاية من Microsoft](android-intune.md)            | 
@@ -77,7 +89,7 @@ ms.locfileid: "66554214"
 
 بعد إلحاق الأجهزة، ستحتاج بعد ذلك إلى تكوين القدرات الأخرى للخدمة. يسرد الجدول التالي القدرات التي يمكنك تكوينها للحصول على أفضل حماية للبيئة الخاصة بك.
 
-| القدره | الوصف |
+| تمكن | الوصف |
 |-|-|
 | [تكوين إدارة الثغرات الأمنية & المخاطر (TVM)](tvm-prerequisites.md) | تعد إدارة الثغرات الأمنية & المخاطر أحد مكونات Microsoft Defender لنقطة النهاية، وتوفر لمسؤولي الأمان وفرق عمليات الأمان قيمة فريدة، بما في ذلك: <br><br> - نتائج تحليلات الكشف عن نقاط النهاية والاستجابة لها (EDR) في الوقت الحقيقي المرتبطة بنقاط الضعف في نقطة النهاية. <br><br> - سياق الثغرة الأمنية للجهاز لا يقدر بثمن في أثناء التحقيقات في الحوادث. <br><br> - عمليات المعالجة المضمنة من خلال Microsoft Intune وMicrosoft System Center Configuration Manager.  |
 | [تكوين حماية الجيل التالي (NGP)](configure-microsoft-defender-antivirus-features.md) | برنامج الحماية من الفيروسات من Microsoft Defender هو حل مضمن لمكافحة البرامج الضارة يوفر حماية الجيل التالي لأجهزة سطح المكتب وأجهزة الكمبيوتر المحمولة والخوادم. يتضمن برنامج الحماية من الفيروسات من Microsoft Defender ما يلي:<br> <br>-الحماية المقدمة من السحابة للكشف شبه الفوري ومنع التهديدات الجديدة والناشئة. جنبا إلى جنب مع التعلم الآلي و Intelligent Security Graph، تعد الحماية المقدمة من السحابة جزءا من تقنيات الجيل التالي التي تدعم برنامج الحماية من الفيروسات من Microsoft Defender.<br> <br> - المسح الضوئي دائما باستخدام مراقبة متقدمة لسلوك الملفات والعمليات وغيرها من الأساليب الاستباقية (المعروفة أيضا باسم "الحماية في الوقت الحقيقي").<br><br> - تحديثات الحماية المخصصة المستندة إلى التعلم الآلي وتحليل البيانات الضخمة البشرية والآلية والبحث المتعمق في مقاومة التهديدات. |
@@ -99,7 +111,7 @@ ms.locfileid: "66554214"
 |الحماية من العبث بالبيانات     |        Y   |    Y     |     Y    |    Y    |    Y   |
 |حماية الويب     |       Y   |    Y     |     Y    |    Y    |    Y   |
 |||||||
-|**الكشف عن**     |         |         |         |||
+|**الكشف**     |         |         |         |||
 |التتبع المتقدم     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |مؤشرات الملفات المخصصة     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |مؤشرات الشبكة المخصصة     |      Y   |    Y     |     Y    |    Y    |    Y   |

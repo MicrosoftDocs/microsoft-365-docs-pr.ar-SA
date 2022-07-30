@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2d6ca7dad014279c5a30e5150d9df659381bf2d1
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 0bc2940bc45a4090a4e1a5399ff1c4493326d050
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66858073"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100108"
 ---
 # <a name="managers---get-your-team-started-with-microsoft-365-for-frontline-workers"></a>المديرون - بدء فريقك باستخدام Microsoft 365 للعاملين في الخطوط الأمامية
 
@@ -32,7 +32,7 @@ ms.locfileid: "66858073"
 |[تمكين الاتصال السريع](#enable-quick-communication) |ساعد فريق الخطوط الأمامية على البقاء على اتصال. |الدردشات و Walkie Talkie |
 |[إدارة جداول الخطوط الأمامية والوقت والحضور](#manage-frontline-schedules-time-and-attendance) |قم بإعداد جدول يمكنك إدارته في Teams. |التحولات |
 |[إدارة عناصر العمل](#manage-work-items) |استخدم تطبيقات Teams وMicrosoft 365 لتعيين عناصر العمل وتعقبها. |المهام والقوائم والموافقات التحديثات |
-|[تعزيز الاتصالات وتعزيز المعنويات](#foster-connections-and-boost-morale-with-praise) |أرسل المديح إلى أعضاء فريقك لمساعدتهم على الشعور بالتقدير. |الثناء |
+|[تعزيز الاتصالات وتعزيز المعنويات](#foster-connections-and-boost-morale-with-praise) |أرسل المديح إلى أعضاء فريقك لمساعدتهم على الشعور بالتقدير. |مدح |
 
 يتم تضمين التطبيقات التي تدعم هذه القدرات في Teams ومعظمها جاهز للاستخدام على الفور. ستحتاج إلى إضافته إلى فريقك أو إعداده قبل أن تصبح جاهزا لاستخدامه. بالإضافة إلى ذلك، يتم تثبيت معظم هذه التطبيقات بشكل افتراضي، مما يعني أن أعضاء فريق الواجهة الأمامية سيرونها بشكل افتراضي في شريط التطبيقات، وهو الشريط الموجود أسفل عملاء Teams للأجهزة المحمولة (iOS وAndroid) وعلى جانب عميل سطح المكتب في Teams. يمكنك دائما إضافة تطبيقات غير مثبتة بناء على احتياجاتك. [تعرف على كيفية إضافة تطبيقات في Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
@@ -55,7 +55,7 @@ ms.locfileid: "66858073"
 
 ### <a name="chats"></a>الدردشات
 
-تسمح دردشة Teams لأعضاء القوى العاملة في الواجهة الأمامية بالاتصال بسلاسة دون الحاجة إلى استخدام تطبيقات المراسلة الشخصية الخاصة بهم. [Mer informasjon حول الدردشات](https://support.microsoft.com/office/first-things-to-know-about-chats-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2).
+تسمح دردشة Teams لأعضاء القوى العاملة في الواجهة الأمامية بالاتصال بسلاسة دون الحاجة إلى استخدام تطبيقات المراسلة الشخصية الخاصة بهم. [تعرف على المزيد حول الدردشات](https://support.microsoft.com/office/first-things-to-know-about-chats-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2).
 
 ### <a name="activity"></a>Activity
 
@@ -78,7 +78,7 @@ ms.locfileid: "66858073"
 
 شاهد [هذا الفيديو](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) لمعرفة المزيد حول إنشاء جداول زمنية في الورديات.
 
-إذا كانت مؤسستك تستخدم بالفعل نظام إدارة القوى العاملة للجدولة، يمكن لفريق تكنولوجيا المعلومات دمجه مع Teams لسحب جميع جداولك إلى الورديات. في الوقت الحالي، يمكن ل Shifts التكامل مع أنظمة إدارة القوى العاملة في Blue Yonder و Reflexis. [Mer informasjon حول ربط نظام إدارة القوى العاملة.](shifts-connectors.md)
+إذا كانت مؤسستك تستخدم بالفعل نظام إدارة القوى العاملة للجدولة، يمكن لفريق تكنولوجيا المعلومات دمجه مع Teams لسحب جميع جداولك إلى الورديات. في الوقت الحالي، يمكن ل Shifts التكامل مع أنظمة إدارة القوى العاملة في Blue Yonder و Reflexis. [تعرف على المزيد حول ربط نظام إدارة القوى العاملة.](shifts-connectors.md)
 
 ## <a name="manage-work-items"></a>إدارة عناصر العمل
 
@@ -120,9 +120,9 @@ ms.locfileid: "66858073"
 7. إذا كان القالب يبدو جيدا لك، فاختر **"نشر**".
 8. سيتمكن أعضاء فريقك الآن من إرسال طلبات الموافقة من القالب الذي أنشأته.
 
-[Mer informasjon حول إنشاء قوالب لفريقك في الموافقات](https://support.microsoft.com/office/discover-templates-in-approvals-c33ecf9f-b745-4287-b104-ac69469745e0).
+[تعرف على المزيد حول إنشاء قوالب لفريقك في الموافقات](https://support.microsoft.com/office/discover-templates-in-approvals-c33ecf9f-b745-4287-b104-ac69469745e0).
 
-### <a name="lists"></a>قوائم
+### <a name="lists"></a>القوائم
 
 يساعدك تطبيق القوائم على تعقب المعلومات وتنظيم العمل. يمكنك أنت وفريقك إنشاء قوائم للمخزون وطلبات العملاء واحتياجات الإمدادات والمزيد.
 

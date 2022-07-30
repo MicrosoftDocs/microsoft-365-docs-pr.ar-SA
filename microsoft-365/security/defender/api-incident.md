@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: bd8c98d533fd5186285a099b4991d527a6302274
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059723"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100064"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>واجهة برمجة تطبيقات أحداث Microsoft 365 Defender ونوع مورد الحوادث
 
@@ -51,13 +51,13 @@ ms.locfileid: "67059723"
 
 تتطلب واجهة برمجة تطبيقات الحوادث أنواعا مختلفة من الأذونات لكل أسلوب من أساليبها. لمزيد من المعلومات حول الأذونات المطلوبة، راجع مقالة الأسلوب المعني.
 
-## <a name="methods"></a>اساليب
+## <a name="methods"></a>أساليب
 
-الاسلوب | نوع الإرجاع | الوصف
+أسلوب | نوع الإرجاع | الوصف
 -|-|-
 [سرد الأحداث](api-list-incidents.md) | قائمة [الحوادث](api-incident.md) | الحصول على قائمة بالحوادث.
-[حدث التحديث](api-update-incidents.md) | [الحادث](api-incident.md) | تحديث حدث معين.
-[الحصول على حادث](api-get-incident.md) | [الحادث](api-incident.md) | احصل على حادث واحد.
+[حدث التحديث](api-update-incidents.md) | [حادث](api-incident.md) | تحديث حدث معين.
+[الحصول على حادث](api-get-incident.md) | [حادث](api-incident.md) | احصل على حادث واحد.
 
 ## <a name="request-body-response-and-examples"></a>نص الطلب والاستجابة والأمثلة
 
@@ -65,20 +65,20 @@ ms.locfileid: "67059723"
 
 ## <a name="common-properties"></a>الخصائص الشائعة
 
-الخاصيه | نوع | الوصف
+مال | نوع | الوصف
 -|-|-
-معرف الحدث | طويله | معرف فريد للحدث.
+معرف الحدث | طويل | معرف فريد للحدث.
 redirectIncidentId | قيمة خالية طويلة | معرف الحدث الذي تم دمج الحدث الحالي فيه.
-اسم الحدث | سلسله | اسم الحدث.
+اسم الحدث | خيط | اسم الحدث.
 createdTime | DateTimeOffset | التاريخ والوقت (في UTC) تم إنشاء الحدث.
 lastUpdateTime | DateTimeOffset | التاريخ والوقت (في UTC) الذي تم فيه آخر تحديث للحدث.
-معين إلى | سلسله | مالك الحدث.
-شده | التعداد | خطورة الحدث. القيم المحتملة هي: ```UnSpecified```و، ```Informational```و، ```Low```و، ```Medium```و ```High```.
-حاله | التعداد | تحديد الحالة الحالية للحادث. القيم المحتملة هي: ```Active```و، ```InProgress```و، ```Resolved```و ```Redirected```.
-تصنيف | التعداد | مواصفات الحدث. القيم المحتملة هي: ```Unknown```, , ```TruePositive``````FalsePositive```.
-تحديد | التعداد | تحديد تحديد الحادث. القيم المحتملة هي: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, , ```SecurityTesting```, ```Other``````UnwantedSoftware```.
+معين إلى | خيط | مالك الحدث.
+شده | قائمة تعداد | خطورة الحدث. القيم المحتملة هي: ```UnSpecified```و، ```Informational```و، ```Low```و، ```Medium```و ```High```.
+حالة | قائمة تعداد | تحديد الحالة الحالية للحادث. القيم المحتملة هي: ```Active```و، ```InProgress```و، ```Resolved```و ```Redirected```.
+تصنيف | قائمة تعداد | مواصفات الحدث. القيم المحتملة هي: ```Unknown```, , ```TruePositive``````FalsePositive```.
+عزم | قائمة تعداد | تحديد تحديد الحادث. القيم المحتملة هي: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, , ```SecurityTesting```, ```Other``````UnwantedSoftware```.
 العلامات | قائمة السلاسل | قائمة بعلامات الحادث.
-تعليقات | قائمة تعليقات الحوادث | يحتوي كائن تعليق الحدث على: سلسلة تعليق وسلسلة createdBy ووقت تاريخ createTime.
+التعليقات | قائمة تعليقات الحوادث | يحتوي كائن تعليق الحدث على: سلسلة تعليق وسلسلة createdBy ووقت تاريخ createTime.
 تنبيهات | قائمة التنبيهات | قائمة التنبيهات ذات الصلة. راجع الأمثلة في وثائق واجهة [برمجة تطبيقات أحداث القائمة](api-list-incidents.md) .
 
 >[!NOTE]
