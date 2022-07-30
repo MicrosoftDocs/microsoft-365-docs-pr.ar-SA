@@ -326,7 +326,7 @@
               href: named-entities-learn.md
         - name: بدء استخدام نوع المعلومات الحساسة
           items:
-            - name: إنشاء أنواع معلومات حساسة مخصصة - مركز التوافق
+            - name: إنشاء نوع معلومات حساسة مخصص - مركز التوافق
               href: create-a-custom-sensitive-information-type.md
             - name: بدء استخدام أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -1020,6 +1020,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: تكوين تسمية حساسية افتراضية لمكتبات SharePoint
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: تمكين التأليف المشترك للمستندات المشفرة بواسطة تسميات الحساسية
           href: sensitivity-labels-coauthoring.md
         - name: تعيين نوع ارتباط المشاركة الافتراضي باستخدام تسميات الحساسية

@@ -278,6 +278,7 @@
 ##### [تمكين الحماية من استغلال](enable-exploit-protection.md)
 ##### [تخصيص الحماية من استغلال](customize-exploit-protection.md)
 ##### [استيراد تكوينات الحماية من الاستغلال وتصديرها ونشرها](import-export-exploit-protection-emet-xml.md)
+##### [استكشاف أخطاء عمليات تقليل المخاطر من الحماية من الهجمات وإصلاحها](troubleshoot-exploit-protection-mitigations.md)
 ##### [مرجع الحماية من استغلال](exploit-protection-reference.md)
 #### [حماية الشبكة]()
 ##### [حماية الشبكة](network-protection.md)

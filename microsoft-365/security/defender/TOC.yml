@@ -477,6 +477,8 @@
                   href: ../intelligence/macro-malware.md
                 - name: التصيّد الاحتيالي
                   href: ../intelligence/phishing.md
+                - name: اتجاهات التصيد الاحتيالي وتقنياته
+                  href: ../intelligence/phishing-trends.md
                 - name: برامج الفدية الضارة
                   href: /security/compass/human-operated-ransomware
                 - name: Rootkits
@@ -487,6 +489,8 @@
                   href: ../intelligence/support-scams.md
                 - name: حصان طروادة
                   href: ../intelligence/trojans-malware.md
+                - name: استكشاف أخطاء مدخل MSI التي يسببها منع بواسطة المسؤول وإصلاحها
+                  href: ../intelligence/portal-submission-troubleshooting.md
                 - name: البرامج غير المرغوب فيها
                   href: ../intelligence/unwanted-software.md
                 - name: فيروسات متنقلة
