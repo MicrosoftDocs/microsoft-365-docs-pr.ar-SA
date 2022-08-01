@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: b710fe78c141cd1f2c0b4461ded6e3f485276616
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 35ab846810c4cef2fdd87563bda3f69a7a5f73f9
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66857573"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107184"
 ---
 # <a name="assess-the-impact-of-security-configuration-changes-with-explorer"></a>تقييم تأثير تغييرات تكوين الأمان باستخدام Explorer
 
@@ -64,4 +64,4 @@ ms.locfileid: "66857573"
 
 يمكنك أيضا إدارة مشكلات مصادقة البريد الإلكتروني باستخدام التحليل [الذكي المخادعة للانتحال](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence)
 
-Mer informasjon حول [مصادقة البريد الإلكتروني لمصادقة البريد الإلكتروني في Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)
+تعرف على المزيد حول [مصادقة البريد الإلكتروني لمصادقة البريد الإلكتروني في Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)

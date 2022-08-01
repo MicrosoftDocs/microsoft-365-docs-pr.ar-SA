@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 36e3fe25444f57de4cd43d67cab5a99f546a0f13
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 1225f7d3f731ee7791808e4442497511078b150e
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66857572"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106986"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>نشر الوظيفة الإضافية لرسالة التقرير وتكوينها للمستخدمين.
 
@@ -72,6 +72,6 @@ ms.locfileid: "66857572"
 
 
 ### <a name="further-reading"></a>قراءة إضافية
-Mer informasjon حول إعدادات الرسائل التي [أبلغ عنها المستخدم لإعدادات الرسائل - Office 365 | Microsoftova dokumentacija](../user-submission.md)
+تعرف على المزيد حول إعدادات الرسائل التي [أبلغ عنها المستخدم لإعدادات الرسائل - Office 365 | Microsoft Docs](../user-submission.md)
 
-تمكين وظيفة التصيد الاحتيالي لرسالة التقرير أو التقرير [- Office 365 | Microsoftova dokumentacija](../enable-the-report-message-add-in.md)
+تمكين وظيفة التصيد الاحتيالي لرسالة التقرير أو التقرير [- Office 365 | Microsoft Docs](../enable-the-report-message-add-in.md)

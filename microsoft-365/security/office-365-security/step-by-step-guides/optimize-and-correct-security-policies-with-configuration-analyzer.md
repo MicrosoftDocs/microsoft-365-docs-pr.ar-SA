@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 765eaffd2f57687c0ee16ace30aff97ddd91462c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 2c1318d685b38332f011d1e56dfb0dd394cc990c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042157"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106350"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>تحسين نُهج الأمان وتصحيحها باستخدام محلل التكوين
 
@@ -36,7 +36,7 @@ ms.locfileid: "66042157"
 ## <a name="compare-settings-and-apply-recommendations"></a>مقارنة الإعدادات وتطبيق التوصيات
 1. انتقل إلى [https://security.microsoft.com/configurationAnalyzer](https://security.microsoft.com/configurationAnalyzer).
 1. اختر **إما توصيات قياسية** أو **توصيات صارمة** من القائمة العلوية استنادا إلى المقارنة جنبا إلى جنب التي تريد إجراؤها.
-1. سيتم عرض التوصيات لتغييرات النهج. (إذا كان ذلك ممكنا)
+1. سيتم عرض توصيات تغييرات النهج. (إذا كان ذلك ممكنا)
 1. يمكنك بعد ذلك تحديد توصية، ولاحظ الإجراء الموصى به، والنهج الذي تنطبق عليه التوصية، وتعيين الاسم & التكوين الحالي وما إلى ذلك.
 1. مع تحديد توصية، يمكنك الضغط **على تطبيق التوصية** ثم **موافق** على رسالة التأكيد التي تظهر.
 1. إذا كنت ترغب في تحرير نهج يدويا، أو تأكيد الإعدادات مباشرة داخل النهج، يمكنك الضغط على **نهج View** بدلا من **تطبيق التوصية** التي ستقوم بتحميل علامة تبويب جديدة واصطحابك مباشرة إلى النهج المتأثر للسهولة.

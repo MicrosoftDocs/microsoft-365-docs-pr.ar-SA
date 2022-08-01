@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043666"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106942"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>كيفية تكوين أذونات ونُهج العزل
 
@@ -50,7 +50,7 @@ ms.locfileid: "66043666"
 
 بمجرد تحديد فئات العناصر التي يمكن للمستخدمين فرزها أو عدم فرزها، وإنشاء نهج العزل المقابلة، يجب على المسؤولين تعيين هذه النهج للمستخدمين المعنيين وتمكين الإعلامات.
 
-1. حدد المستخدمين أو المجموعات أو المجالات التي تريد تضمينها في فئة *الوصول الكامل* مقابل فئة *الوصول المحدود* ، مقابل فئة *المسؤول فقط* .
+1. حدد المستخدمين أو المجموعات أو المجالات التي تريد تضمينها في فئة *الوصول الكامل* مقابل فئة *الوصول المحدود*، مقابل فئة *مسؤول فقط*.
 1. سجل الدخول إلى مدخل [Microsoft Security](https://security.microsoft.com).
 1. حدد **قواعد &** نهج التعاون  > **& البريد الإلكتروني**.
 1. حدد **نهج التهديد**.
@@ -59,10 +59,10 @@ ms.locfileid: "66043666"
 1. أضف اسم النهج أو المستخدمين أو المجموعات أو المجالات لتطبيق النهج عليها **والتالي**.
 1. في علامة التبويب **"إجراءات** "، حدد **رسالة العزل** للفئات. ستلاحظ لوحة إضافية *لتحديد نهج العزل*، استخدم هذه القائمة المنسدلة لتحديد نهج العزل الذي أنشأته سابقا.
 1. انتقل إلى المقطع **"مراجعة** " وانقر فوق الزر **"تأكيد"** لإنشاء النهج الجديد.
-1. كرر هذه الخطوات نفسها للنهج الأخرى: **نهج مكافحة التصيد الاحتيالي** **ونهج مكافحة البرامج الضارة** **ونهج المرفقات خزينة**.
+1. كرر هذه الخطوات نفسها للنهج الأخرى: **نهج مكافحة التصيد الاحتيالي** **ونهج مكافحة البرامج الضارة** **ونهج المرفق الآمن**.
 
 > [!TIP]
-> لمزيد من المعلومات التفصيلية حول ما تعلمته حتى الآن، راجع [تكوين نهج تصفية البريد العشوائي - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoft Docs [تكوين نهج مكافحة التصيد الاحتيالي في EOP - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoft Docs [تهيئة نهج مكافحة البرامج الضارة - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoft Docs [إعداد نهج المرفقات خزينة في Microsoft Defender لـ Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
+> لمزيد من المعلومات التفصيلية حول ما تعلمته حتى الآن، راجع [تكوين نهج تصفية البريد العشوائي - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoft Docs [تكوين نهج مكافحة التصيد الاحتيالي في EOP - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoft Docs [تهيئة نهج مكافحة البرامج الضارة - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoft Docs [إعداد نهج المرفقات الآمنة في Microsoft Defender لـ Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
 
 ## <a name="next-steps"></a>الخطوات التالية
 

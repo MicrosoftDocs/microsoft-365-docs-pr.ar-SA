@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490221"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106744"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>استضافة تقارير جدار الحماية في Microsoft Defender لنقطة النهاية
 
@@ -36,7 +36,7 @@ ms.locfileid: "66490221"
 
 - يجب أن تكون قيد التشغيل Windows 10 أو Windows 11 أو Windows Server 2019 أو Windows Server 2022.
 - لإلحاق الأجهزة بخدمة Microsoft Defender لنقطة النهاية، راجع [هنا](onboard-configure.md).
-- لكي يبدأ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> في تلقي البيانات، يجب تمكين **"أحداث التدقيق**" جدار حماية Windows Defender مع الأمان المتقدم:
+- لكي يبدأ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> في تلقي البيانات، يجب تمكين **أحداث التدقيق** لجدار حماية Windows Defender باستخدام الأمان المتقدم:
   - [إفلات حزمة النظام الأساسي لتصفية التدقيق](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [تدقيق تصفية اتصال النظام الأساسي](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - قم بتمكين هذه الأحداث باستخدام محرر عناصر نهج المجموعة أو نهج الأمان المحلي أو أوامر auditpol.exe. لمزيد من المعلومات، راجع [هنا](/windows/win32/fwp/auditing-and-logging).
@@ -94,8 +94,6 @@ catch {
    - قد يستغرق الأمر ما يصل إلى 12 ساعة قبل أن تنعكس البيانات.
 
 ## <a name="supported-scenarios"></a>السيناريوهات المدعومة
-
-يتم دعم السيناريوهات التالية أثناء معاينة Ring0:
 
 - [تقارير جدار الحماية](#firewall-reporting)
 - [من "أجهزة الكمبيوتر ذات الاتصال المحظور" إلى الجهاز](#from-computers-with-a-blocked-connection-to-device)

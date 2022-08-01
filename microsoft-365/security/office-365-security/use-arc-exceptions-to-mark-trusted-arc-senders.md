@@ -18,12 +18,12 @@ ms.custom:
 description: سلسلة الاستلام المصادق عليها (ARC) هي مصادقة البريد الإلكتروني التي تحاول الحفاظ على نتائج المصادقة عبر الأجهزة وأي تدفقات بريد غير مباشرة تأتي بين المرسل والمستلم. فيما يلي كيفية إجراء استثناءات لمرسلي ARC الموثوق بهم.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059634"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107294"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>إنشاء قائمة بمرسلي ARC الموثوق بهم للوثوث بتدفقات البريد غير المباشرة *المشروعة*
 
@@ -114,7 +114,7 @@ header.from=contoso.com;compauth=pass reason=130
 ``
 Set-ArcConfig -Identity default -ArcTrustedSealers {a list of arc signing domains split by comma}
 ``
-</br>او</br>
+</br>أو</br>
 ``
 Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list of arc signing domains split by comma}
 ``
@@ -124,7 +124,7 @@ Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list
 </br>
 ``
 Get-ArcConfig
-`` او ``
+`` أو ``
 Get-ArcConfig - Organization {tenant name}
 ``
 

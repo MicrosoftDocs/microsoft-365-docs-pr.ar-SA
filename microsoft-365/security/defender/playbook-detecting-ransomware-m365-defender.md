@@ -12,12 +12,12 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a3a1d48ab9876215e2034279d036705bf4e1972
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "66857333"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107074"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>الكشف عن هجمات برامج الفدية الضارة التي يديرها الإنسان باستخدام Microsoft 365 Defender
 
@@ -152,7 +152,7 @@ ms.locfileid: "66857333"
 فئة الارتفاع        |مصدر الإشارة                 |بوابات أمان بديلة
 |:---                    |:---                              |:---
 عمليات تسجيل الدخول: العديد من المحاولات الفاشلة، ومحاولات تسجيل الدخول إلى أجهزة متعددة في فترة قصيرة، وتسجيلات دخول متعددة لأول مرة، وما إلى ذلك. |Azure AD Identity Protection عبر Defender for Cloud Apps، Microsoft Defender for Identity |Defender for Cloud Apps
-حساب المستخدم النشط مؤخرا، المجموعة، حساب الجهاز، التطبيق |Azure AD Identity Protection عبر Defender for Cloud Apps (Azure AD)، و Defender for Identity (Active Directory 域服务 [AD DS]) |Defender for Cloud Apps
+حساب المستخدم النشط مؤخرا، المجموعة، حساب الجهاز، التطبيق |Azure AD Identity Protection عبر Defender for Cloud Apps (Azure AD)، و Defender for Identity (خدمات مجال Active Directory [AD DS]) |Defender for Cloud Apps
 نشاط التطبيق الأخير مثل الوصول إلى البيانات |التطبيقات مع Defender for Cloud Apps مع الوظيفة الإضافية لحوكمة التطبيقات |Defender for Cloud Apps
 
 #### <a name="new-activity"></a>نشاط جديد
@@ -239,7 +239,7 @@ Activity     |مصدر الإشارة           |مدخل أمان بديل
 
 ### <a name="microsoft-365-defender-apis"></a>واجهات برمجة تطبيقات Microsoft 365 Defender
 
-يمكنك أيضا استخدام واجهات برمجة التطبيقات Microsoft 365 Defender للاستعلام عن الحوادث Microsoft 365 Defender وبيانات التنبيهات في المستأجر الخاص بك. يمكن للتطبيق المخصص تصفية البيانات وتصفيتها استنادا إلى الإعدادات المخصصة، ثم توفير قائمة تمت تصفيتها من الارتباطات إلى التنبيهات والحوادث التي يمكنك تحديدها بسهولة للانتقال مباشرة إلى هذا التنبيه أو الحدث. راجع [List incidents API في Microsoft 365 Defender | Microsoftova dokumentacija](/api-list-incidents.md). يمكنك أيضا دمج SIEM مع Microsoft Defender، راجع [دمج أدوات SIEM مع Microsoft 365 Defender](/configure-siem-defender.md).
+يمكنك أيضا استخدام واجهات برمجة التطبيقات Microsoft 365 Defender للاستعلام عن الحوادث Microsoft 365 Defender وبيانات التنبيهات في المستأجر الخاص بك. يمكن للتطبيق المخصص تصفية البيانات وتصفيتها استنادا إلى الإعدادات المخصصة، ثم توفير قائمة تمت تصفيتها من الارتباطات إلى التنبيهات والحوادث التي يمكنك تحديدها بسهولة للانتقال مباشرة إلى هذا التنبيه أو الحدث. راجع [List incidents API في Microsoft 365 Defender | Microsoft Docs](/api-list-incidents.md). يمكنك أيضا دمج SIEM مع Microsoft Defender، راجع [دمج أدوات SIEM مع Microsoft 365 Defender](/configure-siem-defender.md).
 
 ### <a name="microsoft-365-defender-sentinel-integration"></a>تكامل Microsoft 365 Defender Sentinel
 

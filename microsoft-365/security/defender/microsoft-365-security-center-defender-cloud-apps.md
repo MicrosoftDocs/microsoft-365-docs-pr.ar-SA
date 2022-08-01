@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: eaa2a775fb5728ed07ce172b8c128d7b9d8b0dc5
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051217"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106263"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps في Microsoft 365 Defender (معاينة)
 

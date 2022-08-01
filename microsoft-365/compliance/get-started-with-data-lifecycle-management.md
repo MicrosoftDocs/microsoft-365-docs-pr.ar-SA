@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: خطوات توجيهية للمسؤولين ومتطلبات الترخيص والسيناريوهات الشائعة التي تدير دورة حياة بيانات مؤسستك.
-ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942373"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105978"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>بدء استخدام إدارة دورة حياة البيانات
 
@@ -57,7 +57,7 @@ ms.locfileid: "66942373"
 
 يدعم عدد من الاشتراكات المختلفة قدرات إدارة دورة حياة البيانات.
 
-للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات Microsoft Purview، راجع [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على الميزات المدرجة في هذه الصفحة، راجع قسم [إدارة دورة البيانات في Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) [وتنزيل PDF](https://go.microsoft.com/fwlink/?linkid=2139145) ذي الصلة لمتطلبات الترخيص على مستوى الميزات.
+للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات Microsoft Purview، راجع [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على الميزات المدرجة في هذه الصفحة، راجع قسم [إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) لمتطلبات الترخيص على مستوى الميزة.
 
 ## <a name="permissions"></a>الأذونات
 
@@ -79,7 +79,7 @@ ms.locfileid: "66942373"
 
 استخدم الجدول التالي لمساعدتك على تعيين متطلبات عملك إلى السيناريوهات الأكثر شيوعا لإدارة دورة حياة البيانات.
 
-|أريد...|الوثائق|
+|أريد...|توثيق|
 |----------------|---------------|
 |الاحتفاظ بالبيانات لخدمات Microsoft 365 أو حذفها بكفاءة: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- مجموعات Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype for Business |[إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md)|
 |تزويد المستخدمين بتخزين إضافي لعلب البريد |[تمكين علب بريد الأرشيف في مدخل التوافق في Microsoft Purview](enable-archive-mailboxes.md)|

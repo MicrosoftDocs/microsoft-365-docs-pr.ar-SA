@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: تنفيذ قدرات من إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview للتحكم في بياناتك من أجل التوافق أو المتطلبات التنظيمية.
-ms.openlocfilehash: 7578aad4bdbb44bf0937a58343fc05462449688f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5b23a81fcf19a985665b536f418c5a5de1d88cb6
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635974"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106153"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>تحكم في بياناتك باستخدام Microsoft Purview
 
@@ -45,7 +45,7 @@ ms.locfileid: "66635974"
 
 للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه:
  
-|القدره|ما هي المشاكل التي تحلها؟|
+|تمكن|ما هي المشاكل التي تحلها؟|
 |:------|:------------|:----------------|
 |[نهج الاستبقاء لأحمال عمل Microsoft 365، مع تسميات الاستبقاء للاستثناءات](retention.md) | يتيح لك الاحتفاظ بالمحتوى أو حذفه باستخدام إدارة النهج للبريد الإلكتروني والمستندات ورسائل Teams وYamer. |
 |[علب البريد غير النشطة](inactive-mailboxes-in-office-365.md)| يتيح لك الاحتفاظ بمحتوى علبة البريد بعد مغادرة الموظفين للمؤسسة بحيث يظل هذا المحتوى متاحا للمسؤولين ومسؤولي التوافق ومديري السجلات. |
@@ -61,7 +61,7 @@ ms.locfileid: "66635974"
 
 إدارة العناصر عالية القيمة لمتطلبات حفظ السجلات التجارية أو القانونية أو التنظيمية:
 
-|القدره|ما هي المشاكل التي تحلها؟|
+|تمكن|ما هي المشاكل التي تحلها؟|
 |:---------|:---------------------------|
 |[خطة الملف](file-plan-manager.md)| يتيح لك إنشاء تسميات استبقاء بشكل تفاعلي أو الاستيراد بشكل مجمع، والتصدير للتحليل. تدعم التسميات معلومات إدارية إضافية (اختيارية) لمساعدتك في تحديد المتطلبات التجارية أو التنظيمية وتتبعها. |
 |[تسميات الاستبقاء للعناصر الفردية، ونهج الاستبقاء إذا لزم الأمر لاستبقاء الأساس](retention.md)| تدعم التسميات جداول الاستبقاء والحذف المرنة التي يمكن تطبيقها يدويا أو تلقائيا، مع إعلان السجلات عند الحاجة. |
@@ -74,8 +74,4 @@ ms.locfileid: "66635974"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-لفهم متطلبات الترخيص وخياراته، راجع الأقسام التالية من [وثائق ترخيص Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [إدارة دورة البيانات في Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-سيتم تضمين أي متطلبات ترخيص إضافية في إرشادات الوثائق. على سبيل المثال، قد يتطلب الترخيص الخاص بإدارة علب البريد تراخيص من Exchange Online.
+لفهم متطلبات الترخيص وخياراته، راجع المعلومات الواردة في إرشادات Microsoft 365 للامتثال & الأمان، [إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) قسم متطلبات الترخيص على مستوى الميزات.

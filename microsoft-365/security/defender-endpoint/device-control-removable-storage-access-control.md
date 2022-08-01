@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/24/2022
-ms.openlocfilehash: 7b16821f1e4e7b8829615d836bde52dd71a43a96
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.date: 08/01/2022
+ms.reviewer: tewchen
+ms.openlocfilehash: 7407b6184b700ccacd8258ecce7d7cbcf16587b2
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099360"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106569"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
@@ -45,13 +46,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 تمنحك ميزة التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control الإمكانات التالية:
 
-|تمكن|الوصف|التوزيع من خلال Intune|التوزيع من خلال نهج المجموعة|
-|---|---|---|---|
-|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوان 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|فرض افتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، فسيتم تعطيل نهج التحكم في الوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|التقاط معلومات الملف|يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة|  | الخطوة 10 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy) |
+|تمكن|التوزيع من خلال Intune|التوزيع من خلال نهج المجموعة|
+|---|---|---|
+|إنشاء مجموعة وسائط قابلة للإزالة <br/>يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|إنشاء النهج<br/>يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوان 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|فرض افتراضي<br/>يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله<br/>إذا قمت بتعيين تعطيل، فسيتم تعطيل نهج التحكم في الوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|التقاط معلومات الملف<br/>يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة|  | الخطوة 10 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy) |
 
 ### <a name="prepare-your-endpoints"></a>إعداد نقاط النهاية
 
@@ -82,7 +83,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 |اسم الخاصية|الوصف|خيارات|
 |---|---|---|
 |**معرف المجموعة**|يمثل GUID، وهو معرف فريد، المجموعة وسيتم استخدامه في النهج.||
-|**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. للحصول على كل خاصية من خصائص الجهاز، راجع ["خصائص الجهاز](device-control-removable-storage-protection.md) " للحصول على مزيد من التفاصيل. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId**: على سبيل المثال، USB وSCSI<p>**معرف الجهاز**<p>**معرف الأجهزة**<p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**معرف الرقم التسلسلي**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط مع VID=0751|
+|**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: يتضمن `RemovableMediaDevices`المعرف الأساسي و. `CdRomDevices``WpdDevices``PrinterDevices` <p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0``Device instance path` في إدارة الأجهزة. يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: تحول `Device instance path` إلى تنسيق معرف الجهاز، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers)، على سبيل المثال، USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07. <p>**HardwareId**: حددت سلسلة الجهاز في النظام، على سبيل المثال، USBSTOR\DiskGeneric_Flash_Disk___8.07، `Hardware Ids` في إدارة الأجهزة. ملاحظة: معرف الجهاز ليس فريدا؛ قد تشترك الأجهزة المختلفة في نفس القيمة.<p>**FriendlyNameId**: سلسلة مرفقة بالجهاز، على سبيل المثال، جهاز USB عام لقرص محمول، `Friendly name` في إدارة الأجهزة. <p>**BusId**: على سبيل المثال، USB وSCSI. <p>**SerialNumberId**: يمكنك العثور على SerialNumberId من `Device instance path` إدارة الأجهزة، على سبيل المثال، `03003324080520232521` هو SerialNumberId في USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0. <p>**VID_PID**: معرف المورد هو رمز المورد المكون من أربعة أرقام الذي تعينه لجنة USB للمورد. معرف المنتج هو رمز المنتج المكون من أربعة أرقام الذي يقوم المورد بتعيينه إلى الجهاز؛ دعم حرف البدل، وتحويله `Device instance path` إلى معرف المورد وتنسيق معرف المنتج، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers). <p>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط مع VID=0751 <p> **ملاحظة**: انظر إلى "كيف يمكنني العثور على خاصية الوسائط في إدارة الأجهزة؟" ضمن قسم "الأسئلة المتداولة" الذي يليه لفهم كيفية العثور على الخاصية في إدارة الأجهزة.|
 |**نوع المطابقة**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: ستكون أي سمات ضمن `DescriptorIdList` العلاقة **و** ، على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين أم لا. <p> **MatchAny**: السمات ضمن DescriptorIdList ستكون **علاقة أو** ؛ على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيقوم النظام بالإنفاذ طالما أن USB يحتوي على قيمة **DeviceID** أو **InstanceID** متطابقة.|
 
 ### <a name="access-control-policy"></a>نهج التحكم بالوصول
@@ -158,12 +159,12 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 لحظر فئة تخزين معينة قابلة للإزالة ولكن السماح بوسائط معينة، يمكنك استخدام 'IncludedIdList مجموعة من خلال PrimaryId و ExcludedIDList مجموعة من خلال DeviceId/HardwareId/etc.'
 
-انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>) **> Devices > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصص**
+انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>) > **الأجهزة** > **إنشاء نظام أساسي لملف التعريف** > **: Windows 10 والإي وقت لاحق، نوع ملف التعريف: قوالب** > مخصصة**
 
 1. تمكين التحكم في الجهاز أو تعطيله كما يلي:
 
-   - ضمن **إعدادات تكوين > المخصصة**، انقر فوق **"إضافة**".
-   - في الجزء **"إضافة صف** "، أدخل:
+   - ضمن **إعدادات "تكوين** **مخصص** > "، حدد **"إضافة**".
+   - في الجزء **"إضافة صف** "، حدد الإعدادات التالية:
      - **الاسم** **كتمكين عنصر تحكم الجهاز**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **نوع البيانات** **كعدد صحيح**
@@ -172,7 +173,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
        `Disable: 0`
        `Enable: 1`
 
-     - انقر فوق **حفظ**.
+     - حدد **حفظ**.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج التحكم في الوصول إلى التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
 
@@ -180,9 +181,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) لكافة ميزات التحكم في الجهاز (`RemovableMediaDevices`، ، `CdRomDevices`، `WpdDevices``PrinterDevices`).
 
-   على سبيل المثال، لديك إما نهج **رفض** أو **السماح** ل `RemovableMediaDevices`، ولكن ليس لديك نهج ل `CdRomDevices` أو `WpdDevices`. يمكنك تعيين **"الرفض الافتراضي** " من خلال هذا النهج، ثم الوصول للقراءة/الكتابة/التنفيذ إلى `CdRomDevices` أو `WpdDevices` سيتم حظره. إذا كنت تريد إدارة التخزين فقط، فتأكد من إنشاء نهج **السماح** للطابعة؛ وإلا، سيتم تطبيق هذا الإنفاذ الافتراضي على الطابعات أيضا.
+   على سبيل المثال، يمكنك الحصول على نهج **رفض** أو **السماح** ل `RemovableMediaDevices`، ولكن ليس ل `CdRomDevices` أو `WpdDevices`. يمكنك تعيين **"الرفض الافتراضي** " من خلال هذا النهج، ثم الوصول للقراءة/الكتابة/التنفيذ إلى `CdRomDevices` أو `WpdDevices` سيتم حظره. إذا كنت تريد إدارة التخزين فقط، فتأكد من إنشاء نهج **السماح** للطابعة؛ وإلا، سيتم تطبيق هذا الإنفاذ الافتراضي على الطابعات أيضا.
 
-   - في الجزء **"إضافة صف** "، أدخل:
+   - في الجزء **"إضافة صف** "، حدد الإعدادات التالية:
      - **الاسم** **كرفض افتراضي**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
      - **نوع البيانات** **كعدد صحيح**
@@ -191,7 +192,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - انقر فوق **حفظ**.
+     - حدد **حفظ**.
 
    :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::
 
@@ -203,7 +204,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
      - **الاسم** **كرفض افتراضي للتدقيق**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
 
-       :::image type="content" source="images/audit-default-deny-1.png" alt-text="لقطة شاشة لإنشاء نهج الرفض الافتراضي للتدقيق" lightbox="images/audit-default-deny-1.png":::
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="لقطة شاشة لإنشاء نهج الرفض الافتراضي للتدقيق." lightbox="images/audit-default-deny-1.png":::
 
      - **نوع البيانات** **كسلسلة (ملف XML)**
      - **ملف XML مخصص** كملف **Deny.xmlافتراضي للتدقيق** .
@@ -212,7 +213,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
        استخدم بيانات XML التالية لإنشاء نهج التدقيق الخاص بك للرفض الافتراضي:
 
-       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="لقطة شاشة لملف xml لرفض التدقيق الافتراضي":::
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Screenshot of audit default deny xml file.":::
 
 4. ReadOnly - المجموعة:
 
@@ -222,7 +223,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
      - **الاسم** **كأي مجموعة تخزين قابلة للإزالة**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-       :::image type="content" source="images/any-removable-storage-group.png" alt-text="لقطة شاشة لإنشاء أي مجموعة تخزين قابلة للإزالة" lightbox="images/any-removable-storage-group.png":::
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="لقطة شاشة لإنشاء أي مجموعة تخزين قابلة للإزالة." lightbox="images/any-removable-storage-group.png":::
 
      - **نوع البيانات** **كسلسلة (ملف XML)**
        - **XML مخصص** **كأي ملف تخزين قابل للإزالة وقرص DVD وWPD Group.xml**
@@ -308,7 +309,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك تمكين التحكم في الجهاز كما يلي:
 
-   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > ميزات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم في الجهاز**
+   - انتقل إلى **التحكم في جهاز** **القوالب** >  الإدارية **لتكوين** >  الكمبيوتر **في Windows Components** > **Microsoft Defender Antivirus** > **Features** > 
    - في نافذة **"التحكم بالجهاز** "، حدد **"ممكن**".
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="لقطة شاشة لتمكين RSAC باستخدام نهج المجموعة " lightbox="images/enable-rsac-gp.png":::
@@ -320,11 +321,11 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) لكافة ميزات التحكم في الجهاز (RemovableMediaDevices، وDdRomDevices، وWpdDevices، و PrinterDevices).
 
-   على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices. إذا كنت تريد فقط إدارة التخزين، فتأكد من إنشاء نهج السماح للطابعة، وإلا، فسيتم تطبيق "الإنفاذ الافتراضي" هذا على الطابعة أيضا.
+   على سبيل المثال، يمكن أن يكون لديك نهج رفض أو السماح ل RemovableMediaDevices، ولكن ليس ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices. إذا كنت تريد فقط إدارة التخزين، فتأكد من إنشاء نهج السماح للطابعة، وإلا، فسيتم تطبيق "الإنفاذ الافتراضي" هذا على الطابعة أيضا.
 
-   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > ميزات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
+   - انتقل إلى **القوالب الإدارية** **لتكوين** >  الكمبيوتر **لمكونات** >  Windows Components  > **Microsoft Defender Antivirus** > **Features** > **Device Control** > **حدد الإنفاذ الافتراضي للتحكم في الجهاز**
 
-   - في نافذة **«Select Device Control Default Enforcement»** ، حدد **«Default Deny»**:
+   - في جزء **«Select Device Control Default Enforcement** »، حدد **«Default Deny»**:
 
    :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="لقطة شاشة لإعداد «Default Enforcement = Deny» باستخدام نهج المجموعة" lightbox="images/set-default-enforcement-deny-gp.png":::
 
@@ -344,7 +345,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة:
 
-    :::image type="content" source="images/read-only-policy-gp.png" alt-text="لقطة شاشة لبيانات xml للنهج للقراءة فقط" lightbox="images/read-only-policy-gp.png":::
+    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Screenshot of Read only policy xml data." lightbox="images/read-only-policy-gp.png":::
 
 6. إنشاء مجموعة للوسائط المسموح بها:
 
@@ -354,7 +355,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 7. إنشاء نهج للسماح لمجموعة USB المعتمدة:
 
-   استخدم بيانات XML التالية لإنشاء نهج للسماح بمجموعة USB المعتمدة:
+   استخدم بيانات XML التالية لإنشاء نهج للسماح لمجموعة USB المعتمدة:
 
    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="لقطة شاشة لبيانات XML لإنشاء نهج للسماح لمجموعة USB المعتمدة باستخدام نهج المجموعة" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
 
@@ -372,7 +373,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="لقطة شاشة لتعريف مجموعات نهج التحكم في الجهاز" lightbox="images/define-device-control-policy-grps-gp.png":::
 
-   - في نافذة **تعريف مجموعات نهج التحكم في الجهاز** ، أدخل مسار الملف الذي يحتوي على بيانات مجموعات XML.
+   - في نافذة **تعريف مجموعات نهج التحكم في الجهاز** ، حدد مسار الملف الذي يحتوي على بيانات مجموعات XML.
 
      مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
 
@@ -384,7 +385,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك دمج قواعد نهج التحكم في الجهاز في ملف XML واحد كما يلي:
 
-   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > Microsoft Defender Antivirus > التحكم في الأجهزة > تحديد قواعد نهج التحكم في الجهاز**
+   - انتقل إلى **قوالب** >  إدارة **تكوين** >  الكمبيوتر،**Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **، حدد قواعد نهج التحكم في الجهاز**.
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="لقطة شاشة لتحديد قواعد نهج التحكم في الجهاز" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -398,13 +399,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 10. تعيين موقع لنسخة من الملف (دليل):
 
-    إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، يجب عليك تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.
+    إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، فحدد الموقع الذي يمكن للنظام حفظ النسخة فيه.
 
-    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows Components > Microsoft Defender Antivirus > Device Control > تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد**.
+    - انتقل إلى **القوالب** >  الإدارية **لتكوين** >  الكمبيوتر **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد**.
 
-    - في نافذة **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد** ، حدد **«Enabled»** وأدخل مسار مجلد مشاركة الشبكة أو المحلي.
+    - في جزء **"تعريف بيانات دليل التحكم في الأجهزة" عن بعد** ، حدد **"ممكن"**، ثم حدد مسار مجلد مشاركة الشبكة أو المحلي.
 
-      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="لقطة شاشة لتحديد موقع بيانات دليل التحكم في الأجهزة عن بعد" lightbox="images/evidence-data-remote-location-gp.png":::
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Screenshot of Define Device Control evidence data remote location." lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
 
@@ -460,7 +461,7 @@ DeviceEvents
 
 يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
-![صورة](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+![لقطة شاشة ل GUID في PowerShell.](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
@@ -468,7 +469,7 @@ DeviceEvents
 
 على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما.
 
-### <a name="why-does-the-policy-not-work"></a>لماذا لا يعمل النهج؟
+### <a name="why-doesnt-the-policy-work"></a>لماذا لا يعمل النهج؟
 
 1. السبب الأكثر شيوعا هو عدم وجود [إصدار عميل مكافحة البرامج الضارة](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints) المطلوب.
 
@@ -476,15 +477,17 @@ DeviceEvents
 
 3. إذا كنت تقوم بنشر النهج وإدارته باستخدام نهج المجموعة، فالرجاء التأكد من دمج كل PolicyRule في ملف XML واحد داخل عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد داخل عقدة أصل تسمى Groups؛ إذا كنت تدير من خلال Intune، فاحتفظ بملف XML واحد من PolicyRule، والشيء نفسه، ملف XML واحد لمجموعة واحدة.
 
-إذا كان لا يزال لا يعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة أجرة الدعم عن طريق تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
+إذا كان لا يزال لا يعمل، يمكنك الاتصال بالدعم ومشاركة سيارة الدعم الخاصة بك. للحصول على هذا الملف، استخدم موجه الأوامر كمسؤول: 
 
-### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا توجد تجربة مستخدم تكوين ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة
+`"%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles`
 
-نحن لا نرجع تجربة المستخدم لتكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml و admx ذات الصلة بالنقر فوق 'Raw' و'Save as' في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx).
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد أسلوب عمل المستخدم الخاص بالتهيئة **لتعريف مجموعات نهج التحكم في الجهاز** **وتعريف قواعد نهج التحكم في الجهاز** على نهج المجموعة
 
-### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>كيف يمكنني معرفة ما إذا كان قد تم نشر النهج الأخير على الجهاز المستهدف؟
+نحن لا نرجع تجربة المستخدم لتكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml وadmx ذات الصلة عن طريق تحديد **ملفات Raw** و **Save as** في [ملفات WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx).
 
-يمكنك تشغيل "Get-MpComputerStatus" على PowerShell كمسؤول. ستظهر القيمة التالية ما إذا كان قد تم تطبيق أحدث نهج على الجهاز الهدف.
+### <a name="how-do-i-confirm-that-the-latest-policy-has-been-deployed-to-the-target-machine"></a>كيف أعمل تأكيد نشر أحدث نهج على الجهاز المستهدف؟
+
+يمكنك تشغيل PowerShell cmdlet `Get-MpComputerStatus` كمسؤول. ستظهر القيمة التالية ما إذا كان قد تم تطبيق أحدث نهج على الجهاز الهدف.
 
 :::image type="icon" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" border="false":::
 
@@ -502,3 +505,20 @@ DeviceFileEvents
 |summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 |order by PlatformVersion desc
 ```
+
+### <a name="how-do-i-find-the-media-property-in-the-device-manager"></a>كيف أعمل العثور على خاصية الوسائط في إدارة الأجهزة؟
+
+1. توصيل الوسائط.
+
+2. افتح إدارة الأجهزة. 
+
+   ![لقطة شاشة إدارة الأجهزة.](https://user-images.githubusercontent.com/81826151/181859412-affd6aa1-09ad-44bf-9541-330499cc2c87.png)
+
+3. حدد موقع الوسائط في إدارة الأجهزة، وانقر بزر الماوس الأيمن، ثم حدد **"خصائص**".
+
+   ![Screenshot of USB selected in Disk drives, and Properties highlighted.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+
+4. افتح **التفاصيل**، وحدد **"خصائص**".
+
+   ![لقطة شاشة لخصائص جهاز USB.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+    

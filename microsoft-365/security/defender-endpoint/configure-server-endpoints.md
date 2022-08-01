@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 7d83a5a3eba765099e58ff0f5086cb985697333d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827191"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107382"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -102,7 +102,7 @@ ms.locfileid: "66827191"
 
 استنادا إلى الخادم الذي تقوم بإلحاقه، يقوم الحل الموحد بتثبيت برنامج الحماية من الفيروسات من Microsoft Defender و/أو أداة استشعار EDR. يشير الجدول التالي إلى المكون المثبت وما هو مضمن بشكل افتراضي.
 
-|إصدار الخادم|AV|يدر|
+|إصدار الخادم|AV|EDR|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم.](images/svg/check-yes.svg)|
 |Windows Server 2016‏|مضمن|![نعم.](images/svg/check-yes.svg)|
@@ -140,7 +140,7 @@ ms.locfileid: "66827191"
 
 السيناريو المتأثر: -Microsoft Defender لنقطة النهاية مع رقم إصدار Sense 10.8048.22439.1065 أو إصدارات المعاينة السابقة التي تعمل على Windows Server 2012 R2 -باستخدام تكوين وكيل TelemetryProxyServer؛ لا تتأثر الأساليب الأخرى
 
-الحل:
+الحل البديل:
 1. تأكد من تشغيل الجهاز للإصدار 10.8048.22439.1065 أو إصدار أحدث إما عن طريق التثبيت باستخدام أحدث حزمة متوفرة من صفحة الإلحاق، أو عن طريق تطبيق KB5005292.
 2. تنزيل الشهادة وإلغاء ضغطها من https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. استيراد الشهادة إلى مخزن "المراجع المصدقة المتوسطة" الموثوق به على الكمبيوتر المحلي.
@@ -273,7 +273,11 @@ Msiexec /x md4ws.msi /quiet
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>تثبيت Microsoft Defender لنقطة النهاية باستخدام برنامج نصي
 
-يمكنك استخدام [البرنامج النصي المثبت](server-migration.md#installer-script) للمساعدة في أتمتة التثبيت وإلغاء التثبيت والإلحاق. لمزيد من المعلومات، راجع الإرشادات الواردة في القسم التالي لاستخدام البرنامج النصي مع نهج المجموعة.
+يمكنك استخدام [البرنامج النصي المثبت](server-migration.md#installer-script) للمساعدة في أتمتة التثبيت وإلغاء التثبيت والإلحاق. 
+> [!NOTE]
+> تم توقيع البرنامج النصي للتثبيت. ستؤدي أي تعديلات على البرنامج النصي إلى إبطال التوقيع. عند تنزيل البرنامج النصي من GitHub، فإن النهج الموصى به لتجنب التعديل غير المقصود هو تنزيل الملفات المصدر كأرشيف مضغوط ثم استخراجه للحصول على ملف install.ps1 (في صفحة التعليمات البرمجية الرئيسية، انقر فوق القائمة المنسدلة للتعليمات البرمجية وحدد "Download ZIP").
+
+يمكن استخدام هذا البرنامج النصي في مجموعة متنوعة من السيناريوهات، بما في ذلك تلك الموضحة في [سيناريوهات ترحيل الخادم من حل Microsoft Defender لنقطة النهاية السابق المستند إلى MMA](/microsoft-365/security/defender-endpoint/server-migration) وللنشر باستخدام نهج المجموعة كما هو موضح أدناه.
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>تطبيق حزم التثبيت والإلحاق Microsoft Defender لنقطة النهاية باستخدام نهج المجموعة
 
@@ -319,7 +323,7 @@ Msiexec /x md4ws.msi /quiet
     - مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
     - الاسم: `ForceDefenderPassiveMode`
     - نوع: `REG_DWORD`
-    - قيمه: `1`
+    - قيمة: `1`
 
    :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="نتيجة التحقق من الوضع الخامل" lightbox="images/atp-verify-passive-mode.png":::
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ccf4222878777789fb7f89b6382c858eaad9f0c2
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c522c9602874ca8b385a135a64c34ef0643abe82
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042137"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106832"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>كيفية إعداد الهجمات التلقائية والتدريب ضمن التدريب على محاكاة الهجوم
 

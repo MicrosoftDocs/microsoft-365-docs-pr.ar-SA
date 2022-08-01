@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على توسيع حلول Microsoft Purview باستخدام موصلات بيانات الجهات الخارجية وواجهات برمجة تطبيقات Microsoft Graph.
-ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071536"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106416"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>إمكانية توسعة Microsoft Purview وقابلية Microsoft Priva
 
@@ -129,4 +129,4 @@ ms.locfileid: "67071536"
 
 لمزيد من المعلومات حول واجهات برمجة تطبيقات الرسم البياني لإدارة السجلات، راجع [استخدام واجهة برمجة تطبيقات إدارة سجلات Microsoft Graph](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-للحصول على متطلبات الترخيص لاستخدام واجهات برمجة التطبيقات هذه، راجع قسم إدارة السجلات من [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+للحصول على متطلبات الترخيص لاستخدام واجهات برمجة التطبيقات هذه، راجع معلومات إدارة السجلات من إرشادات Microsoft 365 للأمان & التوافق، [إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) القسم.

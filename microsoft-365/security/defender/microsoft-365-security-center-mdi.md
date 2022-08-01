@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 76044b7451014cc578800b6e1726556688d9db14
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051107"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107272"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender for Identity في Microsoft 365 Defender
 
@@ -43,15 +43,15 @@ ms.locfileid: "67051107"
 
 يسرد الجدول أدناه التغييرات في التنقل بين Microsoft Defender for Identity Microsoft 365 Defender.
 
-| **Defender ل** الهويه  | **Microsoft 365 Defender**                                   |
+| **Defender ل** الهوية  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
-| المخطط الزمني                   | قائمة انتظار Microsoft 365 Defender Alerts/Incidents                |
+| مخطط زمني                   | قائمة انتظار Microsoft 365 Defender Alerts/Incidents                |
 | التقارير                    | سيبقى في مدخل [Defender for Identity الكلاسيكي](/defender-for-identity/classic-workspace-portal). <br> يمكن إنشاء تقارير مخصصة في مدخل Microsoft 365 Defender باستخدام [التتبع المتقدم](#advanced-hunting-new).               |
 | صفحة المستخدم                  | صفحة مستخدم Microsoft 365 Defender                             |
 | صفحة الجهاز                | صفحة جهاز Microsoft 365 Defender                           |
 | صفحة المجموعة                 | الجزء الجانبي لمجموعات Microsoft 365 Defender                      |
 | صفحة التنبيه                 | صفحة تنبيه Microsoft 365 Defender                            |
-| البحث                     | Microsoft 365 Defender البحث                                |
+| بحث                     | Microsoft 365 Defender البحث                                |
 | مركز الرعاية الصحية              | الإعدادات -> Identities -> Sensors                            |
 | أنشطة الكيان          | الصيد المتقدم                                             |
 | الإعدادات                   | الإعدادات -> الهويات                                       |

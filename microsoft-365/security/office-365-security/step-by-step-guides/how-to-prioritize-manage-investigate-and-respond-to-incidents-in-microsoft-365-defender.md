@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 18127cd732c0e2e1392a9c62e221dadfbd123246
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 61fd955d244a31dab5549d776a10eec1b582043f
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043426"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106109"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>تحديد أولويات الحوادث وإدارتها والتحقيق فيها & الاستجابة للحوادث في Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ ms.locfileid: "66043426"
 
 لديك الآن قائمة ذات أولوية بالحوادث، والتي يمكنك الاختيار منها لإعادة تسمية الحوادث أو تعيينها أو تصنيفها أو وضع علامة عليها أو تغيير الحالة أو إضافة تعليقات عبر الزر "إدارة الحوادث".
 
-استخدم عوامل التصفية للتأكد من تضمين Microsoft Defender لعناصر Office.
+استخدم عوامل التصفية للتأكد من تضمين عناصر Microsoft Defender for Office.
 
 إذا كنت تبحث عن تنبيهات معينة، فاستخدم إمكانية البحث عن الحوادث (*البحث عن الاسم أو المعرف*) أو فكر في استخدام تصفية قائمة انتظار التنبيه في تنبيه معين.
 

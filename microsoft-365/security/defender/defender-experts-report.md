@@ -20,22 +20,20 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099910"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107228"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>فهم تقرير Defender Experts for Hunting في Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 
-- Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 يقوم خبراء Microsoft Defender للتتبع بطبقات الذكاء البشري والتكنولوجيا المدربة من قبل الخبراء لمساعدة Microsoft 365 Defender العملاء على فهم التهديدات الكبيرة التي يواجهونها. وهو يعرض كيف يمكن أن تساعدك مهارات Defender Expert في تتبع التهديدات، وفهم شامل لمشهد التهديد، ومعرفة التهديدات الناشئة في تحديد تلك التهديدات وتحديد أولوياتها ومعالجتها في بيئتك. 
 
@@ -57,13 +55,13 @@ ms.locfileid: "67099910"
 
 راجع لقطة الشاشة التالية لنموذج تقرير:
 
-![تقرير خبراء defender](../../media/mte/defender-experts-report.png)
+![لقطة شاشة لتقرير Microsoft Defender Experts for Hunting في مدخل Microsoft 365 Defender.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>عرض إعلامات خبراء Defender
 
 يصف إعلام Defender Experts نشاط التهديد الكبير الذي لاحظه Defender Experts for Hunting في بيئتك ويقدم توصيات لمعالجة مؤسستك والدفاع عنها.
 
-توفر لك تقارير Defender Experts for Hunting العدد الإجمالي لإعلامات خبراء Defender التي أرسلها خبراء Defender للوقت الذي اخترته. لعرض هذه الإعلامات، انقر فوق **"عرض الإعلام** " إلى جانب **الإعلام**.
+توفر لك تقارير Defender Experts for Hunting العدد الإجمالي لإعلامات خبراء Defender التي أرسلها خبراء Defender للوقت الذي اخترته. لعرض هذه الإعلامات، حدد **عرض الإعلام** إلى جانب **الإعلام**.
 
 يعيد هذا الارتباط توجيهك إلى صفحة أحداث Microsoft 365 Defender. يتم تسمية Defender Expert for Hunting alerts أو Defender Experts Notifications مع **Defender Experts**.
 
@@ -77,16 +75,16 @@ ms.locfileid: "67099910"
 1.  الاستطلاع
 2.  تطوير الموارد
 3.  الوصول الأولي
-4.  تنفيذ   
-3.  استمرار 
-4.  تصعيد الامتيازات    
-5.  التهرب الدفاعي 
+4.  تنفيذ
+3.  استمرار
+4.  تصعيد الامتيازات
+5.  التهرب الدفاعي
 6.  الوصول إلى بيانات الاعتماد
 7.  اكتشاف
-8.  الحركة الجانبية    
+8.  الحركة الجانبية
 9.  مجموعة
 10. الأمر والتحكم
-11. النقل غير المصرح به    
+11. النقل غير المصرح به
 12. تأثير
 
 تساعد الإشارات من Microsoft 365 Defender والتحقيقات التي يقوم بها Defender Experts for Hunting على تحديد هذه التكتيكات، ممثلة في المخطط الشريطي. يساعدك هذا المخطط على تصور مكان الزيادة ويوفر لك المعلومات التي تحتاجها لتخطيط إجراءات الاحتواء والمعالجة المقابلة.
@@ -95,7 +93,7 @@ ms.locfileid: "67099910"
 
 تساعد فئات التهديد في تحديد التهديدات الأمنية وتنظيمها في فئات لتقييم وتقييم تأثيرها وتطوير استراتيجيات لمنع هذه التهديدات التي تتعرض لها بيئتك أو التخفيف منها. يعرض قسم **فئات التهديد الذي تمت ملاحظته** في التقرير مخططا شريطيا يتضمن مخاطر وتهديدات كبيرة تم اكتشافها في بيئتك، مما يساعدك على فهم اتساع نطاق التعرض.
 
-من بين فئات التهديد المختلفة المتاحة، يتم اختيار الفئات التالية بعناية لأنها غير مشمولة ضمن إطار عمل MITRE ATT&CK:
+من بين فئات التهديد المختلفة المتاحة، يتم اختيار الفئات التالية بعناية لأنها لا تغطيها ضمن إطار عمل MITRE ATT&CK:
 
 - برامج الفدية الضارة
 - البرامج الضارة
@@ -103,4 +101,5 @@ ms.locfileid: "67099910"
 - استغل
 - تسليم
 
-يمكنك تحديد أولويات المعالجة استنادا إلى الفئة الأكثر تأثيرا، كما هو مبين في الرسم البياني الشريطي.
+يمكنك تحديد أولويات المعالجة استنادا إلى الفئة الأكثر تأثيرا، كما هو مبين في المخطط الشريطي.
+

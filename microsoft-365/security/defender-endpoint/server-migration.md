@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695955"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106898"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>سيناريوهات ترحيل الخادم من الحل Microsoft Defender لنقطة النهاية السابق المستند إلى MMA
 
@@ -49,7 +49,10 @@ ms.locfileid: "66695955"
 
 ## <a name="installer-script"></a>البرنامج النصي للمثبت
 
-لتسهيل الترقيات عندما لا تكون نقطة نهاية Microsoft Configuration Manager متوفرة أو محدثة بعد لتنفيذ الترقية التلقائية، يمكنك استخدام [البرنامج النصي للترقية](https://github.com/microsoft/mdefordownlevelserver) هذا. يمكن أن يساعد في أتمتة الخطوات المطلوبة التالية:
+>[!NOTE]
+>تأكد من أن الأجهزة التي تقوم بتشغيل البرنامج النصي عليها لا تمنع تنفيذ البرنامج النصي. تم توقيع إعداد نهج التنفيذ الموصى به ل PowerShell. يتطلب هذا استيراد شهادة توقيع البرنامج النصي إلى مخزن الناشرين الموثوق بهم للكمبيوتر المحلي إذا كان البرنامج النصي قيد التشغيل ك SYSTEM على نقطة النهاية.
+
+لتسهيل الترقيات عندما لا تكون نقطة نهاية Microsoft Configuration Manager متوفرة أو محدثة بعد لتنفيذ الترقية التلقائية، يمكنك استخدام [البرنامج النصي للترقية](https://github.com/microsoft/mdefordownlevelserver) هذا. قم بتنزيله عن طريق تحديد الزر "Code" وتنزيل ملف .zip، ثم استخراج install.ps1. يمكن أن يساعد في أتمتة الخطوات المطلوبة التالية:
 
 1. إزالة مساحة عمل OMS Microsoft Defender لنقطة النهاية (اختياري).
 2. إزالة عميل System Center Endpoint Protection (SCEP) إذا تم تثبيته.
@@ -66,36 +69,17 @@ ms.locfileid: "66695955"
 >[!NOTE]
 >ستحتاج إلى microsoft Endpoint Configuration Manager، الإصدار 2107 أو إصدار أحدث لتكوين نهج حماية نقطة النهاية perfom.
 
-خطوات الترحيل: 
+للحصول على إرشادات حول كيفية الترحيل باستخدام نقطة نهاية Microsoft Configuration Manager أقدم من الإصدار 2207، يرجى مراجعة [ترحيل الخوادم من Microsoft Monitoring Agent إلى الحل الموحد.](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm)
 
-1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016).
-2. إنشاء مجموعة جديدة مع قواعد العضوية لتضمين الأجهزة التي سيتم ترحيلها.
-3. [إنشاء تطبيق](/mem/configmgr/apps/deploy-use/create-applications) لتنفيذ المهام التالية: 
-   1. إلغاء تثبيت SCEP.
-   2. تثبيت [المتطلبات الأساسية](configure-server-endpoints.md#prerequisites) عند الاقتضاء.
-   3. تثبيت Microsoft Defender لنقطة النهاية (راجع [تكوين نقاط نهاية الخادم](configure-server-endpoints.md).
-   4. تطبيق البرنامج النصي **للإلحاق للاستخدام مع نهج المجموعة** التي تم تنزيلها من [Microsoft 365 Defender](https://security.microsoft.com). 
-   > [!TIP]
-   > يمكنك استخدام [البرنامج النصي المثبت](server-migration.md#installer-script) كجزء من التطبيق الخاص بك لأتمتة الخطوات المذكورة أعلاه.
-4. نشر التطبيق إلى المجموعة الجديدة.
-5. إنشاء نهج حماية نقطة النهاية (الموجودة) و/أو تعيينها إلى المجموعة.
-6. تطبيق التحديثات.
+## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>إذا كنت تقوم بتشغيل حل الحماية من الفيروسات غير التابع ل Microsoft
 
-### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-are-running-a-non-microsoft-antivirus-solution-and-the-mma-based-sensor-you-want-to-upgrade-to-the-new-microsoft-defender-for-endpoint"></a>أنت تستخدم حاليا نقطة نهاية Microsoft Configuration Manager لإدارة خوادمك، وتقوم بتشغيل حل الحماية من الفيروسات غير التابع ل Microsoft وجهاز الاستشعار المستند إلى MMA. تريد الترقية إلى Microsoft Defender لنقطة النهاية الجديدة.
-
-خطوات الترحيل:
-
-1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016).
-2. إنشاء مجموعة جديدة مع قواعد العضوية لتضمين الأجهزة التي سيتم ترحيلها. 
-3. تأكد من أن إدارة مكافحة الفيروسات من جهة خارجية لم تعد تدفع برنامج الحماية من الفيروسات إلى هذه الأجهزة.*
-4. تأليف النهج الخاصة بك في عقدة Endpoint Protection الخاصة ب MECM والهدف إلى المجموعة التي تم إنشاؤها حديثا.*
-5. إنشاء تطبيق لتنفيذ المهام التالية:
-   1. إزالة تكوين مساحة عمل MMA Microsoft Defender لنقطة النهاية. راجع [إزالة مساحة عمل باستخدام PowerShell](/azure/azure-monitor/agents/agent-manage). هذه الخطوة اختيارية؛ سيتوقف جهاز استشعار EDR السابق عن التشغيل بعد أن يصبح أحدث جهاز نشطا.
-   2. تثبيت [المتطلبات الأساسية](configure-server-endpoints.md#prerequisites) عند الاقتضاء.
-   3. تثبيت Microsoft Defender لنقطة النهاية لحزمة Windows Server 2012 R2 و2016 **وتمكين الوضع السلبي**. راجع [تثبيت برنامج الحماية من الفيروسات من Microsoft Defender باستخدام سطر الأوامر](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
-   4. تطبيق البرنامج النصي **للإلحاق للاستخدام مع نهج المجموعة** التي تم تنزيلها من [Microsoft 365 Defender](https://security.microsoft.com).
-6. تطبيق التحديثات.
-7. قم بإزالة برنامج الحماية من الفيروسات غير الخاص ب Microsoft إما باستخدام وحدة تحكم الحماية من الفيروسات غير الخاصة ب Microsoft أو باستخدام نقطة نهاية Microsoft Configuration Manager حسب الاقتضاء. تأكد من إزالة تكوين الوضع السلبي.*
+1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016) لضمان استيفاء [المتطلبات الأساسية](configure-server-endpoints.md#prerequisites) .
+2. تأكد من أن إدارة مكافحة الفيروسات من جهة خارجية لم تعد تدفع عوامل الحماية من الفيروسات إلى هذه الأجهزة.*
+3. قم بت تأليف سياساتك لقدرات الحماية في Microsoft Defender لنقطة النهاية واستهدافها إلى الجهاز في الأداة التي تختارها.*
+4. تثبيت Microsoft Defender لنقطة النهاية لحزمة Windows Server 2012 R2 و2016 **وتمكين الوضع السلبي**. راجع [تثبيت برنامج الحماية من الفيروسات من Microsoft Defender باستخدام سطر الأوامر](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
+   أ. تطبيق البرنامج النصي **للإلحاق للاستخدام مع نهج المجموعة** التي تم تنزيلها من [Microsoft 365 Defender](https://security.microsoft.com).
+5. تطبيق التحديثات.
+6. قم بإزالة برنامج الحماية من الفيروسات غير الخاص ب Microsoft إما باستخدام وحدة تحكم الحماية من الفيروسات غير الخاصة ب Microsoft أو باستخدام نقطة نهاية Microsoft Configuration Manager حسب الاقتضاء. تأكد من إزالة تكوين الوضع السلبي.*
 
 > [!TIP]
 > يمكنك استخدام [البرنامج النصي](server-migration.md#installer script) المثبت كجزء من التطبيق الخاص بك لأتمتة الخطوات المذكورة أعلاه. لتمكين الوضع الخامل، قم بتطبيق العلامة -Passive. على سبيل المثال، .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd" -Passive
@@ -106,43 +90,17 @@ ms.locfileid: "66695955"
 
 المسار: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: قيمة REG_DWORD: 0
 
-لمزيد من المعلومات حول ترحيل الخوادم من MMA إلى الحل الموحد، راجع [ترحيل الخوادم من Microsoft Monitoring Agent إلى الحل الموحد](application-deployment-via-mecm.md).
+## <a name="if-you-are-running-system-center-endpoint-protection-but-are-not-managing-the-machine-using-microsoft-endpoint-configuration-manager-mecmconfigmgr"></a>إذا كنت تقوم بتشغيل System Center Endpoint Protection ولكنك لا تدير الجهاز باستخدام Configuration Manager نقطة النهاية من Microsoft (MECM/ConfigMgr)
 
-## <a name="other-migration-scenarios"></a>سيناريوهات الترحيل الأخرى
-
-### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-microsoft-defender-for-cloud-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>لديك خادم تم إلحاقه باستخدام Microsoft Defender لنقطة النهاية المستندة إلى MMA. تم تثبيت SCEP (Windows Server 2012 R2) أو برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016). **لا** تتم إدارة هذا الجهاز من خلال Microsoft Defender for Cloud أو Microsoft إدارة نقاط النهاية أو نقطة نهاية Microsoft Configuration Manager.
-
-1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016).
-2. إزالة تكوين مساحة عمل MMA Microsoft Defender لنقطة النهاية. راجع [إزالة مساحة عمل باستخدام PowerShell](/azure/azure-monitor/agents/agent-manage).
+1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016) لضمان استيفاء [المتطلبات الأساسية](configure-server-endpoints.md#prerequisites) .
+2. إنشاء النهج وتطبيقها باستخدام نهج المجموعة أو PowerShell أو حل إدارة الجهات الخارجية.
 3. إلغاء تثبيت System Center Endpoint Protection (Windows Server 2012 R2).
-4. تثبيت [المتطلبات الأساسية](configure-server-endpoints.md#prerequisites) عند الاقتضاء. 
 5. تثبيت Microsoft Defender لنقطة النهاية (راجع [تكوين نقاط نهاية الخادم](configure-server-endpoints.md).)
 6. تطبيق البرنامج النصي **للإلحاق للاستخدام مع نهج المجموعة** التي تم تنزيلها من [Microsoft 365 Defender](https://security.microsoft.com). 
 7. تطبيق التحديثات.
-8. إنشاء النهج وتطبيقها باستخدام نهج المجموعة أو PowerShell أو حل إدارة الجهات الخارجية.
 
 > [!TIP]
 > يمكنك استخدام البرنامج النصي المثبت لأتمتة الخطوات المذكورة أعلاه.
-
-### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>لديك خادم تريد تثبيت Microsoft Defender لنقطة النهاية عليه. يحتوي على حماية نقطة النهاية غير التابعة ل Microsoft أو تم تثبيت حل الاستجابة والكشف عن نقطة النهاية. لا تنوي استخدام نقطة نهاية Microsoft Configuration Manager أو Microsoft Defender for Cloud. يمكنك استخدام آلية التوزيع الخاصة بك. 
-
-1. قم بتحديث الجهاز بالكامل بما في ذلك برنامج الحماية من الفيروسات من Microsoft Defender (Windows Server 2016).
-2. تثبيت Microsoft Defender لنقطة النهاية لحزمة Windows Server 2012 R2 & 2016 **وتمكين الوضع السلبي**. راجع [تثبيت برنامج الحماية من الفيروسات من Microsoft Defender باستخدام سطر الأوامر](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
-3. تطبيق البرنامج النصي الإلحاق، المناسب للبيئة الخاصة بك، التي تم تنزيلها من [Microsoft 365 Defender](https://security.microsoft.com). 
-4. إزالة حماية نقطة النهاية غير التابعة ل Microsoft أو حل الكشف عن نقطة النهاية والاستجابة لها، وإزالة الوضع السلبي.*
-5. تطبيق التحديثات.
-6. إنشاء النهج وتطبيقها باستخدام نهج المجموعة أو PowerShell أو حل إدارة الجهات الخارجية.
-
-> [!TIP]
-> يمكنك استخدام [البرنامج النصي المثبت](server-migration.md#installer-script) للمساعدة في أتمتة الخطوات من 1 إلى 4. لتمكين الوضع السلبي، قم بتطبيق العلامة -Passive التي ستضمن أن برنامج الحماية من الفيروسات Defender ينتقل إلى الوضع السلبي قبل الإلحاق ولا يتداخل مع حل مكافحة البرامج الضارة غير التابع ل Microsoft. ثم لضمان بقاء Defender Antivirus في الوضع السلبي بعد الإعداد لدعم قدرات EDR مثل EDR Block، تأكد من تعيين مفتاح التسجيل "ForceDefenderPassiveMode". المثال: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
-
-
-*تنطبق هذه الخطوة فقط إذا كنت تنوي استبدال حل الحماية من الفيروسات غير التابع ل Microsoft. نوصي باستخدام برنامج الحماية من الفيروسات من Microsoft Defender، المضمن في Microsoft Defender لنقطة النهاية، لتوفير مجموعة كاملة من القدرات. اطلع [على أفضل معا: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية](why-use-microsoft-defender-antivirus.md).
-
-لنقل جهاز إلى خارج الوضع السلبي، قم بتعيين المفتاح التالي إلى 0:
-
-المسار: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: قيمة REG_DWORD: 0
-
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>سيناريوهات Microsoft Defender for Cloud
 

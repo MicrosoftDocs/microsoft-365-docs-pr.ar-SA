@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: e08e0543dca5c0e4b19995a92c31f34057de896c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185358"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106175"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>تكوين Microsoft 365 Defender لدفق أحداث التتبع المتقدمة إلى Azure Event Hub
 
@@ -66,7 +66,7 @@ ms.locfileid: "66185358"
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="معرف مورد Event Hub" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. انتقل إلى [أنواع أحداث Microsoft 365 Defender المعتمدة في واجهة برمجة تطبيقات دفق الأحداث](supported-event-types.md) لمراجعة حالة دعم أنواع الأحداث في واجهة برمجة تطبيقات الدفق Microsoft 365.
+8. انتقل إلى [أنواع أحداث Microsoft 365 Defender المعتمدة في واجهة برمجة تطبيقات دفق الأحداث](supported-event-types.md) لمراجعة حالة دعم أنواع الأحداث في واجهة برمجة تطبيقات تدفق Microsoft 365.
 
 9. اختر الأحداث التي تريد دفقها وانقر فوق **"حفظ**".
 

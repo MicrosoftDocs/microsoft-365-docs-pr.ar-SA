@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات توجيهية لنشر Microsoft Purview لمؤسستك للتحكم في بياناتك للتوافق أو المتطلبات التنظيمية.
-ms.openlocfilehash: fbfc208a860b8f062b424912207718ece2055b3b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 90832541bf202f062b44c1ec375fb20d3db654c3
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66857508"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106000"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>نشر حل حوكمة البيانات باستخدام Microsoft Purview
 
@@ -32,17 +32,13 @@ ms.locfileid: "66857508"
 
 ![نظرة عامة على خطوات نشر حل حوكمة البيانات باستخدام Microsoft Purview](../media/data-governance-solution-overview.png)
 
-لإدارة البيانات التي تقوم بتعيين البيانات وإدارتها عبر ممتلكات بياناتك، بما في ذلك السحابة المتعددة، والبرامج كخدمة (SaaS)، استخدم [Microsoft Purview Data Map وMicrosoft Purview katalog podataka وMicrosoft Purview Data Estate Insights](/azure/purview/overview).
+لإدارة البيانات التي تعين البيانات وتديرها عبر ممتلكات بياناتك، بما في ذلك السحابة المتعددة والبرمجيات كخدمة (SaaS)، استخدم [Microsoft Purview Data Map وMicrosoft Purview كتالوج البيانات وMicrosoft Purview Data Estate Insights](/azure/purview/overview).
 
 للحصول على حل حماية البيانات، راجع [نشر حل حماية المعلومات باستخدام Microsoft Purview](information-protection-solution.md).
 
 ## <a name="licensing"></a>الترخيص
 
-لفهم متطلبات الترخيص وخياراته، راجع الأقسام التالية من [وثائق ترخيص Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [إدارة دورة البيانات في Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-سيتم تضمين أي متطلبات ترخيص إضافية في إرشادات الوثائق. على سبيل المثال، قد يتطلب الترخيص الخاص بإدارة علب البريد تراخيص من Exchange Online.
+لفهم متطلبات الترخيص وخياراته، راجع المعلومات الواردة في إرشادات Microsoft 365 للامتثال & الأمان، [إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) قسم متطلبات الترخيص على مستوى الميزات.
 
 ## <a name="keep-what-you-need-and-delete-what-you-dont"></a>احتفظ بما تحتاج إليه واحذف ما لا تريده
 
@@ -50,7 +46,7 @@ ms.locfileid: "66857508"
 
 استخدم **إدارة دورة البيانات في Microsoft Purview** (المعروف سابقا ب Microsoft Information Governance) للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه.
 
-|خطوه|الوصف|معلومات إضافية|
+|درج|الوصف|معلومات إضافية|
 |:---|:----------|:---------------|
 |1| فهم كيفية عمل الاستبقاء والحذف لخدمات Microsoft 365. <br /><br /> بعد أن تفهم كيف يمكنك استخدام نهج الاستبقاء وتسميات الاستبقاء، حدد أحمال العمل التي تحتاج إلى نهج استبقاء وما إذا كنت بحاجة إلى إنشاء تسميات استبقاء للاستثناءات. | [التعرف على نهج الاستبقاء وتسميات الاستبقاء](retention.md)|
 |2| إنشاء نهج الاستبقاء، وإذا لزم الأمر، تسميات الاستبقاء للاستثناءات. <br /><br /> نهج الاستبقاء الأكثر استخداما هي ل Exchange وSharePoint وTeams مجموعات Microsoft 365 وYamer. يمكنك تكوين استثناءات للمستندات ورسائل البريد الإلكتروني. | [إنشاء نهج استبقاء](create-retention-policies.md) <p> [إنشاء تسميات الاستبقاء وتطبيقها على الاستثناءات الخاصة بك](create-retention-labels-information-governance.md)|
@@ -65,7 +61,7 @@ ms.locfileid: "66857508"
 
 استخدم **إدارة سجلات Microsoft Purview** لإدارة العناصر عالية القيمة لمؤسستك لمتطلبات حفظ السجلات التجارية أو القانونية أو التنظيمية.
 
-|خطوه|الوصف|معلومات إضافية|
+|درج|الوصف|معلومات إضافية|
 |:---|:----------|:---------------|
 |1| فهم حل إدارة السجلات. <br /><br /> استخدم تسميات الاستبقاء مع خيارات تكوين أكثر مرونة وعند الحاجة، قم بتعريف العناصر كسجلات. | [تعرّف على إدارة السجلات](records-management.md)|
 |2| استخدم خطة الملف لإدارة جداول الاستبقاء. <br /><br /> تتيح لك خطة الملفات إنشاء تسميات استبقاء بشكل تفاعلي أو الاستيراد بشكل مجمع، والتصدير للتحليل. تدعم التسميات التي تقوم بإنشائها باستخدام خطة الملفات معلومات إدارية إضافية لمساعدتك في تحديد متطلبات العمل أو المتطلبات التنظيمية وتتبعها. | [استخدام خطة الملف لإنشاء تسميات الاستبقاء وإدارتها](file-plan-manager.md)|

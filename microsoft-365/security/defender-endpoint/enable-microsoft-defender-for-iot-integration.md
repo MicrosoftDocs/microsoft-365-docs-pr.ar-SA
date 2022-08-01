@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f32d521fe83c9e72566228bb10efb37b851b6e05
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 460988f063eb23c53ce76359da6ba7875ab3bc62
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748066"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107118"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>الإلحاق مع Microsoft Defender ل IoT
 
@@ -34,7 +34,7 @@ ms.locfileid: "66748066"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 يتكامل Microsoft Defender لنقطة النهاية الآن بسلاسة مع Microsoft Defender ل IoT. يعمل هذا التكامل على توسيع قدرات اكتشاف جهازك مع قدرات المراقبة بدون عامل التي يوفرها Defender ل IoT. سيساعد هذا في تأمين أجهزة IoT للمؤسسات المتصلة بشبكات تكنولوجيا المعلومات، مثل أجهزة بروتوكول الصوت عبر الإنترنت (VoIP) والطابعات والكاميرات. فهو يسمح للمؤسسات بالاستفادة من حل متكامل واحد يؤمن جميع البنية الأساسية ل IoT والتكنولوجيا التشغيلية (OT). لمزيد من المعلومات، راجع [حماية شبكة إنترنت الأشياء على مستوى المؤسسة](/azure/defender-for-iot/organizations/overview-eiot).
 
@@ -67,7 +67,7 @@ ms.locfileid: "66748066"
 
 ## <a name="set-up-a-network-sensor"></a>إعداد مستشعر الشبكة
 
-لإعداد مستشعر شبكة، يجب أن يحتوي اشتراك Azure على خطة Defender ل IoT مع إضافة أجهزة Enterprise IoT. لمزيد من المعلومات، راجع [بدء استخدام Defender ل IoT](/azure/defender-for-iot/organizations/getting-started).
+لإعداد مستشعر شبكة، يجب أن يحتوي اشتراك Azure على خطة Defender ل IoT مع إضافة أجهزة Enterprise IoT، كما هو موضح [أعلاه](#onboard-a-defender-for-iot-plan).
 
 لإضافة مستشعر شبكة، ضمن **إعداد مستشعرات الشبكة** ، اختر رابط **Microsoft Defender ل IoT** . هذا ينقلك إلى عملية إعداد أداة الاستشعار على متن أجهزة الاستشعار في مدخل Azure. لمزيد من المعلومات، راجع [بدء استخدام Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
@@ -89,7 +89,7 @@ ms.locfileid: "66748066"
 
 ## <a name="cancel-your-defender-for-iot-plan"></a>إلغاء خطة Defender ل IoT
 
-يمكنك إلغاء خطة Defender for IoT من صفحة إعدادات Defender لنقطة النهاية في [https://security.microsoft.com](https://security.microsoft.com/) المدخل. بمجرد إلغاء خطتك، يتوقف التكامل ولن تحصل على قيمة تقييم الأمان في Defender لنقطة النهاية، أو اكتشاف أجهزة جديدة في Defender ل IoT.
+إلغاء خطة Defender ل IoT من صفحة إعدادات Defender لنقطة النهاية في [https://security.microsoft.com](https://security.microsoft.com/) المدخل. بمجرد إلغاء خطتك، يتوقف التكامل ولن تحصل على قيمة تقييم الأمان في Defender لنقطة النهاية، أو اكتشاف أجهزة جديدة في Defender ل IoT.
 
 ## <a name="see-also"></a>راجع أيضًا
 

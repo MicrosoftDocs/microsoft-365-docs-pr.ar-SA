@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 99bfcd9003d55ced96364f033080992fa4447188
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: de0de8b418036d6b8e73b9cf5ec8deafc24af6a9
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042925"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106482"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>حماية مجموعة c-suite الخاصة بك من خلال حماية الحساب ذي الأولوية
 
@@ -43,7 +43,7 @@ ms.locfileid: "66042925"
 1. راجع الأعضاء الذين حددتهم واضغط على "التالي"
 1. اضغط على "إرسال" لتأكيد التغييرات
 
-لمعرفة علامات الحساب ذات الأولوية، راجع [إدارة الحسابات ذات الأولوية ومراقبتها - Microsoft 365 المسؤول | Microsoft Docs](../../../admin/setup/priority-accounts.md).
+لمعرفة علامات الحساب ذات الأولوية، راجع [إدارة الحسابات ذات الأولوية ومراقبتها - مسؤول Microsoft 365 | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 [راجع الحماية المميزة للمستخدمين الذين تم وضع علامة عليهم كحسابات ذات أولوية](../../office-365-security/configure-review-priority-account.md).

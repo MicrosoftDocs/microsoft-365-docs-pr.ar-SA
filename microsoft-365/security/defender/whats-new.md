@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051525"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106964"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -42,7 +42,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [ما الجديد في Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## <a name="august-2022"></a>أغسطس 2022
+- (GA) يتوفر [الآن خبراء Microsoft Defender للتتبع](defender-experts-for-hunting.md) بشكل عام. إذا كنت عميلا Microsoft 365 Defender مع مركز عمليات أمان قوي ولكنك تريد أن تساعدك Microsoft في البحث بشكل استباقي عن التهديدات عبر نقاط النهاية Office 365 والتطبيقات السحابية والهوية باستخدام بيانات Microsoft Defender، فتعرف على المزيد حول تطبيق الخدمة وإعدادها واستخدامها. يباع Defender Experts for Hunting بشكل منفصل عن منتجات Microsoft 365 Defender الأخرى.
 
 ## <a name="july-2022"></a>يوليو 2022
 - (معاينة) يمكن الآن للمشاركين في المعاينة العامة ل Microsoft Defender للتتبع التطلع إلى تلقي تقارير شهرية لمساعدتهم على فهم التهديدات التي ظهرت بها خدمة التتبع في بيئتهم، إلى جانب التنبيهات التي تم إنشاؤها بواسطة منتجاتهم Microsoft 365 Defender. للحصول على التفاصيل، راجع [فهم تقرير Defender Experts for Hunting في Microsoft 365 Defender](defender-experts-report.md).

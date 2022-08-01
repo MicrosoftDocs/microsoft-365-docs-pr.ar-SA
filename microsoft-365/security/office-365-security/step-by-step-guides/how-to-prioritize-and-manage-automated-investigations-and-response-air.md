@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 234ce1ecb486c01b95c91aa51a0c5fd6b46e7a3c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4b0b5f09e97127aa2270a1fd088f6ab3b339d77e
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043524"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106394"
 ---
 # <a name="prioritize-and-manage-automated-investigations-and-response-air"></a>تحديد أولويات التحقيقات والاستجابة التلقائية (AIR) وإدارتها
 
