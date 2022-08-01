@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: خطوات توجيهية للمسؤولين ومتطلبات الترخيص والسيناريوهات الشائعة التي تدير محتوى عالي القيمة في Microsoft 365 للالتزامات القانونية أو التجارية أو التنظيمية.
-ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069505"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944186"
 ---
 # <a name="get-started-with-records-management"></a>بدء العمل باستخدام إدارة السجلات
 
@@ -43,9 +43,6 @@ ms.locfileid: "67069505"
 
     - [نشر تسميات الاستبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
     - [تطبيق تسمية استبقاء على المحتوى تلقائيا](apply-retention-labels-automatically.md)
-
-> [!TIP]
-> إذا كنت تقوم بترحيل السجلات إلى Microsoft 365 وتحتاج إلى التحقق من أنها لم يتم تغييرها، فراجع [التحقق من صحة السجلات التي تم ترحيلها](records-management.md#validating-migrated-records).
 
 ## <a name="subscription-and-licensing-requirements"></a>متطلبات الاشتراك والترخيص
 

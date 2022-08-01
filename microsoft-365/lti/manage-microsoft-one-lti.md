@@ -12,16 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: تعرف على كيفية تنفيذ مهام إدارة بوابة Microsoft LMS الرئيسية بما في ذلك العرض والحذف والتحرير واستكشاف الأخطاء وإصلاحها.
-ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "66857289"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944098"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>إدارة بوابة Microsoft LMS لأي LMS
 
-تتكامل بوابة Microsoft LMS مع العديد من LMS بما في ذلك Canvas و Blackboard و Moodle.
+تتكامل بوابة Microsoft LMS مع العديد من LMS بما في ذلك Canvas و Blackboard و Moodle و Brightspace.
 
 في هذه المقالة، سيعثر مسؤولو تكنولوجيا المعلومات على إرشادات حول مهام إدارة بوابة Microsoft LMS الرئيسية.
 
