@@ -16,8 +16,8 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
-- VSBFY23
 - commerce_signup
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
@@ -30,12 +30,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: فهم ما تحتاج إلى معرفته حول الإصدارات الأخيرة من برامج Office قبل الانتقال إلى عملية التسجيل للحصول على Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: b8bddd621998fcebf319b2d4ed2386a78375fc70
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 25e74a80f4f1a023f93037c31d61a6d458619bc0
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084554"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111581"
 ---
 # <a name="how-to-sign-up---admin-help"></a>كيفية التسجيل - مسؤول التعليمات
 

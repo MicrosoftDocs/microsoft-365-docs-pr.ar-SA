@@ -1,5 +1,5 @@
 ---
-title: إعداد Microsoft 365 Business Premium
+title: قم بإعداد Microsoft 365 Business Premium
 description: كيفية إعداد Microsoft 365 Business Premium أو العمل مع موفر حلول للقيام بذلك.
 search.appverid: MET150
 author: denisebmsft
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917969"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112450"
 ---
-# <a name="set-up-microsoft-365-business-premium"></a>إعداد Microsoft 365 Business Premium
+# <a name="set-up-microsoft-365-business-premium"></a>قم بإعداد Microsoft 365 Business Premium
 
 بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تكون خطوتك التالية هي إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
 
-- ابدأ [بتجربة الإعداد الإرشادية](m365bp-setup.md#guided-setup-process) للإعداد والتكوين الأساسيين، ثم انتقل إلى [الأمان السريع](m365bp-security-overview.md)؛ او
+- ابدأ [بتجربة الإعداد الإرشادية](m365bp-setup.md#guided-setup-process) للإعداد والتكوين الأساسيين، ثم انتقل إلى [الأمان السريع](m365bp-security-overview.md)؛ أو
 - [العمل مع شريك Microsoft](m365bp-setup.md#work-with-a-microsoft-partner) الذي يمكنه مساعدتك في إعداد كل شيء وتكوينه.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 تأكد من تلبية المتطلبات التالية قبل بدء عملية الإعداد:
 
-| شرط | الوصف |
+| احتياج | الوصف |
 |:---|:---|
-| الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
+| اكتتاب | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤول عمومي. [تعرف على المزيد حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md). |
 | متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [تعرف على المزيد حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | نظام التشغيل | **Windows**: Windows 11، Windows 10، Windows 8.1<br/>**macOS**: أحد أحدث ثلاثة إصدارات من macOS <br/>حاليا، لا يدعم Microsoft 365 Business Premium والإصدار المستقل من Microsoft Defender for Business الخوادم.  |
@@ -52,13 +51,13 @@ ms.locfileid: "66917969"
 
 > [!TIP]
 > - بعد إضافة مستخدمين، امنحهم ارتباطا إلى [دليل الإعداد السريع للموظف](../admin/setup/employee-quick-setup.md). يرشدهم الدليل عبر تسجيل الدخول والحصول على تطبيقات Office وحفظ الملفات ونسخها ومشاركتها.
-> - تابع إلى [الأمان المضني](m365bp-security-overview.md).
+> - تأكد من المتابعة إلى [الأمان الأعلى](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>العمل مع شريك Microsoft
 
 إذا كنت تفضل أن يساعدك شريك Microsoft في الحصول على Microsoft 365 وإعداده، فاتبع الخطوات التالية:
 
-1. انتقل إلى [استعراض الشركاء](https://appsource.microsoft.com/marketplace/partner-dir).
+1. انتقل إلى صفحة [استعراض الشركاء](https://appsource.microsoft.com/marketplace/partner-dir) .
 
 2. في جزء **عوامل التصفية** ، حدد معايير البحث، مثل:
 
@@ -79,4 +78,4 @@ ms.locfileid: "66917969"
 
 ### <a name="next-objective"></a>الهدف التالي
 
-بمجرد تحقيق هذه الأهداف، انتقل [إلى زيادة حماية الأمان](m365bp-security-overview.md).
+بمجرد تحقيق هذه الأهداف، انتقل إلى ["رفع الأمان](m365bp-security-overview.md)".

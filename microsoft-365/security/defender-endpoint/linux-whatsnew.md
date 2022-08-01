@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949426"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112208"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية على Linux
 
@@ -34,6 +34,28 @@ ms.locfileid: "66949426"
 
 - [ما الجديد في Defender لنقطة النهاية على macOS](mac-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
+
+<details>
+  <summary>أغسطس 2022 (النسخة: 101.75.43 | إصدار الإصدار: 30.122071.17543.0)</summary>
+
+&ensp;تم إصداره بتاريخ: **2 أغسطس 2022**<br/>
+&ensp;نشر بتاريخ: **2 أغسطس 2022**<br/>
+&ensp;النسخة: **101.75.43**<br/>
+&ensp;إصدار الإصدار: **30.122071.17543.0**<br/>
+&ensp;إصدار المحرك: **1.1.19300.3**<br/>
+&ensp;إصدار التوقيع: **1.369.395.0**<br/>
+
+**أحدث الميزات**
+
+- دعم إضافي للإصدار 9.0 من Red Hat Enterprise Linux
+- إضافة حقل جديد في الإخراج `mdatp health` الذي يمكن استخدامه للاستعلام عن مستوى إنفاذ ميزة حماية الشبكة. يتم استدعاء `network_protection_enforcement_level` الحقل الجديد ويمكن أن يأخذ إحدى القيم التالية: `audit`، `block`أو `disabled`.
+- معالجة خطأ في المنتج حيث يمكن أن تؤدي عمليات الكشف المتعددة لنفس المحتوى إلى إدخالات مكررة في محفوظات التهديدات
+- تمت معالجة مشكلة عدم إنهاء إحدى العمليات التي تم إنتاجها بواسطة المنتج (`mdatp_audisp_plugin`) في بعض الأحيان بشكل صحيح عند إيقاف الخدمة
+- إصلاحات الأخطاء الأخرى
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Jul-2022 (النسخة: 101.73.77 | إصدار الإصدار: 30.122062.17377.0)</summary>
@@ -218,7 +240,7 @@ ms.locfileid: "66949426"
    
   <p><b> ما الجديد </b></p>
 
-   - إضافة إمكانية للكشف عن jars log4j المعرضة للخطر قيد الاستخدام من قبل تطبيقات Java. يتم فحص الجهاز بشكل دوري لتشغيل عمليات Java مع jars log4j المحملة. يتم الإبلاغ عن المعلومات إلى الخلفية Microsoft Defender لنقطة النهاية ويتم عرضها في منطقة إدارة قابلية النقل في المدخل.
+   - إضافة إمكانية للكشف عن jars log4j المعرضة للخطر قيد الاستخدام من قبل تطبيقات Java. يتم فحص الجهاز بشكل دوري لتشغيل عمليات Java مع jars log4j المحملة. يتم الإبلاغ عن المعلومات إلى الخلفية Microsoft Defender لنقطة النهاية ويتم كشفها في منطقة إدارة الثغرات الأمنية في المدخل.
    
    </details>
 
