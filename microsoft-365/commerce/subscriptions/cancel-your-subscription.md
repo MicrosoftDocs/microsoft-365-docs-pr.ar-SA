@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: تعرف على كيفية إلغاء الاشتراكات التجريبية أو المدفوعة من Dynamics 365 وIntune Power Platform وMicrosoft 365 للأعمال في مركز مسؤولي Microsoft 365.
 ms.date: 07/07/2022
-ms.openlocfilehash: 9acaaff87e649342a073e2395edb41ca07dd1485
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7918690c20466769129875620e98fb162f3d3be5
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084796"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112098"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>إلغاء اشتراكك في Microsoft
 

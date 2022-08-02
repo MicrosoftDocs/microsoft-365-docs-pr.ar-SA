@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/01/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
-ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 47260bbec9e874d07f5508428843aa037a47898e
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037743"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111703"
 ---
-# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 Business Premium للأمان عبر الإنترنت للشركات الصغيرة
+# <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium – الإنتاجية والأمان عبر الإنترنت للشركات الصغيرة
 
 لنبدأ بقول أنك اتخذت خياراً حكيماً في اعتماد Microsoft 365 Business Premium وأدوات الإنتاجية ذات المستوى العالمي. تم تصميم Microsoft 365 Business Premium مع مراعاة الأمان عبر الإنترنت، لحماية بياناتك وأجهزتك ومعلوماتك. أنت أول وأفضل دفاع لمؤسستك ضد المتسللين والهجمات عبر الإنترنت، بما في ذلك الأفراد العشوائيين أو الجريمة المنظمة أو الدول القومية المتطورة للغاية.
 
-المهمة المعروضة عليك هي هذه - السماح لـ Microsoft 365 Business Premium بالمساعدة في تأمين مستقبل مؤسستك. تعامل مع هذه المهمة من خلال القيام بالبعثات التالية التي ستساعدك على تعزيز بيئتك وتدريب فريقك وحماية الأجهزة المدارة. يتم تنظيم المهام على النحو التالي:
+المهمة المعروضة عليك هي: السماح Microsoft 365 Business Premium المساعدة في تأمين مستقبل مؤسستك! تعامل مع هذه المهمة من خلال القيام بالبعثات التالية التي ستساعدك على تعزيز بيئتك وتدريب فريقك وحماية الأجهزة المدارة. يتم تنظيم المهام على النحو التالي:
 
 - **[تقوية بيئتك](m365bp-setup-overview.md)** (المهام التي يقوم بها المسؤول)؛ 
 - **[تدريب فريقك](m365bp-devices-overview.md)** (المهام التي يقوم بها جميع أعضاء فريق العمل)؛ و 
@@ -89,4 +89,4 @@ Microsoft 365 Business Premium هو حل شامل للأمان والتعاون 
 الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
 
 > [!NOTE]
-> عندما يكون المصطلح أو التوجيه غير واضح، يمكنك العثور على تعريفات في [قائمة المصطلحات](m365bp-glossary.yml).
+> عندما يكون هناك مصطلح أو توجيه غير واضح، اطّلع على [قاموس المصطلحات](m365bp-glossary.yml).
