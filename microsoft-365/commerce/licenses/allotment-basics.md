@@ -16,15 +16,16 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_licensing
+- empty
 search.appverid: MET150
 description: تعرف على ميزة المخصصات الجديدة.
 ms.date: 05/12/2022
-ms.openlocfilehash: 2ab253bd122fb4f8ec83c38cb623217ec6ae3815
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 20c2845fd0d0d475c21df626f0a33d62bc094d99
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489080"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111638"
 ---
 # <a name="microsoft-365-license-allotment-basics"></a>أساسيات تخصيص ترخيص Microsoft 365
 

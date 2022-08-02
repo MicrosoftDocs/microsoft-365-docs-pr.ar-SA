@@ -9,23 +9,24 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5210530bb9102436e66667a0482aa09d941e26f9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a0225c12521812dc3888aac6c0179019dfa0ea72
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939400"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112516"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender لنقطة النهاية Device Control Removable Storage Protection
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -41,12 +42,13 @@ ms.locfileid: "64939400"
 - *مراجعه الحسابات* الوصول للقراءة أو الكتابة أو التنفيذ إلى التخزين القابل للإزالة استنادا إلى خصائص الجهاز المختلفة، مع استثناء أو بدونه.
 - *منع* الوصول للقراءة أو الكتابة أو التنفيذ مع استثناء أو بدونه - السماح بجهاز معين استنادا إلى خصائص الجهاز المختلفة.
 
+لإدارة التخزين الخارجي، استخدم التحكم في الوصول إلى التخزين القابل للإزالة بدلا من [تثبيت الجهاز](#device-installation).
+
 **تفاصيل دعم Windows 10 والدعم Windows 11**:
 
 - يتم تطبيقه على مستوى الجهاز، على مستوى المستخدم. أو كليهما. السماح فقط لأشخاص معينين يقومون بإجراء الوصول للقراءة/الكتابة/التنفيذ إلى تخزين معين قابل للإزالة على جهاز معين.
 - دعم MEM OMA-URI وGPO.
-- '[خصائص الجهاز](#device-properties)' المدعومة كما هو مدرج.
-- للحصول على ميزة في Windows، راجع التحكم في [الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md).
+- بالنسبة إلى أجهزة Windows، راجع [التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md).
 
 **النظام الأساسي المدعوم** - Windows 10، Windows 11
 
@@ -65,8 +67,7 @@ ms.locfileid: "64939400"
 **تفاصيل دعم Windows 10 والدعم Windows 11**:
 
 - مطبق على مستوى الجهاز: ينطبق النهج نفسه على أي مستخدم تم تسجيل دخوله.
-- يدعم إدارة نقاط النهاية من Microsoft وكائنات نهج المجموعة.
-- '[خصائص الجهاز](#device-properties)' المدعومة كما هو مدرج.
+- يدعم Microsoft إدارة نقاط النهاية وكائنات نهج المجموعة.
 - لمزيد من المعلومات حول Windows، راجع [كيفية التحكم في أجهزة USB والوسائط الأخرى القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](control-usb-devices-using-intune.md).
 
 **النظام الأساسي المدعوم** - Windows 10، Windows 11
@@ -86,30 +87,13 @@ ms.locfileid: "64939400"
 
 **النظام الأساسي المدعوم** - Windows 10، Windows 11
 
-### <a name="bitlocker"></a>Bitlocker
+### <a name="bitlocker"></a>BitLocker
 
 **القدرات**:
 
 - حظر البيانات المطلوب كتابتها إلى محركات الأقراص القابلة للإزالة غير المحمية ب BitLocker.
 - حظر الوصول إلى محركات الأقراص القابلة للإزالة ما لم تكن مشفرة على كمبيوتر تملكه مؤسستك
 
-**الوصف** - لمزيد من المعلومات حول Windows، راجع [BitLocker - محرك الأقراص القابل للإزالة الإعدادات](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+**الوصف** - لمزيد من المعلومات حول Windows، راجع [BitLocker - إعدادات محرك الأقراص القابلة للإزالة](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **النظام الأساسي المدعوم** - Windows 10، Windows 11
-
-## <a name="device-properties"></a>خصائص الجهاز
-
-تسمح لك Microsoft Defender لنقطة النهاية Device Control Removable Storage Protection بتقييد الوصول إلى التخزين القابل للإزالة استنادا إلى الخصائص الموضحة في الجدول أدناه:
-
-<br/><br/>
-
-|اسم الخاصية|النهج المعمول بها|ينطبق على أنظمة التشغيل|الوصف|
-|---|---|---|---|
-|فئة الجهاز|[كيفية التحكم في أجهزة USB والوسائط الأخرى القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](control-usb-devices-using-intune.md)|بالنسبة لنظام التشغيل|للحصول على معلومات حول تنسيقات معرف الجهاز، راجع [فئة إعداد الجهاز](/windows-hardware/drivers/install/overview-of-device-setup-classes). يوفر الارتباطان التاليان القائمة الكاملة لفئات إعداد الجهاز. تشير فئات "استخدام النظام" في الغالب إلى الأجهزة التي تأتي مع كمبيوتر/جهاز من المصنع، بينما تشير فئات "المورد" في الغالب إلى الأجهزة التي يمكن توصيلها بجهاز كمبيوتر/جهاز موجود: [فئات إعداد الجهاز المعرفة من قبل النظام المتوفرة للموردين - برامج تشغيل Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) [وفئات إعداد الأجهزة المعرفة من قبل النظام المحجوزة لاستخدام النظام - برامج تشغيل Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **ملاحظة**: يمكن تطبيق تثبيت الجهاز على أي أجهزة، وليس فقط على التخزين القابل للإزالة.|
-|المعرف الأساسي|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)|بالنسبة لنظام التشغيل|يتضمن المعرف الأساسي التخزين القابل للإزالة والقرص المضغوط/DVD Windows Portable Device/WPD.|
-|معرف الجهاز|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)؛ <p> [كيفية التحكم في أجهزة USB والوسائط الأخرى القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](control-usb-devices-using-intune.md)|بالنسبة لنظام التشغيل|للحصول على معلومات حول تنسيقات معرف الجهاز، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers)، على سبيل المثال، USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|معرف الجهاز|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md) <p> [كيفية التحكم في أجهزة USB والوسائط الأخرى القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](control-usb-devices-using-intune.md)|بالنسبة لنظام التشغيل|حددت سلسلة الجهاز في النظام، على سبيل المثال، USBSTOR\DiskGeneric_Flash_Disk___8.07; **ملاحظة**: معرف الجهاز ليس فريدا؛ قد تشترك الأجهزة المختلفة في نفس القيمة.|
-|معرف المثيل|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md) <p> تثبيت الجهاز|بالنسبة لنظام التشغيل|تعرف السلسلة الجهاز في النظام بشكل فريد، على سبيل المثال، USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
-|اسم مألوف|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)|بالنسبة لنظام التشغيل|سلسلة متصلة بالجهاز، على سبيل المثال، جهاز USB عام على قرص محمول|
-|معرف المورد / معرف المنتج|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)|بالنسبة لنظام التشغيل <p> ماك|معرف المورد هو رمز المورد المكون من أربعة أرقام الذي تعينه لجنة USB للمورد. معرف المنتج هو رمز المنتج المكون من أربعة أرقام الذي يقوم المورد بتعيينه إلى الجهاز؛ دعم حرف البدل.|
-|معرف الرقم التسلسلي|[التحكم في الوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)|بالنسبة لنظام التشغيل <p> ماك |على سبيل المثال `<SerialNumberId>002324B534BCB431B000058A</SerialNumberId>`|

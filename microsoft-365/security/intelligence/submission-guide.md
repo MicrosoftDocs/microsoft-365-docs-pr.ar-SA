@@ -15,24 +15,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: df2ab2b2019bb76af49f00d2751cdc76848705d1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663589"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112032"
 ---
 # <a name="submit-files-for-analysis"></a>إرسال الملفات لتحليلها
 
 إذا كان لديك ملف تشك في أنه قد يكون برنامجا ضارا أو تم اكتشافه بشكل غير صحيح، يمكنك إرساله إلينا للتحليل. تحتوي هذه الصفحة على إجابات لبعض الأسئلة الشائعة حول إرسال ملف للتحليل.
 
-## <a name="how-do-i-send-a-malware-file-to-microsoft"></a>كيف أعمل إرسال ملف برامج ضارة إلى Microsoft؟
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>كيف أعمل إرسال ملف إلى Microsoft للتحليل؟
 
-يمكنك إرسال الملفات التي تعتقد أنها برامج ضارة أو ملفات تم اكتشافها بشكل غير صحيح من خلال [نموذج مدخل الإرسال](https://www.microsoft.com/wdsi/filesubmission).
+### <a name="send-a-malware-file"></a>إرسال ملف برامج ضارة
 
-نتلقى عددا كبيرا من العينات من العديد من المصادر. يتم تحديد أولويات تحليلنا من خلال عدد عمليات الكشف عن الملفات ونوع الإرسال. يمكنك مساعدتنا على إكمال تحليل سريع من خلال توفير معلومات مفصلة حول المنتج الذي كنت تستخدمه وما كنت تفعله عند العثور على الملف.
+يمكنك إرسال الملفات التي تعتقد أنها برامج ضارة أو ملفات تم اكتشافها بشكل غير صحيح من خلال [مدخل إرسال العينة](https://www.microsoft.com/wdsi/filesubmission).
+
+يمكنك إكمال تحليل سريع من خلال توفير معلومات مفصلة حول المنتج الذي كنت تستخدمه وما كنت تفعله عند العثور على الملف.
 
 بعد تسجيل الدخول، ستتمكن من تعقب عمليات الإرسال.
+
+> [!NOTE]
+>
+> يمكنك استخدام ميزة إرسال WDSI حتى إذا لم يكن لديك Microsoft Defender لنقطة النهاية الخطة 2 أو Microsoft Defender لخطة Office 2.
+
+### <a name="submit-a-suspected-email-attachment"></a>إرسال مرفق بريد إلكتروني مشتبه به
+
+استخدم [مدخل Microsoft 365 Defender](https://security.microsoft.com/) لإرسال مرفقات البريد الإلكتروني المشتبه بها إلى Microsoft للمراجعة. لمزيد من المعلومات، راجع [إرسال مرفق بريد إلكتروني مشتبه به إلى Microsoft](../office-365-security/admin-submission.md).
+
+### <a name="submit-a-file-or-file-hash"></a>إرسال تجزئة ملف أو ملف
+
+استخدم ميزة عمليات الإرسال الموحدة في Microsoft Defender لنقطة النهاية لإرسال الملفات وتجزئة الملفات إلى Microsoft لمراجعتها. لمزيد من المعلومات، راجع ["إرسال الملفات" في Microsoft Defender لنقطة النهاية](../defender-endpoint/admin-submissions-mde.md).
 
 ## <a name="can-i-send-a-sample-by-email"></a>هل يمكنني إرسال عينة بالبريد الإلكتروني؟
 

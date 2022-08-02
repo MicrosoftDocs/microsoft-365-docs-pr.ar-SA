@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/01/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 7407b6184b700ccacd8258ecce7d7cbcf16587b2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106569"
+ms.locfileid: "67112538"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
@@ -83,7 +83,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 |اسم الخاصية|الوصف|خيارات|
 |---|---|---|
 |**معرف المجموعة**|يمثل GUID، وهو معرف فريد، المجموعة وسيتم استخدامه في النهج.||
-|**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: يتضمن `RemovableMediaDevices`المعرف الأساسي و. `CdRomDevices``WpdDevices``PrinterDevices` <p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0``Device instance path` في إدارة الأجهزة. يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: تحول `Device instance path` إلى تنسيق معرف الجهاز، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers)، على سبيل المثال، USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07. <p>**HardwareId**: حددت سلسلة الجهاز في النظام، على سبيل المثال، USBSTOR\DiskGeneric_Flash_Disk___8.07، `Hardware Ids` في إدارة الأجهزة. ملاحظة: معرف الجهاز ليس فريدا؛ قد تشترك الأجهزة المختلفة في نفس القيمة.<p>**FriendlyNameId**: سلسلة مرفقة بالجهاز، على سبيل المثال، جهاز USB عام لقرص محمول، `Friendly name` في إدارة الأجهزة. <p>**BusId**: على سبيل المثال، USB وSCSI. <p>**SerialNumberId**: يمكنك العثور على SerialNumberId من `Device instance path` إدارة الأجهزة، على سبيل المثال، `03003324080520232521` هو SerialNumberId في USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0. <p>**VID_PID**: معرف المورد هو رمز المورد المكون من أربعة أرقام الذي تعينه لجنة USB للمورد. معرف المنتج هو رمز المنتج المكون من أربعة أرقام الذي يقوم المورد بتعيينه إلى الجهاز؛ دعم حرف البدل، وتحويله `Device instance path` إلى معرف المورد وتنسيق معرف المنتج، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers). <p>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط مع VID=0751 <p> **ملاحظة**: انظر إلى "كيف يمكنني العثور على خاصية الوسائط في إدارة الأجهزة؟" ضمن قسم "الأسئلة المتداولة" الذي يليه لفهم كيفية العثور على الخاصية في إدارة الأجهزة.|
+|**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: يتضمن `RemovableMediaDevices`المعرف الأساسي ، ، `CdRomDevices`، `WpdDevices``PrinterDevices`. <p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` إنه في `Device instance path` إدارة الأجهزة. يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: للتحويل `Device instance path` إلى تنسيق معرف الجهاز، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers)، على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: سلسلة تعرف الجهاز في النظام، على سبيل المثال، `USBSTOR\DiskGeneric_Flash_Disk___8.07`وهي `Hardware Ids` موجودة في إدارة الأجهزة. <br>**ملاحظة**: معرف الجهاز ليس فريدا؛ قد تشترك الأجهزة المختلفة في نفس القيمة.<p>**FriendlyNameId**: إنها سلسلة مرفقة بالجهاز، على سبيل المثال. `Generic Flash Disk USB Device` إنه في `Friendly name` إدارة الأجهزة. <p>**BusId**: على سبيل المثال، USB وSCSI <p>**SerialNumberId**: يمكنك العثور على SerialNumberId من `Device instance path` إدارة الأجهزة، على سبيل المثال، `03003324080520232521` هو SerialNumberId في USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: معرف المورد هو رمز المورد المكون من أربعة أرقام الذي تعينه لجنة USB للمورد. معرف المنتج هو رمز المنتج المكون من أربعة أرقام الذي يقوم المورد بتعيينه إلى الجهاز. وهو يدعم حرف البدل. `Device instance path` للتحويل إلى تنسيق معرف المورد ومعرف المنتج، راجع [معرفات USB القياسية](/windows-hardware/drivers/install/standard-usb-identifiers). على سبيل المثال: <br>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<br>`_55E0`: مطابقة أي وسائط مع PID=55E0 <br>`0751_`: مطابقة أي وسائط مع VID=0751 <p> **ملاحظة**: راجع [كيف أعمل العثور على خاصية الوسائط في إدارة الأجهزة؟](#how-do-i-find-the-media-property-in-the-device-manager) ضمن قسم [الأسئلة المتداولة](#frequently-asked-questions) أدناه لفهم كيفية العثور على الخاصية في إدارة الأجهزة.|
 |**نوع المطابقة**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: ستكون أي سمات ضمن `DescriptorIdList` العلاقة **و** ، على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين أم لا. <p> **MatchAny**: السمات ضمن DescriptorIdList ستكون **علاقة أو** ؛ على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيقوم النظام بالإنفاذ طالما أن USB يحتوي على قيمة **DeviceID** أو **InstanceID** متطابقة.|
 
 ### <a name="access-control-policy"></a>نهج التحكم بالوصول
@@ -516,9 +516,9 @@ DeviceFileEvents
 
 3. حدد موقع الوسائط في إدارة الأجهزة، وانقر بزر الماوس الأيمن، ثم حدد **"خصائص**".
 
-   ![Screenshot of USB selected in Disk drives, and Properties highlighted.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+   :::image type="content" alt-text="لقطة شاشة للوسائط في إدارة الأجهزة." source="https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png":::
 
 4. افتح **التفاصيل**، وحدد **"خصائص**".
 
-   ![لقطة شاشة لخصائص جهاز USB.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+   :::image type="content" alt-text="لقطة شاشة لخاصية الجهاز في إدارة الأجهزة." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
     

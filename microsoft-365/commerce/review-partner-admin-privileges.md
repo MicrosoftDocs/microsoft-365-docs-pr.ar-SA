@@ -15,15 +15,16 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- empty
 search.appverid: MET150
 description: تعرف على كيفية مراجعة قائمة موفري الحلول المعتمدين من Microsoft (الشركاء) لتحديد امتيازات المسؤول لديهم، وكيفية إزالة هذه الامتيازات.
 ms.date: 12/03/2021
-ms.openlocfilehash: eefbe2c8b70afee9c1e24e4335a73488906bf844
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0d4bac0ed9e0657700e5ac28e8ad9b3304eee979
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490686"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111922"
 ---
 # <a name="review-microsoft-certified-cloud-solution-provider-partner-administrative-privileges"></a>مراجعة الامتيازات الإدارية لشريك موفر حلول السحابة المعتمد من Microsoft
 
@@ -52,7 +53,7 @@ ms.locfileid: "66490686"
 > - إذا قمت بإزالة DAP (دور المسؤول العام) من شريك، نوصي بالاتصال به لمناقشة تسليم الخدمة في المستقبل. على سبيل المثال، يمكنك إنشاء حساب مستخدم بامتيازات أقل ومشاركة معلومات الحساب هذه مع شريكك. تعرف على المزيد حول [إضافة المستخدمين](../admin/add-users/add-users.md) [وتعيين أدوار المسؤولين](../admin/add-users/assign-admin-roles.md).
 > - حتى مع إزالة دور المسؤول العمومي، لا يزال بإمكان الشريك إجراء عمليات شراء بالنيابة عنك. نوصي بالاتصال بالشريك لمطالبته بإزالة هذه القدرة في مركز الشركاء.
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إدارة علاقات الشركاء](manage-partners.md) (مقالة)\
 [حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md) (مقالة)\

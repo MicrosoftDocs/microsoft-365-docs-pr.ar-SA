@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: تعرف على كيفية استخدام المسؤولين Exchange Online PowerShell وملف CSV لاستيراد جهات الاتصال الخارجية بشكل مجمع إلى قائمة العناوين العمومية.
-ms.openlocfilehash: 40e8c44a45e8d8d0c416f3f00df57e24504a4e70
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 249dc6f2f102c4026ab201f8e9d8da6f76e6a253
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633796"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111505"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>استيراد جهات اتصال خارجية بشكل مجمع إلى Exchange Online
 
@@ -104,15 +104,10 @@ ms.locfileid: "66633796"
     
 2. انتقل إلى مجلد سطح المكتب حيث حفظت ملف CSV في الخطوة 1؛ على سبيل المثال، `C:\Users\Administrator\desktop`.
     
-3. قم بتشغيل الأمرين التاليين لإضافة الخصائص الأخرى من ملف CSV إلى جهات الاتصال الخارجية التي قمت بإنشائها في الخطوة 2.
+3. قم بتشغيل الأمر التالي لإضافة الخصائص الأخرى من ملف CSV إلى جهات الاتصال الخارجية التي قمت بإنشائها في الخطوة 2.
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]

@@ -14,25 +14,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
+- VSBFY23
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: تعرف على كيفية تجديد معظم اشتراكات Microsoft 365 للأعمال عن طريق إيقاف تشغيل الفوترة المتكررة أو تشغيلها.
 ms.date: 05/04/2021
-ms.openlocfilehash: 74eb33f058081d4cd7d9bf7cb741324272a6a46a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b180b5be5427832070680f00b9cd804a650e603e
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084884"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112076"
 ---
 # <a name="renew-microsoft-365-for-business"></a>تجديد Microsoft 365 للأعمال
 
 > [!IMPORTANT]
-> اعتبارا من 26 يناير 2021، لم تعد الحسابات المصرفية الجديدة مدعومة للعملاء في بلجيكا وفرنسا وإيطاليا ولكسمبورج والبرتغال وأسبانيا والولايات المتحدة. إذا كنت عميلا موجودا في أحد هذه البلدان، فيمكنك متابعة دفع قيمة اشتراكك باستخدام حساب بنكي موجود، ويمكنك إضافة اشتراكات جديدة إليه، ولكن فقط طالما كان الحساب البنكي في وضع جيد.
+> اعتبارا من 26 يناير 2021، لم تعد الحسابات المصرفية الجديدة مدعومة للعملاء في بلجيكا وفرنسا وإيطاليا ولكسمبورج والبرتغال وأسبانيا والولايات المتحدة. إذا كنت عميلا موجودا في أحد هذه البلدان، يمكنك الاستمرار في دفع قيمة اشتراكك باستخدام حساب بنكي موجود، ويمكنك إضافة اشتراكات جديدة إليه، ولكن فقط طالما أن الحساب البنكي في وضع جيد.
 
 تنطبق هذه المقالة على معظم اشتراكات Microsoft 365 للأعمال المدفوعة.
   
