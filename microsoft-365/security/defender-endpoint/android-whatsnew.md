@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f5b4cfc38f702bf7ea5affdae13f2215c044fc89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486696"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174883"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Android
 
@@ -29,7 +29,13 @@ ms.locfileid: "66486696"
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+>[!NOTE]
+> **يتوفر الآن محرك مكافحة البرامج الضارة** Microsoft Defender لنقطة النهاية بشكل عام. يطلب من جميع المستخدمين الحصول على إصدار Microsoft Defender لنقطة النهاية أعلى **من 1.0.3815.0000** للاستفادة من إمكانية الحماية من البرامج الضارة الجديدة هذه. سيتم إرسال إعلامات ورسائل تراكب داخل التطبيق للمستخدمين على الإصدار Microsoft Defender لنقطة النهاية أقل من 1.0.3815.0000 لتحديث تطبيق Microsoft Defender لنقطة النهاية الخاص بهم. يمكن للمستخدمين النقر فوق الارتباط المتوفر في رسالة التراكب للانتقال إلى متجر التشغيل المدار وتحديث التطبيق. 
+>
+> إذا تعذر على المستخدمين الوصول إلى متجر التشغيل، يمكن تحديث التطبيق من خلال مدخل الشركة. 
+
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Microsoft defender على ملف التعريف الشخصي BYOD للمؤسسة التي تعمل بنظام Android
 Microsoft Defender لنقطة النهاية مدعوم الآن على ملف التعريف الشخصي ل Android Enterprise (BYOD فقط) مع جميع الميزات الرئيسية بما في ذلك مسح البرامج الضارة والحماية من ارتباطات التصيد الاحتيالي وحماية الشبكة وإدارة الثغرات الأمنية. يقترن هذا الدعم [بعناصر تحكم الخصوصية](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) لضمان خصوصية المستخدم على ملف التعريف الشخصي. لمزيد من المعلومات، اقرأ [الإعلان](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) [ودليل النشر](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).

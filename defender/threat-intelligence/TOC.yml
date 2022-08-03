@@ -1,2 +1,33 @@
-- name: الفهرس
-  href: index.md
+- name: نظرة عامة
+  expanded: true
+  items:
+    - name: ما التحليل الذكي للمخاطر في Microsoft Defender (Defender TI)؟
+      href: index.md
+    - name: مجموعات البيانات
+      href: data-sets.md
+    - name: تسجيل درجات السمعة
+      href: reputation-scoring.md
+    - name: نتائج تحليلات المحللين
+      href: analyst-insights.md
+- name: مفهوم
+  items:
+    - name: تسلسل البنية الأساسية
+      href: infrastructure-chaining.md
+- name: تشغيل سريع
+  items:
+    - name: تعلّم كيفية الوصول إلى التحليل الذكي للمخاطر في Microsoft Defender وإجراء التخصيصات في المدخل الخاص بك
+      href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
+- name: المعلومات الإرشادية
+  items:
+    - name: بحث وإعداد عرض محوري
+      href: searching-and-pivoting.md
+    - name: فرز البيانات وتصفيتها وتنزيلها
+      href: sorting-filtering-and-downloading-data.md
+    - name: استخدام العلامات
+      href: using-tags.md
+    - name: استخدام المشاريع
+      href: using-projects.md
+- name: البرامج التعليمية
+  items:
+    - name: جمع التحليل الذكي للمخاطر وتسلسل البنية الأساسية
+      href: gathering-threat-intelligence-and-infrastructure-chaining.md

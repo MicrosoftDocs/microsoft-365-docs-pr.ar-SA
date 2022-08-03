@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية إدارة المشاركة ل Microsoft Whiteboard في بيئات GCC High.
-ms.openlocfilehash: 0cd4dc8e4bf39cfbaab79a0140bac544de9e9015
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b6efeac47cec8de02487bf4526891b52c9098079
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943365"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175323"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>إدارة المشاركة ل Microsoft Whiteboard في بيئات GCC High
 
@@ -28,7 +28,9 @@ ms.locfileid: "66943365"
 
 ## <a name="share-in-teams-meetings"></a>المشاركة في اجتماعات Teams
 
-عند مشاركة لوح معلومات في اجتماع Teams، ينشئ Whiteboard ارتباط مشاركة يمكن لأي شخص داخل المؤسسة الوصول إليه. ثم يقوم بمشاركة لوح المعلومات تلقائيا مع أي مستخدمين داخل المستأجرين في الاجتماع.
+عند مشاركة لوح معلومات في اجتماع Teams، يقوم Whiteboard بإنشاء ارتباط مشاركة يمكن الوصول إليه من قبل أي شخص داخل المؤسسة ومشاركة لوح المعلومات تلقائيا مع أي مستخدمين داخل المستأجرين في الاجتماع. تتم مشاركة ألواح المعلومات باستخدام الارتباطات التي يمكن للشركة مشاركتها، بغض النظر عن الإعداد الافتراضي. يتم التخطيط لدعم نوع ارتباط المشاركة الافتراضي.
+
+هناك إمكانية إضافية للتعاون المؤقت من قبل معظم حسابات الأجهزة الخارجية والمشتركة أثناء الاجتماع. يسمح هذا للمستخدمين بعرض اللوحات البيضاء والتعاون في العمل عليها مؤقتا عند مشاركتها في اجتماع Teams، على غرار مشاركة PowerPoint مباشر.
 
 >[!NOTE]
 > المشاركة الخارجية أثناء اجتماع Teams غير متوفرة بعد، ولكن ستتم إضافتها في إصدار مستقبلي.

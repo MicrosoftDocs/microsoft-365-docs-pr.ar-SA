@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3161a26a8b22304e9343e9e16a1dd1e313d47df9
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970089"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175287"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>إدارة تسميات الحساسية في تطبيقات Office
 
@@ -59,12 +59,12 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 > [!NOTE]
 > بالنسبة إلى Windows وقناة Semi-Annual Enterprise، قد لا يتم إصدار الحد الأدنى لأرقام الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
-|القدره |بالنسبة لنظام التشغيل |ماك |دائره الرقابه الداخليه |الروبوت |الويب |
+|تمكن |بالنسبة لنظام التشغيل |الماك |دائره الرقابه الداخليه |الروبوت |الويب |
 |-----------|-------:|----|----|--------|----|
 |[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[دعم متعدد اللغات](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | قيد المراجعة |
 |[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الجديدة                                         | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الموجودة | معاينة: النشر إلى [خيار التحديث بيتا](https://office.com/insider) | معاينة: النشر إلى [خيار التحديث الحالي (معاينة)](https://office.com/insider) | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الموجودة | معاينة: النشر إلى [خيار التحديث الحالي (معاينة)](https://office.com/insider)) | معاينة: النشر إلى [خيار التحديث الحالي (معاينة)](https://office.com/insider) | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[طلب مبرر لتغيير تسمية](sensitivity-labels.md#what-label-policies-can-do)                     | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+  <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[توفير ارتباط تعليمات إلى صفحة تعليمات مخصصة](sensitivity-labels.md#what-label-policies-can-do)                       | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,7 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 > [!NOTE]
 > بالنسبة إلى Windows وقناة Semi-Annual Enterprise، قد لا يتم إصدار الحد الأدنى لأرقام الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
-|القدره |Outlook for Windows |Outlook for Mac |Outlook على iOS |Outlook على Android |Outlook على ويب |
+|تمكن |Outlook for Windows |Outlook for Mac |Outlook على iOS |Outlook على Android |Outlook على ويب |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
 |[دعم متعدد اللغات](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | نعم |
@@ -140,7 +140,7 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 
 ## <a name="office-file-types-supported"></a>أنواع ملفات Office المعتمدة
 
-تدعم تطبيقات Office التي تحتوي على تسميات مضمنة لملفات Word وExcel وPowerPoint تنسيق Open XML (مثل .docx .xlsx) ولكن ليس تنسيق Microsoft Office 97-2003 (مثل .doc .xls) أو Open Document Format (مثل odt. و ods. أو تنسيقات أخرى. عندما لا يكون نوع الملف معتمدا للتسمية المضمنة، لا يتوفر الزر **"الحساسية** " في تطبيق Office.
+تدعم تطبيقات Office التي تحتوي على تسميات مضمنة لملفات Word وExcel وPowerPoint تنسيق Open XML (مثل .docx .xlsx) وليس تنسيق Microsoft Office 97-2003 (مثل .doc .xls) أو Open Document Format (مثل .odt .ods) أو تنسيقات أخرى. عندما لا يكون نوع الملف معتمدا للتسمية المضمنة، لا يتوفر الزر **"الحساسية** " في تطبيق Office.
 
 يدعم عميل التسمية الموحد ل Azure حماية البيانات تنسيق Open XML وتنسيق Microsoft Office 97-2003. لمزيد من المعلومات، راجع [أنواع الملفات المدعومة من قبل عميل التسمية الموحد ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) من دليل مسؤول هذا العميل.
 
